@@ -2,20 +2,21 @@
   <footer class="site-footer" id="footer" dir="<%= lang === 'ar' ? 'rtl' : 'ltr' %>">
     <div class="page-wrapper">
       <div class="footer-container">
-        <div class="footer-top">
-          <img src="/logo.png" alt="Smart Ller logo" class="footer-logo">
-        </div>
+
         <hr class="footer-divider">
         <div class="footer-bottom">
-          <nav class="footer-nav">
-            <ul>
-              <li><a href="/about" style="text-decoration: none;"><%= t.aboutUsFooter %></a></li>
-              <li><a href="/categories" style="text-decoration: none;"><%= t.ourProductsFooter %></a></li>
-              <li><a href="/contact" style="text-decoration: none;"><%= t.contactUsFooter %></a></li>
-            </ul>
-          </nav>
+          <div class="footer-left">
+            <img src="/logo.png" alt="Smart Ller logo" class="footer-logo">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="/about" style="text-decoration: none;"><%= t.aboutUsFooter %></a></li>
+                <li><a href="/categories" style="text-decoration: none;"><%= t.ourProductsFooter %></a></li>
+                <li><a href="/contact" style="text-decoration: none;"><%= t.contactUsFooter %></a></li>
+              </ul>
+            </nav>
+          </div>
           <div class="footer-social">
-            <h3 class="footer-heading"><%= t.socialCommunication %></h3>
+            <h3 class="footer-heading" style="text-align: center;"><%= t.socialCommunication %></h3>
             <div class="social-icons">
               <a href="#" aria-label="Facebook"><img src="/facebook.svg" alt="Facebook"></a>
               <a href="#" aria-label="Telegram"><img src="/telegram.svg" alt="Telegram"></a>
@@ -43,13 +44,22 @@
 
   .footer-top {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 20px 80px 0;
+  }
+
+  .contact-message {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
   }
 
   .footer-logo {
     width: 160px;
     height: 110px;
+    margin-right: 40px;
   }
 
   .footer-divider {
@@ -67,8 +77,23 @@
     padding: 0 100px;
   }
 
+  .footer-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-nav ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
   .footer-nav ul li {
     margin-bottom: 15px;
+    color: #ffffff;
+  }
+
+  .footer-nav ul li::marker {
+    color: #ffffff;
   }
   
   .footer-nav ul li:last-child {
@@ -115,9 +140,11 @@
     .footer-logo {
       width: 180px;
       height: 125px;
+      margin-right: 50px;
     }
     .footer-nav a,
-    .footer-heading {
+    .footer-heading,
+    .contact-message {
       font-size: 22px;
     }
     .social-icons {
@@ -136,18 +163,23 @@
       gap: 40px;
       text-align: center;
     }
-    .social-icons {
-      justify-content: center;
+    .footer-left {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
     }
     .footer-logo {
       width: 200px;
       height: 140px;
+      margin-right: 0;
     }
     .footer-nav a,
-    .footer-heading {
+    .footer-heading,
+    .contact-message {
       font-size: 24px;
     }
     .social-icons {
+      justify-content: center;
       gap: 50px;
     }
     .social-icons img {
@@ -164,8 +196,8 @@
     .footer-bottom {
       padding: 0 40px;
     }
-    .footer-top {
-      justify-content: center;
+    .footer-left {
+      gap: 20px;
     }
   }
   
