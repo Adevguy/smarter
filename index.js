@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -7,6 +9,7 @@ const {sendEmail} = require('./emailHandler.js');
 app.use(express.json());
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true })); // to parse form data
 app.set("views", __dirname + "/views");
 // Sample route
 app.use((req, res, next) => {
@@ -17,13 +20,14 @@ app.get('/', (req, res) => {
   res.render('home', { title: 'Home' });
 });
 app.get("/contact", (req, res) => {
-  const products = Object.keys(categories.ar).map(key => {
+  const categoriesNames = Object.keys(categories.ar).map(key => {
     const category = categories.ar[key];
     return {
       name: key, // Arabic/English name from the object
       description: category.description || "" // optional field
     };
   });
+  const products = categoriesNames.map(cat => cat.name);
   res.render("contact", { title: "Contact Us", products });
 });
 app.get("/about", (req, res) => {
@@ -116,7 +120,7 @@ app.post("/send-email", async (req, res) => {
 
   try {
     await sendEmail(name, email, phoneNumber, product, message);
-    res.status(200).json({ message: "Email sent successfully" });
+    res.redirect("/")
   } catch (error) {
     console.error("Error sending email:", error);
     res.status(500).json({ message: "Failed to send email" });
