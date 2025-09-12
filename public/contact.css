@@ -45,7 +45,9 @@ body {
   max-width: 611px;
   margin-bottom: 36px;
 }
-
+.right {
+  text-align: right !important;
+}
 .hero-subtitle {
   font-weight: 600;
   font-size: 20px;
@@ -286,8 +288,8 @@ select.form-input {
 
 .icon-wrapper {
   position: relative;
-  width: 98px;
-  height: 98px;
+  width: 68px;
+  height: 68px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,7 +315,7 @@ select.form-input {
 
 .info-text {
   font-weight: 600;
-  font-size: 32px;
+  font-size: 22px;
   color: #ffffff;
   text-decoration: none;
   word-break: break-all;

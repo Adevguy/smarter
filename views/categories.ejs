@@ -18,10 +18,10 @@
       <!-- Text Column -->
       <div class="col-md-6 col-12 text-md-end text-center">
         <h2 class="display-1 text-white fw-bold"><%= t.ourProducts %></h2>
-        <p class="text-white fs-3">
+        <p class="text-white fs-4">
           <%= t.categoriesSubtitle %>
         </p>
-        <a href="/contact"
+        <a href="/contact" dir="<%=lang === "ar" ? "rtl" : "rtl"%>"
           class=" fs-4 w-50 text-white header-btn mx-auto mx-md-0 d-block d-md-inline"
          style="padding: 20px; text-decoration: none;">
           <%= t.orderNow %> <img src="/arrow.svg" alt="arrow svg" />

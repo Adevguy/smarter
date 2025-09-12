@@ -2,6 +2,9 @@ body {
   background-color: #356bb7;
   overflow-x: hidden;
 }
+* {
+  font-family: Alexandria, sans-serif;
+}
 .header-img {
   width: 250px;
   position: absolute;

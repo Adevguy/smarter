@@ -21,8 +21,8 @@
     <img src="/contact.png" alt="Decorative background image of bread">
   </div>
   <div class="container hero-content">
-    <h1 class="hero-title"><%= t.contactUsNow %></h1>
-    <p class="hero-subtitle"><%= t.contactSubtitle %></p>
+    <h1 class="hero-title <%=lang === "ar" ? "right": ""%>"><%= t.contactUsNow %></h1>
+    <p class="hero-subtitle <%=lang === "ar" ? "right": ""%>"><%= t.contactSubtitle %></p>
     <hr class="hero-divider">
   </div>
 </section>
@@ -57,7 +57,7 @@
         <div class="form-group">
           <textarea id="message" name="message" class="form-textarea" placeholder="<%= t.message %>"></textarea>
         </div>
-        <button type="submit" class="submit-button" style="margin-bottom: 50px;">
+        <button dir="rtl" type="submit" class="submit-button" style="margin-bottom: 50px;">
           <span><%= t.send %><img src="/arrow1.svg" alt=""></span>
         </button>
       </form>
