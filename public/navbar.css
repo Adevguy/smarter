@@ -2,14 +2,18 @@
     .navbar-extras {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       width: 100%;
       padding: 0 20px;
       margin-top: 40px;
+      gap: 35px;
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Logo */
-    .navbar-logo img { width: 140px; height: auto; margin-right: 30px; }
+    .navbar-logo img { width: 140px; height: auto; }
 
     /* Desktop Navbar */
     .navbar {
@@ -21,9 +25,9 @@
       align-items: center;
       height: 80px;
       border-radius: 40px;
-      flex: 1;
-      margin: 0 20px;
-      max-width: 1000px;
+      flex: 0 1 auto;
+      max-width: 800px;
+      min-width: 600px;
       position: relative;
     }
     .navbar-links { display: flex; gap: 12px; position: relative; }
@@ -43,7 +47,12 @@
     }
 
     /* Dropdown */
-    .navbar-dropdown { display: flex; align-items: center; gap: 8px; }
+    .navbar-dropdown { 
+      display: flex; 
+      align-items: center; 
+      gap: 8px;
+      flex-shrink: 0;
+    }
     .dropdown-img { width: 36px; height: 36px; border-radius: 50%; }
     .dropdown-select {
       font-size: 16px; padding: 6px 12px; border-radius: 20px;
@@ -94,7 +103,21 @@
     }
 
     /* Responsive */
+    @media (min-width: 1400px) {
+      .navbar-extras {
+        gap: 45px;
+        max-width: 1600px;
+      }
+      .navbar {
+        max-width: 900px;
+      }
+    }
+
     @media (max-width: 992px) {
       .navbar { display: none; }  /* hide pill navbar */
       .hamburger { display: flex; }
+      .navbar-extras {
+        justify-content: space-between;
+        gap: 10px;
+      }
     }
