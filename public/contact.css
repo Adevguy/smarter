@@ -7,11 +7,12 @@ body {
 
 .hero-section {
   position: relative;
-  text-align: right;
+  text-align: left;
   padding-top: 120px;
   padding-bottom: 120px;
   display: flex;
-  align-items: center;
+  flex-direction: row; /* Changed to row-reverse */
+  justify-content: space-around;
   min-height: 657px;
 }
 
@@ -64,6 +65,7 @@ body {
 
 @media (max-width: 992px) {
   .hero-section {
+    flex-direction: column; /* Stack vertically on small screens */
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;

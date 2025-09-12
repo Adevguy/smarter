@@ -1,62 +1,55 @@
-const express = require("express");
+const express = require('express');
 const app = express();
 const port = 3000;
-const translations = require("./translations");
-
-const categories = require("./data.js");
-const { sendEmail } = require("./emailHandler.js");
+const categories = require('./data.js');
+const {sendEmail} = require('./emailHandler.js');
 // Middleware to parse JSON bodies
 app.use(express.json());
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.set("views", __dirname + "/views");
 // Sample route
-
 app.use((req, res, next) => {
-  let lang = req.cookies.lang || "ar";
-  res.locals.lang = lang; // pass to templates
-  res.locals.url = req.url;
+  res.locals.url = req.url
   next();
 });
-
-app.get("/set-lang/:lang", (req, res) => {
-  const lang = req.params.lang;
-  if (["en", "ar"].includes(lang)) {
-    res.cookie("lang", lang, { maxAge: 1000 * 60 * 60 * 24 * 30 }); // 30 days
-  }
-  res.redirect("back"); // redirect to last page
-});
-app.get("/", (req, res) => {
-  const lang = res.locals.lang;
-
-  res.render("home", { title: "Home", t: translations[lang] });
+app.get('/', (req, res) => {
+  res.render('home', { title: 'Home' });
 });
 app.get("/contact", (req, res) => {
-  res.render("contact", { title: "Contact Us" });
+  const products = Object.keys(categories.ar).map(key => {
+    const category = categories.ar[key];
+    return {
+      name: key, // Arabic/English name from the object
+      description: category.description || "" // optional field
+    };
+  });
+  res.render("contact", { title: "Contact Us", products });
 });
 app.get("/about", (req, res) => {
   res.render("about", { title: "About Us" });
 });
 app.get("/categories", (req, res) => {
-  const uniqueCategories = Object.keys(categories.en).map((key) => {
+  const uniqueCategories = Object.keys(categories.en).map(key => {
     const category = categories.en[key];
     return {
       // the object key, e.g. "paperCupsSingleLayer"
       name: key, // Arabic/English name from the object
-      description: category.description || "", // optional field
+      description: category.description || "" // optional field
     };
   });
-  res.render("categories", {
-    title: "Categories",
-    categories: uniqueCategories,
+  res.render("categories", { 
+    title: "Categories", 
+    categories: uniqueCategories 
   });
 });
+
 
 const categoryMap = {
   "PaperCups (single layer)": "أكواب ورقية (طبقة واحدة)",
   "PaperCups (double)": "أكواب ورقية (مزدوجة)",
   "PaperCups (double corrugated)": "أكواب ورقية (مزدوجة مموجة)",
-  PaperCupLids: "أغطية الأكواب الورقية",
+  "PaperCupLids": "أغطية الأكواب الورقية"
 };
 
 app.get("/products/:category", (req, res) => {
@@ -103,19 +96,20 @@ app.get("/products/:category", (req, res) => {
       material: items[0]?.rawMaterial || "N/A",
       quantity: items[0]?.piece || "N/A",
       cartoonSize: items[0]?.carton || "N/A",
-      size: items.map((p) => p.volume),
-      id: items.map((p) => p.itemNumber),
-      packing: items.map((p) => p.packing),
-      image, // can be null
+      size: items.map(p => p.volume),
+      id: items.map(p => p.itemNumber),
+      packing: items.map(p => p.packing),
+      image // can be null
     };
   });
   res.render("products", {
     title: category || "Products",
     description: categoryData.description || "",
     products,
-    category,
+    category
   });
 });
+
 
 app.post("/send-email", async (req, res) => {
   const { name, email, phoneNumber, product, message } = req.body;
