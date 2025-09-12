@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/navbar.css">
+  <link rel="stylesheet" href="/home.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="navbar-extras">
+    <!-- Hamburger (mobile only) -->
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+
+    <!-- Logo -->
+    <div class="navbar-logo">
+      <img src="/logo.png" alt="Logo" />
+    </div>
+
+    <!-- Navbar (desktop) -->
+    <nav class="navbar">
+      <div class="navbar-links" id="navbarLinks">
+        <a href="#" class="navbar-link active">الرئيسية</a>
+        <a href="#" class="navbar-link">من نحن</a>
+        <a href="#" class="navbar-link">المنتجات</a>
+        <a href="#" class="navbar-link">خدماتنا</a>
+        <a href="#" class="navbar-link">اعمالنا</a>
+        <a href="#" class="navbar-link">تواصل معنا</a>
+        <div class="navbar-indicator" id="navbarIndicator"></div>
+      </div>
+    </nav>
+
+    <!-- Dropdown -->
+    <div class="navbar-dropdown">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/48px-Flag_of_Saudi_Arabia.svg.png" alt="Flag" class="dropdown-img" />
+      <select class="dropdown-select">
+        <option>AR</option>
+        <option>EN</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Sidebar (mobile) -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <button class="close-btn" id="closeSidebar">&times;</button>
+    </div>
+    <div class="sidebar-links" id="sidebarLinks">
+      <button class="sidebar-link active">الرئيسية</button>
+      <button class="sidebar-link">من نحن</button>
+      <button class="sidebar-link">المنتجات</button>
+      <button class="sidebar-link">خدماتنا</button>
+      <button class="sidebar-link">اعمالنا</button>
+      <button class="sidebar-link">تواصل معنا</button>
+      <div class="sidebar-indicator" id="sidebarIndicator"></div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-text">
+        <h1>منتجات ورقيةممتازة</h1>
+            <a href="/categories" style="cursor: pointer; text-decoration: none;" class="hero-button">المزيد<img src="/arrow1.svg" alt="arrow svg"></a>
+    </div>
+
+    <div class="hero-image">
+        <img src="/hero-image.png" alt="">
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="explore">
+    <div class="explore-text">
+        <h1>تصفح مجموعتنا من المنتجات الصديقة للبيئة!</h1>
+        <button>اكتشف <div class="img-cont"><img src="/arrow.svg" alt=""></div></button>
+    </div>
+
+    <div class="explore-img">
+        <img src="/explore-image.png" alt="">
+    </div>
+</section>
+
+
+<section id="services" class="services-section">
+  <img src="/decoration circle.png" alt="Decorative Circle" class="decoration-circle-1" loading="lazy">
+  <img src="/decoration circle-2.png" alt="Decorative Circle" class="decoration-circle-2" loading="lazy">
+  
+  <div class="services-container">
+    <header class="services-header">
+      <h2 class="section-title">خدماتنا</h2>
+      <p class="section-subtitle">نقدم لك حلولاً متكاملة في التغليف والطباعة الصديقة للبيئة لنساعدك على تطوير عملك بشكل مستدام.</p>
+    </header>
+
+    <div class="services-grid">
+      <div class="grid-row">
+        <article class="service-card">
+          <!--merged image-->
+          <div class="icon-wrapper">
+            <img src="/paint-roller-svgrepo-com 1.svg" alt="">
+            </div> 
+          <h3 class="service-title">تصميم عبوات مخصصة</h3>
+        </article>
+        <article class="service-card">
+          <!--merged image-->
+          <div class="icon-wrapper">
+            <img src="/printer-svgrepo-com 1.svg" alt="">
+          </div>
+          <h3 class="service-title">طباعة صديقة للبيئة</h3>
+        </article>
+        <article class="service-card">
+          <!--merged image-->
+          <div class="icon-wrapper">
+            <img src="/recycle-svgrepo-com 1.svg" alt="">
+          </div>
+          <h3 class="service-title">برامج إعادة التدوير</h3>
+        </article>
+      </div>
+      <div class="grid-row">
+        <article class="service-card">
+          <!--merged image-->
+          <div class="icon-wrapper">
+           <img src="/SVGRepo_iconCarrier.svg" alt="">
+          </div>
+          <h3 class="service-title">توصيل سريع وخضر</h3>
+        </article>
+        <article class="service-card">
+          <!--merged image-->
+          <div class="icon-wrapper">
+            <img src="/box-svgrepo-com 1.svg" alt="">
+          </div>
+          <h3 class="service-title">حلول التوريد بالجملة</h3>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="our-work" class="our-work-section">
+  <div class="container">
+    <header class="our-work-header">
+      <h1 class="our-work-title">اعمالنا</h1>
+      <p class="our-work-subtitle">لمحة عن أبرز مشاريعنا التي تعكس الجودة والإبداع في كل تفصيلة.</p>
+    </header>
+
+    <!--merged image-->
+    <div class="our-work-gallery">
+      <div class="gallery-item bg-rect-1"></div>
+      <div class="gallery-item bg-rect-2"></div>
+      <img src="/image.png" class="gallery-item image-1">
+      <img src="/image2.png" class="gallery-item image-2">
+      <div class="gallery-item bg-rect-3"></div>
+      <img src="/image3.png" class="gallery-item image-3">
+      <img src="/image4.png" class="gallery-item image-4">
+    </div>
+  </div>
+</section>
+
+
+<section id="browse-products" class="browse-products-section">
+
+  <h1 class="product-text">تصفح منتجاتنا المتنوعة</h1>
+    <div class="product-grid">
+      <article class="product-card">
+        <div class="product-card__visuals">
+          <!--merged image-->
+          <div class="product-card__image-bg product-card__image-bg--green"></div>
+          <img src="/product2.png" alt="ورق الطعام" class="product-card__image product-card__image--1">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__title">ورق الطعام</h3>
+          <p class="product-card__description">ورق عالي الجودة لجميع أنواع الأطعمة المختلفة.</p>
+          <a href="#" class="btn product-card__button">استكشاف الفئة</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-card__visuals">
+          <!--merged image-->
+          <div class="product-card__image-bg product-card__image-bg--blue"></div>
+          <img src="/product1.png" alt="صناديق الورق" class="product-card__image product-card__image--2">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__title">صناديق الورق</h3>
+          <p class="product-card__description">صناديق بأحجام مختلفة تناسب منتجاتك الغذائية!</p>
+          <a href="#" class="btn product-card__button">استكشاف الفئة</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="about-us" class="about-us-section">
+  <div class="page-wrapper">
+    <div class="about-us-container" dir="rtl">
+      <div class="about-us-image-wrapper">
+        <img src="/about us section image.png" alt="Smart paper product packaging illustration">
+      </div>
+      <div class="about-us-content">
+        <p class="about-us-text">في smart paper، الجودة ليست مجرد ميزة، بل هي الأساس. كل كوب وزجاجة وعبوة مصنوعة من ورق عالي الجودة.</p>
+        <a href="#footer" class="about-us-button">
+          <span>معلومات عنا </span>
+          <!--merged image-->
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="footer-section">
+  <footer class="site-footer" id="footer" dir="rtl">
+    <div class="page-wrapper">
+      <div class="footer-container">
+        <div class="footer-top">
+          <img src="/logo.png" alt="Smart Ller logo" class="footer-logo">
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#about-us" style="text-decoration: none;">معلومات عنا</a></li>
+              <li><a href="#" style="text-decoration: none;">منتجاتنا</a></li>
+              <li><a href="#" style="text-decoration: none;">تواصل معنا</a></li>
+            </ul>
+          </nav>
+          <div class="footer-social">
+            <h3 class="footer-heading">تواصل اجتماعي</h3>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"><img src="/facebook.svg" alt="Facebook"></a>
+              <a href="#" aria-label="Telegram"><img src="/telegram.svg" alt="Telegram"></a>
+              <a href="#" aria-label="Instagram"><img src="/insta.svg" alt="Instagram"></a>
+              <a href="#" aria-label="LinkedIn"><img src="/linked-in.svg" alt="LinkedIn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
+
+
+  <script>
+    // Desktop Navbar Indicator
+    const links = document.querySelectorAll('.navbar-link');
+    const indicator = document.getElementById('navbarIndicator');
+    function moveIndicator(activeLink) {
+      if (!indicator) return;
+      const rect = activeLink.getBoundingClientRect();
+      const parentRect = activeLink.parentElement.getBoundingClientRect();
+      indicator.style.width = rect.width + 'px';
+      indicator.style.left = (rect.left - parentRect.left) + 'px';
+    }
+    function setActive(link) {
+      links.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+      moveIndicator(link);
+    }
+    links.forEach(link => link.addEventListener('click', () => setActive(link)));
+    window.addEventListener('DOMContentLoaded', () => moveIndicator(document.querySelector('.navbar-link.active')));
+    window.addEventListener('resize', () => moveIndicator(document.querySelector('.navbar-link.active')));
+
+    // Sidebar Toggle
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+    const closeSidebar = document.getElementById('closeSidebar');
+    hamburger.addEventListener('click', () => sidebar.classList.add('open'));
+    closeSidebar.addEventListener('click', () => sidebar.classList.remove('open'));
+
+    // Sidebar Indicator
+    const sidebarLinks = document.querySelectorAll('.sidebar-link');
+    const sidebarIndicator = document.getElementById('sidebarIndicator');
+    function moveSidebarIndicator(activeLink) {
+      if (!sidebarIndicator) return;
+      const rect = activeLink.getBoundingClientRect();
+      const parentRect = activeLink.parentElement.getBoundingClientRect();
+      sidebarIndicator.style.width = rect.width + 'px';
+      sidebarIndicator.style.top = (rect.top - parentRect.top) + 'px';
+    }
+    function setSidebarActive(link) {
+      sidebarLinks.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+      moveSidebarIndicator(link);
+    }
+    sidebarLinks.forEach(link => link.addEventListener('click', () => setSidebarActive(link)));
+    window.addEventListener('DOMContentLoaded', () => moveSidebarIndicator(document.querySelector('.sidebar-link.active')));
+    window.addEventListener('resize', () => moveSidebarIndicator(document.querySelector('.sidebar-link.active')));
+  
+  // 3D parallax effect on mouse move
+const heroImg = document.querySelector(".hero-image img");
+document.addEventListener("mousemove", (e) => {
+  const x = (window.innerWidth / 2 - e.pageX) / 40;
+  const y = (window.innerHeight / 2 - e.pageY) / 40;
+  heroImg.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
+});
+
+// Reset when mouse leaves
+document.addEventListener("mouseleave", () => {
+  heroImg.style.transform = "rotateX(0deg) rotateY(0deg)";
+});
+
+// Scroll animation for services section
+function handleServiceCards() {
+  const cards = document.querySelectorAll('.service-card');
+  cards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 60 && rect.bottom > 60) {
+      card.classList.add('in-view');
+    } else {
+      card.classList.remove('in-view');
+    }
+  });
+}
+window.addEventListener('scroll', handleServiceCards);
+window.addEventListener('DOMContentLoaded', handleServiceCards);
+
+// Scroll animation for our work section
+function handleOurWorkGallery() {
+  const items = document.querySelectorAll('.our-work-gallery .gallery-item');
+  items.forEach(item => {
+    const rect = item.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 60 && rect.bottom > 60) {
+      item.classList.add('in-view');
+    } else {
+      item.classList.remove('in-view');
+    }
+  });
+}
+window.addEventListener('scroll', handleOurWorkGallery);
+window.addEventListener('DOMContentLoaded', handleOurWorkGallery);
+
+// Scroll animation for product cards
+function handleProductCards() {
+  const cards = document.querySelectorAll('.product-card');
+  cards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 60 && rect.bottom > 60) {
+      card.classList.add('in-view');
+    } else {
+      card.classList.remove('in-view');
+    }
+  });
+}
+window.addEventListener('scroll', handleProductCards);
+window.addEventListener('DOMContentLoaded', handleProductCards);
+
+// Scroll to services section when clicking the services link in navbar
+const servicesBtn = Array.from(document.querySelectorAll('.navbar-link')).find(btn => btn.textContent.trim() === 'خدماتنا');
+if (servicesBtn) {
+  servicesBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    const section = document.getElementById('services');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
+  
+  </script>
+</body>
+</html>
+
+</body>
+</html>

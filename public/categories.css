@@ -1,0 +1,32 @@
+body {
+  background-color: #356bb7;
+}
+.header_img {
+  width: 300px;
+}
+.header-btn {
+  background-color: #ef6341;
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 0;
+  padding-right: 10%;
+  align-items: center;
+}
+.explore-btn {
+  background-color: #356bb7;
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  border-radius: 30px;
+  padding-right: 10%;
+  align-items: center;
+  font-weight: bold;
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50% !important;
+  }
+}
