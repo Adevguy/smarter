@@ -27,7 +27,8 @@ body {
 }
 
 .hero-background img {
-  width: 600px;
+  width: 80%;
+  height: 100%;
   object-fit: cover;
   object-position: 20% 50%;
 }
