@@ -144,9 +144,11 @@ app.get("/products/:category", (req, res) => {
       (group && group.image) ||
       (Array.isArray(categoryData.images) ? categoryData.images[idx] : null) ||
       null;
-
+    const productType =     (group && group.type) ||
+      (Array.isArray(categoryData.types) ? categoryData.types[idx] : null) ||
+      null;
     return {
-      type: category,
+      type: productType || category,
       material: items[0]?.rawMaterial || "N/A",
       quantity: items[0]?.piece || "N/A",
       cartoonSize: items[0]?.carton || "N/A",

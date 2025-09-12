@@ -434,8 +434,8 @@ body {
 
   .our-work-gallery {
     position: relative;
-    width: 90.2%; /* 1299px / 1440px */
-    max-width: 1299px;
+    width: 75%; /* Reduced from 90.2% to make it smaller */
+    max-width: 1000px; /* Reduced from 1299px */
     aspect-ratio: 1299 / 1981;
   }
 

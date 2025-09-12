@@ -21,13 +21,13 @@
         class="header-rectangle w-100 p-4 mt-5 rounded-4"
         style="background-color: #ef6341"
       >
-        <div class="row align-items-center text-center text-md-start">
+        <div class="row align-items-center text-center text-md-<%=lang === "ar" ? "end" : "start"%>">
           <div class="col-md-6">
             <h2 class="display-5 text-white fw-bold"><%= t.cups %></h2>
             <p class="text-white fs-5"><%= t.productsSubtitle %></p>
           </div>
           <div class="col-md-6 text-center mt-3 mt-md-0">
-            <!-- <img src="/black_cup.png" alt="cup" class="img-fluid header-img" /> -->
+            <img src="/black_cup.png" alt="cup" class="img-fluid header-img <%=lang === "ar"? "" : "right"%>" />
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@
       <!-- Products -->
       <div class="products mt-5">
         <%for(let product of products){%>
-        <div class="product">
+        <div class="product mt-5">
           <div class="row g-4">
             <!-- Product Image -->
             <div class="col-md-6 col-12 text-center">
@@ -145,6 +145,7 @@
       </div>
       <!-- end of .products -->
     </div>
+        <%-include("footer")%>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>

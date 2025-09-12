@@ -30,7 +30,7 @@
       min-width: 600px;
       position: relative;
     }
-    .navbar-links { display: flex; gap: 12px; position: relative; }
+    .navbar-links { display: flex;  position: relative; }
     .navbar-link {
       font-size: 15px; font-weight: 600; color: #000 !important;
       background: none; border: none; cursor: pointer;

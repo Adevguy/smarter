@@ -23,7 +23,7 @@ const translations = {
     ourWork: "Our Work",
     workDescription: "A glimpse of our most prominent projects that reflect quality and creativity in every detail.",
     browseOurProducts: "Browse Our Diverse Products",
-    
+    browseAboutUs: "Browse About Us",
     // About page
     passionForSustainability: "Passion for Sustainability, Innovation in Packaging",
     introduction: "Introduction",
@@ -93,7 +93,7 @@ const translations = {
     ourWork: "اعمالنا",
     workDescription: "لمحة عن أبرز مشاريعنا التي تعكس الجودة والإبداع في كل تفصيلة.",
     browseOurProducts: "تصفح منتجاتنا المتنوعة",
-    
+    browseAboutUs: "من نحن",
     // About page
     passionForSustainability: "شغف بالاستدامة، ابتكار في التغليف",
     introduction: "مقدمة",

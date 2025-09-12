@@ -1,10 +1,11 @@
 const catalog = {
   en: {
-    "PaperCups (single layer)": {
-      description: "Single-layer paper cups suitable for hot and cold drinks.",
+    "Paper Cups": {
+      description: "Complete collection of paper cups - single layer, double layer, and corrugated cups for all your beverage needs.",
       groups: [
         {
           image: "img1.png",
+          type: "PaperCups (single layer)",
           products: [
             { itemNumber: "PCW4", volume: 4, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" },
             { itemNumber: "PCW7", volume: 7, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" },
@@ -14,6 +15,7 @@ const catalog = {
         },
         {
           image: "img2.png",
+          type: "PaperCups (single layer)",
           products: [
             { itemNumber: "PC053", volume: 8, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" },
             { itemNumber: "PC040", volume: 12, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" }
@@ -21,21 +23,17 @@ const catalog = {
         },
         {
           image: "img3.png",
+          type: "PaperCups (single layer)",
           products: [
             { itemNumber: "PCK4", volume: 4, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" },
             { itemNumber: "PCK7", volume: 7, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" },
             { itemNumber: "PCK8", volume: 8, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" },
             { itemNumber: "PCK12", volume: 12, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" }
           ]
-        }
-      ]
-    },
-
-    "PaperCups (double)": {
-      description: "Double-layer paper cups for extra insulation and strength.",
-      groups: [
+        },
         {
           image: "img4.png",
+          type: "PaperCups (double)",
           products: [
             { itemNumber: "PCWD4", volume: 4, piece: 50, carton: 20, packing: 500, rawMaterial: "paper" },
             { itemNumber: "PCWD7", volume: 7, piece: 50, carton: 20, packing: 500, rawMaterial: "paper" },
@@ -45,21 +43,17 @@ const catalog = {
         },
         {
           image: "img5.png",
+          type: "PaperCups (double)",
           products: [
             { itemNumber: "BDW4", volume: 4, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" },
             { itemNumber: "BCW7", volume: 7, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" },
             { itemNumber: "BCD8", volume: 8, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" },
             { itemNumber: "BDW4", volume: 12, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" }
           ]
-        }
-      ]
-    },
-
-    "PaperCups (double corrugated)": {
-      description: "Durable corrugated paper cups for better grip and insulation.",
-      groups: [
+        },
         {
           image: "img6.png",
+          type: "PaperCups (double corrugated)",
           products: [
             { itemNumber: null, volume: 4, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" },
             { itemNumber: null, volume: 7, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" },
@@ -69,6 +63,7 @@ const catalog = {
         },
         {
           image: "img7.png",
+          type: "PaperCups (double corrugated)",
           products: [
             { itemNumber: "BRP4", volume: 4, piece: 50, carton: 20, packing: 500, rawMaterial: "paper" },
             { itemNumber: "BRP7", volume: 7, piece: 50, carton: 20, packing: 500, rawMaterial: "paper" },
@@ -78,6 +73,7 @@ const catalog = {
         },
         {
           image: "img8.png",
+          type: "PaperCups (double corrugated)",
           products: [
             { itemNumber: "PCKR4", volume: 4, piece: 50, carton: 20, packing: 1000, rawMaterial: "paper" },
             { itemNumber: "PCKR7", volume: 7, piece: 50, carton: 20, packing: 500, rawMaterial: "paper" },
@@ -121,11 +117,12 @@ const catalog = {
   },
 
   ar: {
-    "أكواب ورقية (طبقة واحدة)": {
-      description: "أكواب ورقية بطبقة واحدة مناسبة للمشروبات الساخنة والباردة.",
+    "أكواب ورقية": {
+      description: "مجموعة كاملة من الأكواب الورقية - طبقة واحدة، طبقة مزدوجة، ومموجة لتلبية جميع احتياجات المشروبات.",
       groups: [
         {
           image: "img1.png",
+          type: "أكواب ورقية (طبقة واحدة)",
           products: [
             { itemNumber: "PCW4", volume: 4, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" },
             { itemNumber: "PCW7", volume: 7, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" },
@@ -135,6 +132,7 @@ const catalog = {
         },
         {
           image: "img2.png",
+          type: "أكواب ورقية (طبقة واحدة)",
           products: [
             { itemNumber: "PC053", volume: 8, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" },
             { itemNumber: "PC040", volume: 12, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" }
@@ -142,21 +140,17 @@ const catalog = {
         },
         {
           image: "img3.png",
+          type: "أكواب ورقية (طبقة واحدة)",
           products: [
             { itemNumber: "PCK4", volume: 4, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" },
             { itemNumber: "PCK7", volume: 7, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" },
             { itemNumber: "PCK8", volume: 8, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" },
             { itemNumber: "PCK12", volume: 12, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" }
           ]
-        }
-      ]
-    },
-
-    "أكواب ورقية (مزدوجة)": {
-      description: "أكواب ورقية مزدوجة لمزيد من العزل والمتانة.",
-      groups: [
+        },
         {
           image: "img4.png",
+          type: "أكواب ورقية (مزدوجة)",
           products: [
             { itemNumber: "PCWD4", volume: 4, piece: 50, carton: 20, packing: 500, rawMaterial: "ورق" },
             { itemNumber: "PCWD7", volume: 7, piece: 50, carton: 20, packing: 500, rawMaterial: "ورق" },
@@ -166,21 +160,17 @@ const catalog = {
         },
         {
           image: "img5.png",
+          type: "أكواب ورقية (مزدوجة)",
           products: [
             { itemNumber: "BDW4", volume: 4, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" },
             { itemNumber: "BCW7", volume: 7, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" },
             { itemNumber: "BCD8", volume: 8, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" },
             { itemNumber: "BDW4", volume: 12, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" }
           ]
-        }
-      ]
-    },
-
-    "أكواب ورقية (مزدوجة مموجة)": {
-      description: "أكواب ورقية مموجة لمتانة أفضل وإمساك مريح.",
-      groups: [
+        },
         {
           image: "img6.png",
+          type: "أكواب ورقية (مزدوجة مموجة)",
           products: [
             { itemNumber: null, volume: 4, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" },
             { itemNumber: null, volume: 7, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" },
@@ -190,6 +180,7 @@ const catalog = {
         },
         {
           image: "img7.png",
+          type: "أكواب ورقية (مزدوجة مموجة)",
           products: [
             { itemNumber: "BRP4", volume: 4, piece: 50, carton: 20, packing: 500, rawMaterial: "ورق" },
             { itemNumber: "BRP7", volume: 7, piece: 50, carton: 20, packing: 500, rawMaterial: "ورق" },
@@ -199,6 +190,7 @@ const catalog = {
         },
         {
           image: "img8.png",
+          type: "أكواب ورقية (مزدوجة مموجة)",
           products: [
             { itemNumber: "PCKR4", volume: 4, piece: 50, carton: 20, packing: 1000, rawMaterial: "ورق" },
             { itemNumber: "PCKR7", volume: 7, piece: 50, carton: 20, packing: 500, rawMaterial: "ورق" },
