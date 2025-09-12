@@ -44,7 +44,7 @@ html, body, *
         display: flex;
         align-items: center;
         color: white;
-        font-size: 32px;
+        font-size: 24px;
         padding: 10px;
         border-radius: 20px;
         gap: 10px;
@@ -170,7 +170,7 @@ hr{
     align-items: center;
     h1{
         color: white;
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -180,18 +180,19 @@ hr{
     border: none;
     display: flex;
     align-items: center;
-    font-size: 32px;
-    padding: 15px;
+    font-size: 20px;
     border-radius: 50px;
-    gap: 40px;
-    width: 250px;
+    padding-right: 40px;
+    width:30%;
+    gap: 20px;
     justify-content: center;
 }
 
 .img-cont{
     background-color: #356BB7;
-    border-radius: 50px;
-    padding: 5px;
+    align-items: center;
+    width: 30%;
+    border-radius: 150px;
 }
 
 .explore-img img{
@@ -246,7 +247,7 @@ body {
 .section-title {
   font-family: 'Alexandria', sans-serif;
   font-weight: 600;
-  font-size: 96px;
+  font-size:3.5rem;
   line-height: 1.2;
   color: #ffffff;
   margin: 0 0 20px 0;
@@ -284,6 +285,7 @@ body {
   padding: 33px 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   color: #ffffff;
@@ -305,7 +307,9 @@ body {
   border-radius: 50px;
   padding: 10px;
 }
-
+.icon-wrapper img {
+  width: 50px;
+}
 .icon-bg {
   position: absolute;
   top: 0;
@@ -326,7 +330,7 @@ body {
 .service-title {
   font-family: 'Alexandria', sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.25;
   margin: 0;
 }
@@ -414,7 +418,7 @@ body {
   .our-work-title {
     font-family: 'Alexandria', sans-serif;
     font-weight: 600;
-    font-size: 96px;
+    font-size: 3.5rem;
     line-height: 1.2;
     margin: 0 0 45px 0;
   }
@@ -422,7 +426,7 @@ body {
   .our-work-subtitle {
     font-family: 'Alexandria', sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 1.6rem;
     line-height: 1.2;
     margin: 0 auto;
     max-width: 713px;
@@ -614,6 +618,7 @@ body {
 /* CSS from section:products */
 .browse-products-section {
     padding: 143px 0 150px;
+    padding-top: 0;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -942,6 +947,7 @@ body {
 /* CSS from section:about-us */
 .about-us-section {
     padding: 176px 0 0;
+    padding-top: 0;
     margin-bottom: 64px;
   }
 
