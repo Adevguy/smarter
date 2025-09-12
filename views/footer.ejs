@@ -1,0 +1,149 @@
+<section id="footer-section">
+  <footer class="site-footer" id="footer" dir="rtl">
+    <div class="page-wrapper">
+      <div class="footer-container">
+        <div class="footer-top">
+          <img src="/logo.png" alt="Smart Ller logo" class="footer-logo">
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#about-us" style="text-decoration: none;">معلومات عنا</a></li>
+              <li><a href="#" style="text-decoration: none;">منتجاتنا</a></li>
+              <li><a href="#" style="text-decoration: none;">تواصل معنا</a></li>
+            </ul>
+          </nav>
+          <div class="footer-social">
+            <h3 class="footer-heading">تواصل اجتماعي</h3>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"><img src="/facebook.svg" alt="Facebook"></a>
+              <a href="#" aria-label="Telegram"><img src="/telegram.svg" alt="Telegram"></a>
+              <a href="#" aria-label="Instagram"><img src="/insta.svg" alt="Instagram"></a>
+              <a href="#" aria-label="LinkedIn"><img src="/linked-in.svg" alt="LinkedIn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
+<style>
+    .site-footer {
+    background-color: #ef6341;
+    margin-top: -1px; /* To ensure overlap with blue background if needed */
+    padding-bottom: 68px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 80px;
+  }
+
+  .footer-logo {
+    width: 214px;
+    height: 148px;
+  }
+
+  .footer-divider {
+    width: 947px;
+    max-width: 90%;
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin: 0 auto 42px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 150px;
+  }
+
+  .footer-nav ul li {
+    margin-bottom: 20px;
+  }
+  
+  .footer-nav ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-nav a,
+  .footer-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .footer-nav a:hover {
+    opacity: 0.8;
+  }
+
+  .footer-heading {
+    margin: 0 0 18px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 55px;
+  }
+
+  .social-icons a {
+    transition: transform 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.1);
+  }
+
+  .social-icons img {
+    width: 35px;
+    height: 35px;
+  }
+
+  @media (max-width: 1200px) {
+    .footer-bottom {
+      padding: 0 80px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      text-align: center;
+    }
+    .social-icons {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-top,
+    .footer-bottom {
+      padding: 0 40px;
+    }
+    .footer-top {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer-top,
+    .footer-bottom {
+      padding: 0 20px;
+    }
+    .social-icons {
+      gap: 30px;
+    }
+  }
+</style>
+

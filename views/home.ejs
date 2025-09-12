@@ -22,55 +22,7 @@
   </style>
 </head>
 <body>
-  <div class="navbar-extras">
-    <!-- Hamburger (mobile only) -->
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
-
-    <!-- Logo -->
-    <div class="navbar-logo">
-      <img src="/logo.png" alt="Logo" />
-    </div>
-
-    <!-- Navbar (desktop) -->
-    <nav class="navbar">
-      <div class="navbar-links" id="navbarLinks">
-        <a href="#" class="navbar-link active">الرئيسية</a>
-        <a href="#" class="navbar-link">من نحن</a>
-        <a href="#" class="navbar-link">المنتجات</a>
-        <a href="#" class="navbar-link">خدماتنا</a>
-        <a href="#" class="navbar-link">اعمالنا</a>
-        <a href="#" class="navbar-link">تواصل معنا</a>
-        <div class="navbar-indicator" id="navbarIndicator"></div>
-      </div>
-    </nav>
-
-    <!-- Dropdown -->
-    <div class="navbar-dropdown">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/48px-Flag_of_Saudi_Arabia.svg.png" alt="Flag" class="dropdown-img" />
-      <select class="dropdown-select">
-        <option>AR</option>
-        <option>EN</option>
-      </select>
-    </div>
-  </div>
-
-  <!-- Sidebar (mobile) -->
-  <div class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <button class="close-btn" id="closeSidebar">&times;</button>
-    </div>
-    <div class="sidebar-links" id="sidebarLinks">
-      <button class="sidebar-link active">الرئيسية</button>
-      <button class="sidebar-link">من نحن</button>
-      <button class="sidebar-link">المنتجات</button>
-      <button class="sidebar-link">خدماتنا</button>
-      <button class="sidebar-link">اعمالنا</button>
-      <button class="sidebar-link">تواصل معنا</button>
-      <div class="sidebar-indicator" id="sidebarIndicator"></div>
-    </div>
-  </div>
+  <%-include("navbar")%>
 
   <section class="hero">
     <div class="hero-text">
@@ -260,51 +212,7 @@
 
 
   <script>
-    // Desktop Navbar Indicator
-    const links = document.querySelectorAll('.navbar-link');
-    const indicator = document.getElementById('navbarIndicator');
-    function moveIndicator(activeLink) {
-      if (!indicator) return;
-      const rect = activeLink.getBoundingClientRect();
-      const parentRect = activeLink.parentElement.getBoundingClientRect();
-      indicator.style.width = rect.width + 'px';
-      indicator.style.left = (rect.left - parentRect.left) + 'px';
-    }
-    function setActive(link) {
-      links.forEach(l => l.classList.remove('active'));
-      link.classList.add('active');
-      moveIndicator(link);
-    }
-    links.forEach(link => link.addEventListener('click', () => setActive(link)));
-    window.addEventListener('DOMContentLoaded', () => moveIndicator(document.querySelector('.navbar-link.active')));
-    window.addEventListener('resize', () => moveIndicator(document.querySelector('.navbar-link.active')));
 
-    // Sidebar Toggle
-    const hamburger = document.getElementById('hamburger');
-    const sidebar = document.getElementById('sidebar');
-    const closeSidebar = document.getElementById('closeSidebar');
-    hamburger.addEventListener('click', () => sidebar.classList.add('open'));
-    closeSidebar.addEventListener('click', () => sidebar.classList.remove('open'));
-
-    // Sidebar Indicator
-    const sidebarLinks = document.querySelectorAll('.sidebar-link');
-    const sidebarIndicator = document.getElementById('sidebarIndicator');
-    function moveSidebarIndicator(activeLink) {
-      if (!sidebarIndicator) return;
-      const rect = activeLink.getBoundingClientRect();
-      const parentRect = activeLink.parentElement.getBoundingClientRect();
-      sidebarIndicator.style.width = rect.width + 'px';
-      sidebarIndicator.style.top = (rect.top - parentRect.top) + 'px';
-    }
-    function setSidebarActive(link) {
-      sidebarLinks.forEach(l => l.classList.remove('active'));
-      link.classList.add('active');
-      moveSidebarIndicator(link);
-    }
-    sidebarLinks.forEach(link => link.addEventListener('click', () => setSidebarActive(link)));
-    window.addEventListener('DOMContentLoaded', () => moveSidebarIndicator(document.querySelector('.sidebar-link.active')));
-    window.addEventListener('resize', () => moveSidebarIndicator(document.querySelector('.sidebar-link.active')));
-  
   // 3D parallax effect on mouse move
 const heroImg = document.querySelector(".hero-image img");
 document.addEventListener("mousemove", (e) => {
@@ -364,7 +272,7 @@ window.addEventListener('scroll', handleProductCards);
 window.addEventListener('DOMContentLoaded', handleProductCards);
 
 // Scroll to services section when clicking the services link in navbar
-const servicesBtn = Array.from(document.querySelectorAll('.navbar-link')).find(btn => btn.textContent.trim() === 'خدماتنا');
+const servicesBtn = Array.from(document.querySelectorAll('.navbar-lin')).find(btn => btn.textContent.trim() === 'خدماتنا');
 if (servicesBtn) {
   servicesBtn.addEventListener('click', function(e) {
     e.preventDefault();

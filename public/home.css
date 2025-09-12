@@ -1,6 +1,7 @@
 html, body, * 
     { font-family: 'Alexandria',
      sans-serif !important;
+     scroll-behavior: smooth;
      box-sizing: border-box;
      }
 
@@ -565,7 +566,6 @@ body {
 .our-work-gallery img.gallery-item:hover {
   transform: scale(1.07) rotate(-2deg);
   box-shadow: 0 16px 48px rgba(0,0,0,0.25);
-  z-index: 100;
 }
 
 
@@ -957,7 +957,7 @@ body {
   }
 
   .about-us-content {
-    flex: 0 0 590px;
+    flex: 0 0 390px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;

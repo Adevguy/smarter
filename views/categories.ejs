@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%=title%></title>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="/categories.css" />
   </head>
-  <body dir="rtl" class="container" style="overflow-x: hidden">
+  <body dir="rtl" style="overflow-x: hidden">
+    <%-include("navbar")%>
+    <div class="container">
     <div class="mt-5 row align-items-center justify-content-center">
       <!-- Text Column -->
       <div class="col-md-6 col-12 text-md-end text-center">
@@ -54,6 +57,7 @@
 
         <%}%>
       </div>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>

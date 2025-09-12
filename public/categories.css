@@ -1,6 +1,9 @@
 body {
   background-color: #356bb7;
 }
+* {
+  font-family: 'Alexandria', sans-serif !important;
+}
 .header_img {
   width: 300px;
 }

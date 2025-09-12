@@ -28,13 +28,13 @@
     }
     .navbar-links { display: flex; gap: 24px; position: relative; }
     .navbar-link {
-      font-size: 20px; font-weight: 600; color: #000;
+      font-size: 15px; font-weight: 600; color: #000 !important;
       background: none; border: none; cursor: pointer;
       padding: 12px 24px; border-radius: 40px;
       text-decoration: none;
       transition: color 0.2s; z-index: 1; position: relative;
     }
-    .navbar-link.active { color: #fff; }
+    .navbar-link.active { color: #fff !important; }
     .navbar-indicator {
       position: absolute; left: 0; top: 0; height: 100%;
       background: #EF6341; border-radius: 40px;
