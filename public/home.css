@@ -13,17 +13,18 @@ html, body, *
 
     body {
          background: #356BB7;
-         direction: rtl;
          color: #fff;
         }
 
 .hero{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .hero-text {
     margin-right: 100px;
+    margin-left: 100px;
     margin-top: 150px;
 }
 
@@ -202,7 +203,6 @@ body {
   font-family: 'Alexandria', sans-serif;
   background-color: #356bb7;
   color: #ffffff;
-  direction: rtl;
 }
 
 * {
@@ -582,7 +582,6 @@ body {
   margin: 0;
   font-family: var(--font-secondary);
   background-color: var(--color-primary);
-  direction: rtl;
 }
 
 *,

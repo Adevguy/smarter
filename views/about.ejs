@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= lang === 'ar' ? 'ar' : 'en' %>">
 <head>
     <meta charset="UTF-8">
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,12 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=title%></title>
 </head>
-<body>
+<body dir="<%= lang === 'ar' ? 'rtl' : 'ltr' %>">
     <%-include("navbar")%>
 <section id="hero" class="hero-section">
   <div class="page-container">
     <h1 class="hero-title">
-      شغف <span class="highlight">بالاستدامة</span>، ابتكار في <span class="highlight">التغليف</span>
+      <% if (lang === 'ar') { %>
+        شغف <span class="highlight">بالاستدامة</span>، ابتكار في <span class="highlight">التغليف</span>
+      <% } else { %>
+        Passion for <span class="highlight">Sustainability</span>, Innovation in <span class="highlight">Packaging</span>
+      <% } %>
     </h1>
   </div>
 </section>
@@ -25,9 +29,9 @@
       <!--merged image-->
     
       <div class="text-block">
-        <h2>مقدمة</h2>
+        <h2><%= t.introduction %></h2>
         <div class="text-with-separator">
-          <p>نحن فريق متخصص في تقديم حلول تغليف صديقة للبيئة تجمع بين الجودة والابتكار. نسعى لتقليل الأثر البيئي عبر استخدام مواد مستدامة، ونحرص على تلبية احتياجات عملائنا من الأفراد والشركات بأفكار حديثة وتصاميم عملية. رؤيتنا هي أن نكون الشريك الموثوق الذي يساعدك على تطوير عملك بطريقة أكثر استدامة ومسؤولية.</p>
+          <p><%= t.introText %></p>
           <div class="separator"></div>
         </div>
         
@@ -43,10 +47,10 @@
   <div class="page-container">
     <div class="content-grid vision-grid">
       <div class="text-block">
-        <h2>رؤيتنا</h2>
+        <h2><%= t.ourVision %></h2>
         <div class="text-with-separator">
           <div class="separator"></div>
-          <p>رؤيتنا تتمثل في أن نصبح الخيار الأول محليًا وإقليميًا في مجال حلول التغليف المستدامة. نطمح إلى قيادة التحول نحو صناعة أكثر وعيًا، حيث تكون الاستدامة جزءًا أساسيًا من كل عملية إنتاجية وتجارية. نؤمن بأن الابتكار هو المحرك الأساسي للتغيير، لذلك نعمل باستمرار على تطوير تقنيات جديدة، واعتماد أفضل الممارسات العالمية</p>
+          <p><%= t.visionText %></p>
         </div>
       </div>
       <!--merged image-->
@@ -62,9 +66,9 @@
     <div class="content-grid">
       <div class="placeholder-column"></div>
       <div class="text-block">
-        <h2>مهماتنا</h2>
+        <h2><%= t.ourMission %></h2>
         <div class="text-with-separator">
-          <p>رسالتنا هي توفير حلول تغليف متكاملة تجمع بين الابتكار والجودة والاستدامة. نحن نؤمن بأن التغليف ليس مجرد وسيلة لحفظ المنتجات، بل هو تجربة متكاملة تعكس هوية العلامة التجارية وقيمها. لذلك نعمل على تصميم وتصنيع عبوات صديقة للبيئة تعتمد على مواد قابلة لإعادة التدوير وآمنة للاستخدام</p>
+          <p><%= t.missionText %></p>
           <div class="separator"></div>
         </div>
       </div>

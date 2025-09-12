@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= lang === 'ar' ? 'ar' : 'en' %>">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,20 +11,20 @@
     />
     <link rel="stylesheet" href="/categories.css" />
   </head>
-  <body dir="rtl" style="overflow-x: hidden">
+  <body dir="<%= lang === 'ar' ? 'rtl' : 'ltr' %>" style="overflow-x: hidden">
     <%-include("navbar")%>
     <div class="container">
     <div class="mt-5 row align-items-center justify-content-center">
       <!-- Text Column -->
       <div class="col-md-6 col-12 text-md-end text-center">
-        <h2 class="display-1 text-white fw-bold">منتجاتنا</h2>
+        <h2 class="display-1 text-white fw-bold"><%= t.ourProducts %></h2>
         <p class="text-white fs-3">
-          اكتشف مجموعتنا من منتجات التغليف المستدامة المصممة بجودة عالية.
+          <%= t.categoriesSubtitle %>
         </p>
         <a href="/contact"
           class=" fs-4 w-50 text-white header-btn mx-auto mx-md-0 d-block d-md-inline"
          style="padding: 20px; text-decoration: none;">
-          اطلب الان <img src="/arrow.svg" alt="arrow svg" />
+          <%= t.orderNow %> <img src="/arrow.svg" alt="arrow svg" />
         </a>
       </div>
 
@@ -50,7 +50,7 @@
             <a
               href="/products/<%=category.name%>"
               class="text-white mt-3 text-decoration-none explore-btn"
-              >استكشاف الفئة <img src="/arrow.svg" alt="arrow"
+              ><%= t.exploreCategory %> <img src="/arrow.svg" alt="arrow"
             /></a>
           </div>
         </div>

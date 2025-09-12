@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= lang === 'ar' ? 'ar' : 'en' %>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=title%></title>
 </head>
-<body>
+<body dir="<%= lang === 'ar' ? 'rtl' : 'ltr' %>">
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,8 +26,8 @@
 
   <section class="hero">
     <div class="hero-text">
-        <h1>منتجات ورقيةممتازة</h1>
-            <a href="/categories" style="cursor: pointer; text-decoration: none;" class="hero-button">المزيد<img src="/arrow1.svg" alt="arrow svg"></a>
+        <h1><%= t.excellentPaperProducts %></h1>
+            <a href="/categories" style="cursor: pointer; text-decoration: none;" class="hero-button"><%= t.more %><img src="/arrow1.svg" alt="arrow svg"></a>
     </div>
 
     <div class="hero-image">
@@ -39,8 +39,8 @@
 
   <section class="explore">
     <div class="explore-text">
-        <h1>تصفح مجموعتنا من المنتجات الصديقة للبيئة!</h1>
-        <button>اكتشف <div class="img-cont"><img src="/arrow.svg" alt=""></div></button>
+        <h1><%= t.browseEcoFriendly %></h1>
+        <button><%= t.discover %> <div class="img-cont"><img src="/arrow.svg" alt=""></div></button>
     </div>
 
     <div class="explore-img">
@@ -55,8 +55,8 @@
   
   <div class="services-container">
     <header class="services-header">
-      <h2 id="services" class="section-title">خدماتنا</h2>
-      <p class="section-subtitle">نقدم لك حلولاً متكاملة في التغليف والطباعة الصديقة للبيئة لنساعدك على تطوير عملك بشكل مستدام.</p>
+      <h2 id="services" class="section-title"><%= t.ourServices %></h2>
+      <p class="section-subtitle"><%= t.servicesDescription %></p>
     </header>
 
     <div class="services-grid">
@@ -66,21 +66,21 @@
           <div class="icon-wrapper">
             <img src="/paint-roller-svgrepo-com 1.svg" alt="">
             </div> 
-          <h3 class="service-title">تصميم عبوات مخصصة</h3>
+          <h3 class="service-title"><%= t.customPackageDesign %></h3>
         </article>
         <article class="service-card">
           <!--merged image-->
           <div class="icon-wrapper">
             <img src="/printer-svgrepo-com 1.svg" alt="">
           </div>
-          <h3 class="service-title">طباعة صديقة للبيئة</h3>
+          <h3 class="service-title"><%= t.ecoFriendlyPrinting %></h3>
         </article>
         <article class="service-card">
           <!--merged image-->
           <div class="icon-wrapper">
             <img src="/recycle-svgrepo-com 1.svg" alt="">
           </div>
-          <h3 class="service-title">برامج إعادة التدوير</h3>
+          <h3 class="service-title"><%= t.recyclingPrograms %></h3>
         </article>
       </div>
       <div class="grid-row">
@@ -89,14 +89,14 @@
           <div class="icon-wrapper">
            <img src="/SVGRepo_iconCarrier.svg" alt="">
           </div>
-          <h3 class="service-title">توصيل سريع وخضر</h3>
+          <h3 class="service-title"><%= t.consultingServices %></h3>
         </article>
         <article class="service-card">
           <!--merged image-->
           <div class="icon-wrapper">
             <img src="/box-svgrepo-com 1.svg" alt="">
           </div>
-          <h3 class="service-title">حلول التوريد بالجملة</h3>
+          <h3 class="service-title"><%= t.qualityPackaging %></h3>
         </article>
       </div>
     </div>
@@ -107,8 +107,8 @@
 <section id="our-work" class="our-work-section">
   <div class="container">
     <header class="our-work-header">
-      <h1 class="our-work-title">اعمالنا</h1>
-      <p id="work" class="our-work-subtitle">لمحة عن أبرز مشاريعنا التي تعكس الجودة والإبداع في كل تفصيلة.</p>
+      <h1 class="our-work-title"><%= t.ourWork %></h1>
+      <p id="work" class="our-work-subtitle"><%= t.workDescription %></p>
     </header>
 
     <!--merged image-->
@@ -127,7 +127,7 @@
 
 <section id="browse-products" class="browse-products-section">
 
-  <h1 class="product-text">تصفح منتجاتنا المتنوعة</h1>
+  <h1 class="product-text"><%= t.browseOurProducts %></h1>
     <div class="product-grid">
       <article class="product-card">
         <div class="product-card__visuals">

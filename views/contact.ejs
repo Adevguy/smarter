@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= lang === 'ar' ? 'ar' : 'en' %>">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,15 +14,15 @@
     />
     <link rel="stylesheet" href="/contact.css" />
   </head>
-  <body dir="rtl">
+  <body dir="<%= lang === 'ar' ? 'rtl' : 'ltr' %>">
     <%-include("navbar")%>
 <section id="hero" class="hero-section">
   <div class="hero-background">
     <img src="/contact.png" alt="Decorative background image of bread">
   </div>
   <div class="container hero-content">
-    <h1 class="hero-title">قم بالتواصل معنا الان</h1>
-    <p class="hero-subtitle">سواء كان لديك سؤال، طلب مخصص، أو مجرد فكرة تحب مشاركتها، نحن هنا للاستماع إليك ودعمك.</p>
+    <h1 class="hero-title"><%= t.contactUsNow %></h1>
+    <p class="hero-subtitle"><%= t.contactSubtitle %></p>
     <hr class="hero-divider">
   </div>
 </section>
@@ -33,20 +33,20 @@
       <img src="/contact1.png" alt="Branded packaging and products" class="contact-main-image">
     </div>
     <div class="contact-form-wrapper">
-      <h2 class="form-title">تواصل معنا</h2>
+      <h2 class="form-title"><%= t.contactUs %></h2>
       <form class="contact-form" method="post" action="/send-email">
         <div class="form-group">
-          <input type="text" id="name" name="name" class="form-input" placeholder="الاسم">
+          <input type="text" id="name" name="name" class="form-input" placeholder="<%= t.name %>">
         </div>
         <div class="form-group">
-          <input type="email" id="email" name="email" class="form-input" placeholder="البريد الاكتروني">
+          <input type="email" id="email" name="email" class="form-input" placeholder="<%= t.email %>">
         </div>
         <div class="form-group">
-          <input type="tel" id="phone" name="phoneNumbe" class="form-input" placeholder="رقم الهاتف">
+          <input type="tel" id="phone" name="phoneNumbe" class="form-input" placeholder="<%= t.phone %>">
         </div>
         <div class="form-group select-wrapper">
           <select id="product" name="product" class="form-input">
-            <option value="" disabled selected>المنتج</option>
+            <option value="" disabled selected><%= t.product %></option>
             <%console.log(products)%>
             <%for(let product of products){%>
               <option value="<%=product%>"><%=product%></option>
@@ -55,10 +55,10 @@
           </select>
         </div>
         <div class="form-group">
-          <textarea id="message" name="message" class="form-textarea" placeholder="الرسالة..."></textarea>
+          <textarea id="message" name="message" class="form-textarea" placeholder="<%= t.message %>"></textarea>
         </div>
         <button type="submit" class="submit-button" style="margin-bottom: 50px;">
-          <span>ارسال<img src="/arrow1.svg" alt=""></span>
+          <span><%= t.send %><img src="/arrow1.svg" alt=""></span>
         </button>
       </form>
     </div>
@@ -66,7 +66,7 @@
 </section>
 <section id="info" class="info-section" style="margin-bottom: 50px;">
   <div class="container">
-    <h2 class="info-title">معلومات التواصل</h2>
+    <h2 class="info-title"><%= t.contactInfo %></h2>
     <div class="info-items-container">
       <div class="info-item">
         <!--merged image-->

@@ -14,22 +14,22 @@
     <!-- Navbar (desktop) -->
     <nav class="navbar">
       <div class="navbar-links" id="navbarLinks">
-        <a href="/" class="navbar-link <%=url === "/"? "active" : ""%>">الرئيسية</a>
-        <a href="/about" class="navbar-link <%=url === "/about"? "active" : ""%>">من نحن</a>
-        <a href="/categories" class="navbar-link <%=url === "/categories"? "active" : ""%>">المنتجات</a>
-        <a href="/#services" class="navbar-link navbar-lin">خدماتنا</a>
-        <a href="/#work" class="navbar-link navbar-lin">اعمالنا</a>
-        <a href="/contact" class="navbar-link <%=url === "/contact"? "active": ""%>">تواصل معنا</a>
+        <a href="/" class="navbar-link <%=url === "/"? "active" : ""%>"><%= t.home %></a>
+        <a href="/about" class="navbar-link <%=url === "/about"? "active" : ""%>"><%= t.about %></a>
+        <a href="/categories" class="navbar-link <%=url === "/categories"? "active" : ""%>"><%= t.products %></a>
+        <a href="/#services" class="navbar-link navbar-lin"><%= t.services %></a>
+        <a href="/#work" class="navbar-link navbar-lin"><%= t.work %></a>
+        <a href="/contact" class="navbar-link <%=url === "/contact"? "active": ""%>"><%= t.contact %></a>
         <div class="navbar-indicator" id="navbarIndicator"></div>
       </div>
     </nav>
 
     <!-- Dropdown -->
     <div class="navbar-dropdown">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/48px-Flag_of_Saudi_Arabia.svg.png" alt="Flag" class="dropdown-img" />
-      <select class="dropdown-select">
-        <option>AR</option>
-        <option>EN</option>
+      <img src="<%= lang === 'ar' ? 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/48px-Flag_of_Saudi_Arabia.svg.png' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/48px-Flag_of_the_United_States.svg.png' %>" alt="Flag" class="dropdown-img" />
+      <select class="dropdown-select" id="languageSelect">
+        <option value="ar" <%= lang === 'ar' ? 'selected' : '' %>>AR</option>
+        <option value="en" <%= lang === 'en' ? 'selected' : '' %>>EN</option>
       </select>
     </div>
   </div>
@@ -40,12 +40,12 @@
       <button class="close-btn" id="closeSidebar">&times;</button>
     </div>
     <div class="sidebar-links" id="sidebarLinks">
-        <a style="text-decoration: none; color: black;" href="/" class="sidebar-link <%=url === "/"? "active" : ""%>">الرئيسية</a>
-        <a style="text-decoration: none; color: black;" href="/about" class="sidebar-link <%=url === "/about"? "active" : ""%>">من نحن</a>
-        <a style="text-decoration: none; color: black;" href="/categories" class="sidebar-link <%=url === "/categories"? "active": ""%>">المنتجات</a>
-        <a style="text-decoration: none; color: black;" href="/#services" class="sidebar-link navbar-lin">خدماتنا</a>
-        <a style="text-decoration: none; color: black;" href="/#work" class="sidebar-link navbar-lin">اعمالنا</a>
-        <a style="text-decoration: none; color: black;" href="/contact" class="sidebar-link <%=url === "/contact"? "active": ""%>">تواصل معنا</a>
+        <a style="text-decoration: none; color: black;" href="/" class="sidebar-link <%=url === "/"? "active" : ""%>"><%= t.home %></a>
+        <a style="text-decoration: none; color: black;" href="/about" class="sidebar-link <%=url === "/about"? "active" : ""%>"><%= t.about %></a>
+        <a style="text-decoration: none; color: black;" href="/categories" class="sidebar-link <%=url === "/categories"? "active": ""%>"><%= t.products %></a>
+        <a style="text-decoration: none; color: black;" href="/#services" class="sidebar-link navbar-lin"><%= t.services %></a>
+        <a style="text-decoration: none; color: black;" href="/#work" class="sidebar-link navbar-lin"><%= t.work %></a>
+        <a style="text-decoration: none; color: black;" href="/contact" class="sidebar-link <%=url === "/contact"? "active": ""%>"><%= t.contact %></a>
       <div class="sidebar-indicator" id="sidebarIndicator"></div>
     </div>
   </div>
@@ -96,5 +96,13 @@
     window.addEventListener('DOMContentLoaded', () => moveSidebarIndicator(document.querySelector('.sidebar-link.active')));
     window.addEventListener('resize', () => moveSidebarIndicator(document.querySelector('.sidebar-link.active')));
   
+    // Language switching functionality
+    const languageSelect = document.getElementById('languageSelect');
+    if (languageSelect) {
+      languageSelect.addEventListener('change', function() {
+        const selectedLang = this.value;
+        window.location.href = `/switch-language/${selectedLang}`;
+      });
+    }
 
   </script>

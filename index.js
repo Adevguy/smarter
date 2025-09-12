@@ -1,27 +1,55 @@
 require("dotenv").config()
 
 const express = require('express');
+const session = require('express-session');
 const app = express();
 const port = 3000;
 const categories = require('./data.js');
 const {sendEmail} = require('./emailHandler.js');
+const translations = require('./translations.js');
 // Middleware to parse JSON bodies
 app.use(express.json());
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true })); // to parse form data
 app.set("views", __dirname + "/views");
+
+// Session middleware for language persistence
+app.use(session({
+  secret: 'your-secret-key',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: false } // set to true if using https
+}));
 // Sample route
 app.use((req, res, next) => {
-  res.locals.url = req.url
+  res.locals.url = req.url;
+  // Set default language if not set
+  if (!req.session.language) {
+    req.session.language = 'ar'; // default to Arabic
+  }
+  res.locals.lang = req.session.language;
+  res.locals.t = translations[req.session.language];
   next();
+});
+
+// Language switching route
+app.get('/switch-language/:lang', (req, res) => {
+  const lang = req.params.lang;
+  if (lang === 'ar' || lang === 'en') {
+    req.session.language = lang;
+  }
+  // Redirect back to the referring page or home
+  const referer = req.get('Referer') || '/';
+  res.redirect(referer);
 });
 app.get('/', (req, res) => {
   res.render('home', { title: 'Home' });
 });
 app.get("/contact", (req, res) => {
-  const categoriesNames = Object.keys(categories.ar).map(key => {
-    const category = categories.ar[key];
+  const lang = req.session.language || 'ar';
+  const categoriesNames = Object.keys(categories[lang]).map(key => {
+    const category = categories[lang][key];
     return {
       name: key, // Arabic/English name from the object
       description: category.description || "" // optional field
@@ -34,8 +62,9 @@ app.get("/about", (req, res) => {
   res.render("about", { title: "About Us" });
 });
 app.get("/categories", (req, res) => {
-  const uniqueCategories = Object.keys(categories.en).map(key => {
-    const category = categories.en[key];
+  const lang = req.session.language || 'ar';
+  const uniqueCategories = Object.keys(categories[lang]).map(key => {
+    const category = categories[lang][key];
     return {
       // the object key, e.g. "paperCupsSingleLayer"
       name: key, // Arabic/English name from the object
@@ -50,23 +79,44 @@ app.get("/categories", (req, res) => {
 
 
 const categoryMap = {
+  // English to Arabic
   "PaperCups (single layer)": "أكواب ورقية (طبقة واحدة)",
   "PaperCups (double)": "أكواب ورقية (مزدوجة)",
   "PaperCups (double corrugated)": "أكواب ورقية (مزدوجة مموجة)",
-  "PaperCupLids": "أغطية الأكواب الورقية"
+  "PaperCupLids": "أغطية الأكواب الورقية",
+  // Arabic to English  
+  "أكواب ورقية (طبقة واحدة)": "PaperCups (single layer)",
+  "أكواب ورقية (مزدوجة)": "PaperCups (double)",
+  "أكواب ورقية (مزدوجة مموجة)": "PaperCups (double corrugated)",
+  "أغطية الأكواب الورقية": "PaperCupLids"
 };
 
 app.get("/products/:category", (req, res) => {
-  const lang = "ar"; // or "en" depending on user/session
+  const lang = req.session.language || 'ar';
   const category = req.params.category;
 
-  // Convert to Arabic key if needed
+  // Convert category name to match current language
   let categoryKey = category;
-  if (lang === "ar" && categoryMap[category]) {
+  if (categoryMap[category]) {
     categoryKey = categoryMap[category];
   }
-
-  const categoryData = categories[lang] && categories[lang][categoryKey];
+  
+  // Try to find category in current language first
+  let categoryData = categories[lang] && categories[lang][categoryKey];
+  
+  // If not found, try the original category name
+  if (!categoryData) {
+    categoryData = categories[lang] && categories[lang][category];
+  }
+  
+  // If still not found, try the other language and map it
+  if (!categoryData) {
+    const otherLang = lang === 'ar' ? 'en' : 'ar';
+    categoryData = categories[otherLang] && categories[otherLang][category];
+    if (!categoryData && categoryMap[category]) {
+      categoryData = categories[otherLang] && categories[otherLang][categoryMap[category]];
+    }
+  }
 
   if (!categoryData) {
     return res.status(404).send("Category not found");

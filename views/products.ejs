@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="<%= lang === 'ar' ? 'ar' : 'en' %>">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="/products.css" />
   </head>
-  <body class="container" dir="rtl">
+  <body class="container" dir="<%= lang === 'ar' ? 'rtl' : 'ltr' %>">
     <!-- Header -->
     <div
       class="header-rectangle w-100 p-4 mt-5 rounded-4"
@@ -18,8 +18,8 @@
     >
       <div class="row align-items-center text-center text-md-start">
         <div class="col-md-6">
-          <h2 class="display-5 text-white fw-bold">الأكواب</h2>
-          <p class="text-white fs-5">أدوات بأحجام مختلفة و جودة متميزة</p>
+          <h2 class="display-5 text-white fw-bold"><%= t.cups %></h2>
+          <p class="text-white fs-5"><%= t.productsSubtitle %></p>
         </div>
         <div class="col-md-6 text-center mt-3 mt-md-0">
           <img src="/black_cup.png" alt="cup" class="img-fluid header-img" />
@@ -46,7 +46,7 @@
             <!-- نوع المنتج -->
             <div class="row mb-4">
               <div class="col-6 text-white">
-                <p class="fs-5 fw-bolder">النوع</p>
+                <p class="fs-5 fw-bolder"><%= t.type %></p>
                 <p class="info-text fw-bold"><%=product.type%></p>
               </div>
               <div
@@ -66,11 +66,11 @@
             <!-- الكمية -->
             <div class="row mb-4">
               <div class="col-6 text-white">
-                <p class="fs-5 fw-bolder">قطعه</p>
+                <p class="fs-5 fw-bolder"><%= t.piece %></p>
                 <p class="info-text fw-bold"><%=product.quantity%></p>
               </div>
               <div class="col-6 text-white">
-                <p class="fs-5 fw-bolder">مغلف-كرتون</p>
+                <p class="fs-5 fw-bolder"><%= t.packagedCarton %></p>
                 <p class="info-text fw-bold"><%=product.cartoonSize%></p>
               </div>
             </div>
@@ -78,7 +78,7 @@
             <!-- السعة -->
             <div class="row mb-4">
               <div class="col-12 text-white">
-                <p class="fs-5 fw-bolder">السعة</p>
+                <p class="fs-5 fw-bolder"><%= t.capacity %></p>
                 <div class="row text-center g-2">
                   <%for(let size of product.size){%>
                   <div class="col-6 col-sm-3">
@@ -92,7 +92,7 @@
             <!-- رقم الصنف -->
             <div class="row">
               <div class="col-12 text-white">
-                <p class="fs-5 fw-bolder">رقم الصنف</p>
+                <p class="fs-5 fw-bolder"><%= t.itemNumber %></p>
                 <div class="row text-center g-3 justify-content-center">
 <% for(let i = 0; i < product.id.length; i++){ %>
   <div class="col-6 col-md-3 size-col">
@@ -116,9 +116,7 @@
               </div>
               <div class="col-9 text-white">
                 <p class="fs-5 fw-bolder d-inline">
-                  خفيفة الوزن وقابلة للحمل ، مما يجعلها مثالية للأشخاص أثناء
-                  التنقل. كما يسهل حملها ، وهي متوفرة بأحجام مختلفة التناسب
-                  مختلف المشروبات.
+                  <%= t.lightweightPortable %>
                 </p>
               </div>
             </div>
