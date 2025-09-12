@@ -4,18 +4,25 @@
   --color-text-light: #ffffff;
 }
 
-html {
-  direction: rtl;
-  scroll-behavior: smooth;
-  font-family: 'Alexandria', sans-serif !important;
+html, body, * 
+    { font-family: 'Alexandria',
+     sans-serif !important;
+     scroll-behavior: smooth;
+     box-sizing: border-box;
+     }
+
+    html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-  background-color: var(--color-primary-bg);
-  color: var(--color-text-light);
-  font-family: 'Alexandria', sans-serif;
-  font-weight: 700;
-}
+    body {
+         background: #356BB7;
+         direction: rtl;
+         color: #fff;
+        }
+
 
 .page-container {
   max-width: 1440px;
