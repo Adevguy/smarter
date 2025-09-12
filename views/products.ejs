@@ -35,7 +35,7 @@
           <!-- Product Image -->
           <div class="col-md-6 col-12 text-center">
             <img
-              src="/black_cup.png"
+              src="/<%=product.image%>"
               class="img-fluid products-img"
               alt="product image"
             />
@@ -99,7 +99,7 @@
     <p class="info-text fw-bold"><%= product.id[i] || "غير متوفر" %></p>
     <p class="info-text fw-bold"><%= product.packing[i] %></p>
     <img
-      src="/black_cup.png"
+      src="/<%=product.image%>"
       class="img-fluid size-img"
       alt="cup"
     />

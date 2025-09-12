@@ -9,6 +9,10 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.set("views", __dirname + "/views");
 // Sample route
+app.use((req, res, next) => {
+  res.locals.url = req.url
+  next();
+});
 app.get('/', (req, res) => {
   res.render('home', { title: 'Home' });
 });
@@ -88,7 +92,6 @@ app.get("/products/:category", (req, res) => {
       image // can be null
     };
   });
-
   res.render("products", {
     title: category || "Products",
     description: categoryData.description || "",
