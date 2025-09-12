@@ -691,6 +691,9 @@ body {
     display: flex;
     gap: 100px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
   }
 
   .product-card {
@@ -946,8 +949,7 @@ body {
   .about-us-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    direction: ltr;
+    justify-content:center;
     gap: 142px;
     padding: 0 80px;
   }
