@@ -34,8 +34,8 @@ app.get("/categories", (req, res) => {
 const categoryMap = {
   "PaperCups (single layer)": "أكواب ورقية (طبقة واحدة)",
   "PaperCups (double)": "أكواب ورقية (مزدوجة)",
-  "PlasticCups": "أكواب بلاستيكية",
-  "SoupCups": "أكواب شوربة"
+  "PaperCups (double corrugated)": "أكواب ورقية (مزدوجة مموجة)",
+  "PaperCupLids": "أغطية الأكواب الورقية"
 };
 
 app.get("/products/:category", (req, res) => {
