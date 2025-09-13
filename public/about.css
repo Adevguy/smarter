@@ -220,6 +220,19 @@ html, body, *
   }
 }
 
+/* Mission section alignment for desktop */
+.mission-align {
+  justify-content: flex-start;
+}
+[dir="rtl"] .mission-align {
+  justify-content: flex-end;
+}
+@media (max-width: 992px) {
+  .mission-align {
+    justify-content: center;
+  }
+}
+
 /* Responsive tweaks for mobile screens */
 @media (max-width: 600px) {
   .page-container {
@@ -278,33 +291,51 @@ html, body, *
   }
 
   .image-stack {
+    position: relative;
     max-width: 95vw;
     min-width: 0;
     margin: 0 auto;
+    width: 100%;
+    aspect-ratio: 3/4;
+    height: auto;
   }
   .image-bg-1,
-  .main-image-1,
   .image-bg-2,
-  .main-image-2 {
-    border-radius: 12px !important;
-  }
   .main-image-1,
   .main-image-2 {
+    position: absolute !important;
+    border-radius: 12px !important;
     width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
     left: 0 !important;
     top: 0 !important;
     min-width: 0;
     min-height: 0;
     max-width: 100vw;
     object-fit: cover;
+    margin: 0 auto;
   }
   .image-bg-1,
   .image-bg-2 {
+    z-index: 1;
+    width: 86%;
+    height: 92%;
+    transform: translate(7%, -5%);
+    opacity: 0.9;
+    filter: blur(0.5px);
+    border-radius: 8px !important;
+  }
+  .main-image-1,
+  .main-image-2 {
+    z-index: 2;
     width: 100% !important;
-    height: 100px !important;
+    height: 100% !important;
     left: 0 !important;
     top: 0 !important;
+    object-fit: cover;
+    border-radius: 16px !important;
+    background: transparent;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
   }
 
   .mission-section {
@@ -313,6 +344,34 @@ html, body, *
 
   .placeholder-column {
     display: none !important;
+  }
+}
+
+@media (min-width: 601px) {
+  .mission-section .content-grid {
+    flex-direction: row;
+    align-items: center;
+  }
+  .mission-section .image-stack {
+    order: 1;
+    margin-right: 40px;
+    margin-left: 0;
+  }
+  [dir="rtl"] .mission-section .image-stack {
+    order: 1;
+    margin-left: 40px;
+    margin-right: 0;
+  }
+  .mission-section .text-block {
+    order: 2;
+  }
+}
+@media (max-width: 600px) {
+  .mission-section .content-grid {
+    flex-direction: column;
+  }
+  .mission-section .image-stack {
+    margin: 0 auto 16px auto;
   }
 }
 
