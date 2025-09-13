@@ -23,9 +23,13 @@ html, body, *
 }
 
 .hero-text {
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 15vw;
     margin-top: 150px;
+}
+
+.hero-left {
+  margin-left: 15vw;
+  margin-right: 0;
 }
 
 .hero-text h1{
@@ -446,7 +450,7 @@ body {
   }
 
   /* Stacking order is determined by the order in the HTML */
-  
+
   /* Base rectangle (29:262) */
   .bg-rect-1 {
     top: 0;
@@ -1195,3 +1199,12 @@ body {
       gap: 30px;
     }
   }
+
+body[dir="ltr"] .hero-button img,
+body[dir="ltr"] .explore-btn img,
+body[dir="ltr"] .about-us-button img,
+body[dir="ltr"] .product-card__button img,
+body[dir="ltr"] .promo-banner__button img,
+body[dir="ltr"] .img-cont img {
+  transform: rotate(180deg);
+}

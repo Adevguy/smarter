@@ -4,28 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=title%></title>
-</head>
-<body dir="<%= lang === 'ar' ? 'rtl' : 'ltr' %>">
-    <!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="/navbar.css">
   <link rel="stylesheet" href="/home.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
-  <style>
-
-  </style>
 </head>
-<body>
+<body dir="<%= lang === 'ar' ? 'rtl' : 'ltr' %>">
   <%-include("navbar")%>
 
   <section class="hero">
-    <div class="hero-text">
+    <div class="hero-text <%=lang === "ar" ? "" : "hero-left"%>">
         <h1><%= t.excellentPaperProducts %></h1>
             <a href="/categories" style="cursor: pointer; text-decoration: none;" class="hero-button"><%= t.more %><img src="/arrow1.svg" alt="arrow svg"></a>
     </div>
@@ -133,12 +124,12 @@
         <div class="product-card__visuals">
           <!--merged image-->
           <div class="product-card__image-bg product-card__image-bg--green"></div>
-          <img src="/product2.png" alt="ورق الطعام" class="product-card__image product-card__image--1">
+          <img src="/product2.png" alt="<%= lang === 'ar' ? 'ورق الطعام' : 'Food Paper' %>" class="product-card__image product-card__image--1">
         </div>
         <div class="product-card__info">
-          <h3 class="product-card__title">ورق الطعام</h3>
-          <p class="product-card__description">ورق عالي الجودة لجميع أنواع الأطعمة المختلفة.</p>
-          <a href="#" class="btn product-card__button">استكشاف الفئة</a>
+          <h3 class="product-card__title"><%= lang === 'ar' ? 'ورق الطعام' : 'Food Paper' %></h3>
+          <p class="product-card__description"><%= lang === 'ar' ? 'ورق عالي الجودة لجميع أنواع الأطعمة المختلفة.' : 'High quality paper for all types of food.' %></p>
+          <a href="#" class="btn product-card__button"><%= t.exploreCategory %></a>
         </div>
       </article>
 
@@ -146,12 +137,12 @@
         <div class="product-card__visuals">
           <!--merged image-->
           <div class="product-card__image-bg product-card__image-bg--blue"></div>
-          <img src="/product1.png" alt="صناديق الورق" class="product-card__image product-card__image--2">
+          <img src="/product1.png" alt="<%= lang === 'ar' ? 'صناديق الورق' : 'Paper Boxes' %>" class="product-card__image product-card__image--2">
         </div>
         <div class="product-card__info">
-          <h3 class="product-card__title">صناديق الورق</h3>
-          <p class="product-card__description">صناديق بأحجام مختلفة تناسب منتجاتك الغذائية!</p>
-          <a href="#" class="btn product-card__button">استكشاف الفئة</a>
+          <h3 class="product-card__title"><%= lang === 'ar' ? 'صناديق الورق' : 'Paper Boxes' %></h3>
+          <p class="product-card__description"><%= lang === 'ar' ? 'صناديق بأحجام مختلفة تناسب منتجاتك الغذائية!' : 'Boxes in various sizes to fit your food products!' %></p>
+          <a href="#" class="btn product-card__button"><%= t.exploreCategory %></a>
         </div>
       </article>
     </div>
@@ -170,43 +161,13 @@
         <img src="/about us section image.png" alt="Smart paper product packaging illustration">
       </div>
       <div class="about-us-content">
-        <p class="about-us-text">في smart paper، الجودة ليست مجرد ميزة، بل هي الأساس. كل كوب وزجاجة وعبوة مصنوعة من ورق عالي الجودة.</p>
+        <p class="about-us-text"><%= lang === 'ar' ? 'في smart paper، الجودة ليست مجرد ميزة، بل هي الأساس. كل كوب وزجاجة وعبوة مصنوعة من ورق عالي الجودة.' : 'At smart paper, quality is not just a feature, it is the foundation. Every cup, bottle, and package is made from high-quality paper.' %></p>
 
       </div>
     </div>
   </div>
 </section>
-<section id="footer-section">
-  <footer class="site-footer" id="footer" dir="rtl">
-    <div class="page-wrapper">
-      <div class="footer-container">
-        <div class="footer-top">
-          <img src="/logo.png" alt="Smart Ller logo" class="footer-logo">
-        </div>
-        <hr class="footer-divider">
-        <div class="footer-bottom">
-          <nav class="footer-nav">
-            <ul>
-              <li><a href="/about" style="text-decoration: none;">معلومات عنا</a></li>
-              <li><a href="/categories" style="text-decoration: none;">منتجاتنا</a></li>
-              <li><a href="/contact" style="text-decoration: none;">تواصل معنا</a></li>
-            </ul>
-          </nav>
-          <div class="footer-social">
-            <h3 class="footer-heading">تواصل اجتماعي</h3>
-            <div class="social-icons">
-              <a href="#" aria-label="Facebook"><img src="/facebook.svg" alt="Facebook"></a>
-              <a href="#" aria-label="Telegram"><img src="/telegram.svg" alt="Telegram"></a>
-              <a href="#" aria-label="Instagram"><img src="/insta.svg" alt="Instagram"></a>
-              <a href="#" aria-label="LinkedIn"><img src="/linked-in.svg" alt="LinkedIn"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-</section>
-
+<%-include("footer")%>
 
 
   <script>

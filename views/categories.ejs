@@ -49,9 +49,10 @@
             </p>
             <a
               href="/products/<%=category.name%>"
-              class="text-white mt-3 text-decoration-none explore-btn"
+              class="text-white mt-3 text-decoration-none explore-btn <%= lang === 'en' ? 'center-en' : '' %>"
               ><%= t.exploreCategory %> <img src="/arrow.svg" alt="arrow"
-            /></a>
+                class="<%= lang === 'en' ? 'arrow-rotate-en' : '' %>"
+              /></a>
           </div>
         </div>
 
