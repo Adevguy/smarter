@@ -66,9 +66,11 @@ body {
 
 .size-img {
   display: block;
-  margin: 0 auto 0 0px;
+  margin: 0 auto 0px 60px;
 }
-
+.leftt {
+  margin: 0 auto 0 0;
+}
 .size-img-wrapper {
   /* removed centering styles, no longer needed */
 }
