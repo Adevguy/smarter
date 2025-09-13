@@ -96,4 +96,18 @@ body {
     top: -15px;
     right: 5px;
   }
+}body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/water_mark.jpeg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 200px auto;
+  opacity: 0.08;
+  z-index: -1;
+  pointer-events: none;
 }
