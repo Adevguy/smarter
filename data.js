@@ -241,7 +241,7 @@ const catalog = {
         "description": "",
         "groups": [
           {
-            "image": "img1.png",
+            "image": "",
             "type": "PaperCups (single layer)",
             "products": [
               {
@@ -2013,7 +2013,7 @@ const catalog = {
         "description": "",
         "groups": [
           {
-            "image": "img1.png",
+            "image": "images/img1.png",
             "type": "أكواب ورقية (طبقة واحدة)",
             "products": [
               {
