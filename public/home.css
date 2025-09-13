@@ -123,13 +123,12 @@ html, body, *
   .hero-text h1 {
     font-size: 3rem;
     max-width: 90%;
-    text-align: right;
   }
   .hero-button {
     font-size: 22px;
     width: 170px !important;
     padding: 10px;
-    margin-right: 20px;
+    margin:0 auto;
 
   }
   .explore {
@@ -144,10 +143,11 @@ html, body, *
   }
   .explore-text button {
     font-size: 20px !important;
-    width: 160px !important;
-    padding: 10px !important;
+    width: 200px !important;
     gap: 16px !important;
+    padding: 5px 0;
   }
+
   .explore-img img {
     width: 90vw;
     max-width: 350px;
