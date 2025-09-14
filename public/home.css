@@ -1459,8 +1459,7 @@ body[dir="ltr"] .img-cont img {
 }
 
 body[dir="ltr"] .hero-image img {
-  transform: scaleX(-1);
-  animation: float 6s ease-in-out infinite !important;
+  transform: scaleX(-1) !important;
 }
 
 body::before {
