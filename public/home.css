@@ -169,13 +169,18 @@ html, body, *
   }
   .hero-left + .hero-image {
     order: 2;
-    margin-left: 0;
+    margin-left: -200px;
     margin-right: 0;
-    justify-content: flex-end;
-    margin-right: -100px;
+    justify-content: flex-start;
   }
   .hero-image img {
-    min-width: 450px;
+    min-width: 550px;
+    margin-right: 200px;
+  }
+  .hero-image .en-img {
+    margin-right: 0;
+    margin-left: 150px;
+    animation: float 6s ease-in-out infinite;
   }
   .hero-text h1 {
     font-size: 3rem;
@@ -1454,7 +1459,8 @@ body[dir="ltr"] .img-cont img {
 }
 
 body[dir="ltr"] .hero-image img {
-  transform: scaleX(-1) !important;
+  transform: scaleX(-1);
+  animation: float 6s ease-in-out infinite !important;
 }
 
 body::before {

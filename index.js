@@ -2,11 +2,16 @@ require("dotenv").config()
 
 const express = require('express');
 const session = require('express-session');
+const MongoStore = require('connect-mongo');
 const app = express();
 const port = 3000;
 const categories = require('./data.js');
 const {sendEmail} = require('./emailHandler.js');
 const translations = require('./translations.js');
+
+// Trust proxy for production environments
+app.set('trust proxy', 1);
+
 // Middleware to parse JSON bodies
 app.use(express.json());
 app.set("view engine", "ejs");
@@ -14,12 +19,20 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true })); // to parse form data
 app.set("views", __dirname + "/views");
 
-// Session middleware for language persistence
+// Session middleware with MongoDB store
 app.use(session({
-  secret: 'your-secret-key',
+  secret: process.env.SESSION_SECRET || 'your-secret-key',
   resave: false,
-  saveUninitialized: true,
-  cookie: { secure: false } // set to true if using https
+  saveUninitialized: false,
+  store: MongoStore.create({
+    mongoUrl: process.env.MONGODB_URI || 'mongodb://localhost:27017/smarter-sessions',
+    touchAfter: 24 * 3600 // lazy session update
+  }),
+  cookie: { 
+    secure: process.env.NODE_ENV === 'production', // true in production with HTTPS
+    httpOnly: true,
+    maxAge: 1000 * 60 * 60 * 24 * 7 // 1 week
+  }
 }));
 // Sample route
 app.use((req, res, next) => {

@@ -26,7 +26,7 @@ body {
   padding-right: 10%;
   align-items: center;
   font-weight: bold;
-  width: 50%;
+  width: 70%;
 }
 @media (min-width: 768px) {
   .w-md-50 {
