@@ -227,12 +227,17 @@ html, body, *
 [dir="rtl"] .mission-align {
   justify-content: flex-end;
 }
+[dir="rtl"] .mission-align .text-block {
+  max-width: 530px;
+}
 @media (max-width: 992px) {
   .mission-align {
     justify-content: center;
   }
 }
-
+.right-mission {
+  text-align: right;
+}
 /* Responsive tweaks for mobile screens */
 @media (max-width: 600px) {
   .page-container {
@@ -241,13 +246,13 @@ html, body, *
   }
 
   .section {
-    padding: 32px 0;
-    margin-bottom: 24px;
+    padding: 20px 0;
+    margin-bottom: 12px;
   }
 
   .hero-section {
-    padding-top: 40px;
-    padding-bottom: 24px;
+    padding-top: 30px;
+    padding-bottom: 16px;
   }
 
   .hero-title {
@@ -264,7 +269,7 @@ html, body, *
   }
 
   .text-block {
-    margin-top: 32px;
+    margin-top: 20px;
     padding: 0 4px;
   }
 
@@ -339,7 +344,7 @@ html, body, *
   }
 
   .mission-section {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   .placeholder-column {
@@ -352,26 +357,10 @@ html, body, *
     flex-direction: row;
     align-items: center;
   }
-  .mission-section .image-stack {
-    order: 1;
-    margin-right: 40px;
-    margin-left: 0;
-  }
-  [dir="rtl"] .mission-section .image-stack {
-    order: 1;
-    margin-left: 40px;
-    margin-right: 0;
-  }
-  .mission-section .text-block {
-    order: 2;
-  }
 }
 @media (max-width: 600px) {
   .mission-section .content-grid {
     flex-direction: column;
-  }
-  .mission-section .image-stack {
-    margin: 0 auto 16px auto;
   }
 }
 
@@ -386,7 +375,7 @@ body::before {
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 200px auto;
-  opacity: 0.08;
+  opacity: 0.2;
   z-index: -1;
   pointer-events: none;
 }

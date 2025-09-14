@@ -45,7 +45,9 @@
       transition: all 0.3s cubic-bezier(.68,-0.55,.27,1.55);
       z-index: 0;
     }
-
+    @media (min-width: 1600px) {
+      .navbar-link { font-size: 16px; }
+    }
     /* Dropdown */
     .navbar-dropdown { 
       display: flex; 

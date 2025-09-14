@@ -61,13 +61,13 @@
     </div>
   </div>
 </section>
-<section id="mission" class="section mission-section">
+<section dir="ltr" id="mission" class="section mission-section">
   <div class="page-container">
     <div class="content-grid mission-align">
       <div class="text-block">
-        <h2><%= t.ourMission %></h2>
+        <h2 class="<%=lang === "ar" ? "right-mission" : ""%>"><%= t.ourMission %></h2>
         <div class="text-with-separator">
-          <p><%= t.missionText %></p>
+          <p class="<%=lang === "ar" ? "right-mission" : ""%>"><%= t.missionText %></p>
           <div class="separator"></div>
         </div>
       </div>

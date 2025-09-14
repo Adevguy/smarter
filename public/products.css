@@ -96,7 +96,8 @@ body {
     top: -15px;
     right: 5px;
   }
-}body::before {
+}
+body::before {
   content: "";
   position: fixed;
   top: 0;
@@ -107,7 +108,7 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 200px auto;
-  opacity: 0.08;
+  opacity: 0.17;
   z-index: -1;
   pointer-events: none;
 }
