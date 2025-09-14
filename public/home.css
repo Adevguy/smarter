@@ -177,11 +177,11 @@ html, body, *
   }
   .hero-image img {
     min-width: 550px;
-    margin-right: 200px;
+    margin-right: 100px;
   }
   .hero-image .en-img {
     margin-right: 0;
-    margin-left: 150px;
+    margin-left: 120px;
     animation: float 6s ease-in-out infinite;
   }
   .hero-text h1 {

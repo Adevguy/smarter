@@ -340,7 +340,6 @@ html, body, *
     object-fit: cover;
     border-radius: 16px !important;
     background: transparent;
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
   }
 
   .mission-section {
@@ -361,6 +360,25 @@ html, body, *
 @media (max-width: 600px) {
   .mission-section .content-grid {
     flex-direction: column;
+  }
+}
+
+/* Image display control for different screen sizes */
+.desktop-image {
+  display: block;
+}
+
+.mobile-image {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-image {
+    display: none;
+  }
+  
+  .mobile-image {
+    display: block;
   }
 }
 
