@@ -144,6 +144,61 @@
         <%}%>
       </div>
       <!-- end of .products -->
+
+      <!-- Image Gallery Slider -->
+      <div class="gallery-section mt-5 mb-5">
+        <h2 class="text-white text-center mb-4 fw-bold"><%= lang === 'ar' ? 'معرض الصور' : 'Image Gallery' %></h2>
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <% 
+            const allImages = [];
+            products.forEach(product => {
+              allImages.push(product.image);
+            });
+            
+            // Create slides with 3 images each
+            const imagesPerSlide = 3;
+            const slides = [];
+            for(let i = 0; i < allImages.length; i += imagesPerSlide) {
+              slides.push(allImages.slice(i, i + imagesPerSlide));
+            }
+            %>
+            
+            <% slides.forEach((slide, index) => { %>
+            <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+              <div class="row g-3 justify-content-center">
+                <% slide.forEach(image => { %>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="gallery-item">
+                    <img src="/<%= image %>" class="img-fluid gallery-img" alt="Product Gallery">
+                  </div>
+                </div>
+                <% }) %>
+              </div>
+            </div>
+            <% }) %>
+          </div>
+          
+          <!-- Carousel controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <% slides.forEach((slide, index) => { %>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="<%= index %>" 
+                    class="<%= index === 0 ? 'active' : '' %>" aria-current="<%= index === 0 ? 'true' : 'false' %>" 
+                    aria-label="Slide <%= index + 1 %>"></button>
+            <% }) %>
+          </div>
+        </div>
+      </div>
     </div>
         <%-include("footer")%>
 
