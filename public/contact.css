@@ -358,7 +358,7 @@ span img{
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 200px auto;
-  opacity: 0.2;
+  opacity: 0.3;
   z-index: -1;
   pointer-events: none;
 }
