@@ -722,7 +722,7 @@ body {
   .product-card {
     background-color: var(--color-accent);
     border-radius: 20px;
-    width: 700px;
+    width: 600px;
     padding: 60px 0 55px;
     display: flex;
     flex-direction: column;
@@ -739,7 +739,7 @@ body {
 
   .product-card__visuals {
     position: relative;
-    width: 580px;
+    width: 500px;
     height: 500px;
     margin-bottom: 45px;
   }
