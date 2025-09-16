@@ -82,9 +82,9 @@ app.get("/categories", (req, res) => {
   const uniqueCategories = Object.keys(categories[lang]).map((key) => {
     const category = categories[lang][key];
     if(category.image === undefined){
-      category.image = "cups.png"; // set a default image if none is provided
+      category.image = "/cups.png"; // set a default image if none is provided
     }else {
-      category.image = `category_images/${category.image}`;
+      category.image = `/category_images/${category.image}`;
     }
     return {
       // the object key, e.g. "paperCupsSingleLayer"
