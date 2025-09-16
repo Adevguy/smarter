@@ -367,3 +367,7 @@ span img{
   }
   
 }
+
+body[dir = "ltr"] .hero-section {
+  flex-direction: row-reverse;
+}
