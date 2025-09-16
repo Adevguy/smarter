@@ -236,3556 +236,3514 @@
 
 // module.exports = catalog;
 const catalog = {
-    "en": {
-      "Paper Cups": {
-        "description": "",
-        "groups": [
-          {
-            "image": "",
-            "type": "PaperCups (single layer)",
-            "products": [
-              {
-                "itemNumber": "PCW4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCW7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCW8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCW12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img2.png",
-            "type": "PaperCups (single layer)",
-            "products": [
-              {
-                "itemNumber": "PC053",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PC040",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img3.png",
-            "type": "PaperCups (single layer)",
-            "products": [
-              {
-                "itemNumber": "PCK4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCK7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCK8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCK12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img4.png",
-            "type": "PaperCups (double)",
-            "products": [
-              {
-                "itemNumber": "PCWD4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCWD7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "WCD8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCWD12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img5.png",
-            "type": "PaperCups (double)",
-            "products": [
-              {
-                "itemNumber": "BDW4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "BCW7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "BCD8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "BDW12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img6.png",
-            "type": "PaperCups (double corrugated)",
-            "products": [
-              {
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img7.png",
-            "type": "PaperCups (double corrugated)",
-            "products": [
-              {
-                "itemNumber": "BRP4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "BRP7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "BRP8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "BRP12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img8.png",
-            "type": "PaperCups (double corrugated)",
-            "products": [
-              {
-                "itemNumber": "PCKR4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCKR7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCKR8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCKR12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              }
-            ]
-          }
-        ]
-      },
-      "PaperCupLids": {
-        "description": "",
-        "groups": [
-          {
-            "image": "img9.png",
-            "type": "PaperCupLids (plastic)",
-            "products": [
-              {
-                "itemNumber": "WCL4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              },
-              {
-                "itemNumber": "WCL7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              },
-              {
-                "itemNumber": "WCL8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              },
-              {
-                "itemNumber": "WCL12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              }
-            ]
-          },
-          {
-            "image": "img10.png",
-            "type": "PaperCupLids (plastic)",
-            "products": [
-              {
-                "itemNumber": "BCL4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              },
-              {
-                "itemNumber": "BCL7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              },
-              {
-                "itemNumber": "BCL8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              },
-              {
-                "itemNumber": "BCL12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              }
-            ]
-          },
-          {
-            "image": "img11.png",
-            "type": "PaperCupLids (sugarcane)",
-            "products": [
-              {
-                "itemNumber": "0000000",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "sugarCane"
-              }
-            ]
-          }
-        ]
-      },
-      "Plastic PP Caps": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-09.png",
-            "type": "Leakproof PP plastic caps",
-            "products": [
-              {
-                "itemNumber": "LCT8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCT12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCB8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCB12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCT8N",
-                "volume": 8,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCT12N",
-                "volume": 12,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCB8N",
-                "volume": 8,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCB12N",
-                "volume": 12,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              }
-            ]
-          }
-        ]
-      },
-      "Paper Cup Holders": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-10.png",
-            "type": "Cup holders",
-            "products": [
-              {
-                "itemNumber": "REB CUC2",
-                "piece": 250,
-                "rawMaterial": "paper",
-                "notes": "Double"
-              },
-              {
-                "itemNumber": "REB CUC4",
-                "piece": 250,
-                "rawMaterial": "paper",
-                "notes": "Quadrant"
-              }
-            ]
-          }
-        ]
-      },
-      "Paper Bowls": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-13.png",
-            "type": "White with PET-PP cover",
-            "products": [
-              {
-                "itemNumber": "WR32A",
-                "volume": 32,
-                "size": "15cm x 7.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "WB32A",
-                "volume": 32,
-                "size": "16.5cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "WB42B200",
-                "volume": 42,
-                "size": "18.4cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "WR24",
-                "volume": 24,
-                "size": "15cm x 5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "WB16",
-                "volume": 16,
-                "size": "15cm x 4.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              }
-            ]
-          },
-          {
-            "image": "page-14.png",
-            "type": "Brown kraft with PET-PP cover",
-            "products": [
-              {
-                "itemNumber": "REF PB32",
-                "volume": 32,
-                "size": "15cm x 7.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "REF BP328200",
-                "volume": 32,
-                "size": "16.5cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "REF BP428",
-                "volume": 42,
-                "size": "18.4cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "REF BP48",
-                "volume": 48,
-                "size": "20.3cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "REF BP168",
-                "volume": 16,
-                "size": "15cm x 4.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "REF BP25200",
-                "volume": 24,
-                "size": "15cm x 5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              }
-            ]
-          },
-          {
-            "image": "page-15.png",
-            "type": "Black with PET-PP cover",
-            "products": [
-              {
-                "itemNumber": "PB021",
-                "volume": 32,
-                "size": "15cm x 7.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "KB328200",
-                "volume": 32,
-                "size": "16.5cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "KB42B200",
-                "volume": 42,
-                "size": "18.4cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "PB022",
-                "volume": 48,
-                "size": "20.3cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "PK16B",
-                "volume": 16,
-                "size": "15cm x 4.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "KB24200",
-                "volume": 24,
-                "size": "15cm x 5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              }
-            ]
-          }
-        ]
-      },
-      "Paper Boxes": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-19.png",
-            "type": "Attached cover & window",
-            "products": [
-              {
-                "itemNumber": "REF LBWH15",
-                "volume": 15,
-                "size": "12cm x 8.5cm x 3.7cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBWH25",
-                "volume": 25,
-                "size": "15cm x 10cm x 3.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBWH40",
-                "volume": 40,
-                "size": "18cm x 12cm x 5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBW55",
-                "volume": 15,
-                "size": "12cm x 8.5cm x 3.7cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBW25",
-                "volume": 25,
-                "size": "15cm x 10cm x 3.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBW40",
-                "volume": 40,
-                "size": "18cm x 12cm x 5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBW66",
-                "volume": 66,
-                "size": "19.5cm x 14cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBWK15",
-                "volume": 15,
-                "size": "12cm x 8.5cm x 3.7cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBWK25",
-                "volume": 25,
-                "size": "15cm x 10cm x 3.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBWK40",
-                "volume": 40,
-                "size": "18cm x 12cm x 5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBWK66",
-                "volume": 66,
-                "size": "19.5cm x 14cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "page-20.png",
-            "type": "Burger Boxes",
-            "products": [
-              {
-                "itemNumber": "HB100",
-                "size": "10cm x 10cm x 8cm",
-                "piece": 50,
-                "carton": 6,
-                "packing": 300,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "HB105",
-                "size": "10.5cm x 10.5cm x 8.5cm",
-                "piece": 50,
-                "carton": 6,
-                "packing": 300,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "HB11",
-                "size": "11cm x 11cm x 11cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "HB120",
-                "size": "12cm x 12cm x 7cm",
-                "piece": 50,
-                "carton": 6,
-                "packing": 300,
-                "rawMaterial": "paper"
-              }
-            ]
-          }
-        ]
-      },
-      "Paper Plates": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-21.png",
-            "type": "Kraft paper plates",
-            "products": [
-              {
-                "itemNumber": "REF TRK3",
-                "size": "10cm x 6.2cm x 4.1cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF TRK4",
-                "size": "10.7cm x 6.9cm x 4.1cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF TRK5",
-                "size": "13.8cm x 8.6cm x 5.7cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF TRK6",
-                "size": "16.8cm x 9.6cm x 5.7cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "paper"
-              }
-            ]
-          }
-        ]
-      },
-      "Paper Bags": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-23.png",
-            "type": "Reinforced handle",
-            "products": [
-              {
-                "itemNumber": "REF WB29",
-                "size": "10cm x 29cm x 22cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF WB36",
-                "size": "12cm x 36cm x 28cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF WB40",
-                "size": "16cm x 38cm x 32cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF BP35",
-                "size": "18cm x 35cm x 35cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "page-24.png",
-            "type": "Flat handle",
-            "products": [
-              {
-                "itemNumber": "REF WE35",
-                "size": "18cm x 35cm x 35cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF BP29",
-                "size": "10cm x 29cm x 22cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF BP36",
-                "size": "12cm x 36cm x 28cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF BP40",
-                "size": "16cm x 38cm x 32cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              }
-            ]
-          }
-        ]
-      },
-      "Microwave Containers": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-26.png",
-            "type": "Rectangular microwave containers",
-            "products": [
-              {
-                "itemNumber": "PMW28",
-                "volume": 28,
-                "size": "22cm x 15.3cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "PMW32",
-                "volume": 32,
-                "size": "22.4cm x 15.3cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MYB38",
-                "volume": 38,
-                "size": "22.5cm x 11.5cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "PMW16",
-                "volume": 16,
-                "size": "19cm x 12.8cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MYB24",
-                "volume": 24,
-                "size": "22cm x 15.3cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              }
-            ]
-          },
-          {
-            "image": "page-27.png",
-            "type": "Round microwave containers",
-            "products": [
-              {
-                "itemNumber": "MW24-A",
-                "volume": 24,
-                "size": "15.5cm x 12.5cm x 5cm",
-                "piece": 50,
-                "carton": 6,
-                "packing": 300,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MW24-B",
-                "volume": 24,
-                "size": "18.5cm x 13.5cm x 5cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MYB32",
-                "volume": 32,
-                "size": "17cm x 13.5cm x 6.5cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MYB48",
-                "volume": 48,
-                "size": "23cm x 18cm x 6cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              }
-            ]
-          },
-          {
-            "image": "page-28.png",
-            "type": "Oval microwave containers",
-            "products": [
-              {
-                "itemNumber": "MPB16",
-                "volume": 16,
-                "size": "22cm x 15.3cm",
-                "piece": 28,
-                "carton": 5,
-                "packing": 250,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MPC24",
-                "volume": 24,
-                "size": "22.4cm x 15.3cm",
-                "piece": 24,
-                "carton": 5,
-                "packing": 250,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MPB32",
-                "volume": 32,
-                "size": "22.4cm x 15.3cm",
-                "piece": 32,
-                "carton": 5,
-                "packing": 250,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MPB38",
-                "volume": 38,
-                "size": "22.5cm x 11.5cm",
-                "piece": 38,
-                "carton": 5,
-                "packing": 250,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MPC53",
-                "volume": 53,
-                "size": "24cm x 19cm x 3.5cm",
-                "piece": 32,
-                "carton": 5,
-                "packing": 250,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MPC52",
-                "volume": 52,
-                "size": "24cm x 19cm x 3.5cm",
-                "piece": 32,
-                "carton": 5,
-                "packing": 250,
-                "rawMaterial": "Paper,PP"
-              }
-            ]
-          }
-        ]
-      },
-      "Sugarcane Boxes": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-29.png",
-            "type": "Sugarcane boxes",
-            "products": [
-              {
-                "itemNumber": "Subr1000",
-                "volume": 1000,
-                "size": "23.5cm x 13.5cm x 6cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr750",
-                "volume": 750,
-                "size": "23.5cm x 13.5cm x 4.5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr700",
-                "volume": 700,
-                "size": "19.5cm x 11.5cm x 5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr10",
-                "volume": 10,
-                "size": "10cm x 10cm x 8cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "sugarCane,Connected"
-              },
-              {
-                "itemNumber": "Subr500",
-                "volume": 500,
-                "size": "23.5cm x 13.5cm x 4.5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr600",
-                "volume": 600,
-                "size": "22cm x 17cm x 5.5cm",
-                "piece": 50,
-                "carton": 6,
-                "packing": 300,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr800",
-                "volume": 800,
-                "size": "22cm x 17cm x 4cm",
-                "piece": 50,
-                "carton": 6,
-                "packing": 300,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr900",
-                "volume": 900,
-                "size": "18cm x 18cm x 7cm",
-                "piece": 75,
-                "carton": 4,
-                "packing": 300,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr90000-A",
-                "volume": 90000,
-                "size": "18cm x 18cm x 5.5cm",
-                "piece": 75,
-                "carton": 4,
-                "packing": 300,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr90000-B",
-                "volume": 90000,
-                "size": "20cm x 5cm",
-                "piece": 125,
-                "carton": 4,
-                "packing": 500,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "REF SBR32A",
-                "volume": 32,
-                "size": "19.5cm x 6.3cm x 10.5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Sugar Cane,Plastic PET"
-              },
-              {
-                "itemNumber": "REF SBR24B",
-                "volume": 24,
-                "size": "19.5cm x 4.8cm x 10.5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Sugar Cane,Plastic PET"
-              },
-              {
-                "itemNumber": "REF SBR16",
-                "volume": 16,
-                "size": "15.5cm x 5.5cm x 8.5cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Sugar Cane,Plastic PET"
-              },
-              {
-                "itemNumber": "REF SB450",
-                "volume": "",
-                "size": "17cm x 12.5cm x 3.5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Sugar Cane,Connected"
-              },
-              {
-                "itemNumber": "REF SB600",
-                "volume": "",
-                "size": "18.3cm x 13.5cm x 4.5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Sugar Cane,Connected"
-              }
-            ]
-          }
-        ]
-      },
-      "Tableware Sets": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-31.png",
-            "type": "Napkin included (covered)",
-            "products": [
-              {
-                "itemNumber": "PENB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "PSBNIB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "CS3",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "MS3",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "TAOIS",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "PKB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1950,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PKB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1950,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PFIB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1950,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PSB18",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1950,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "PKW19",
-                "size": "19cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PFWB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PSBWB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              }
-            ]
-          }
-        ]
-      },
-      "Cake Bases": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-32.png",
-            "type": "Round cake bases",
-            "products": [
-              {
-                "itemNumber": "CBG26",
-                "size": "26cm",
-                "piece": 80,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              },
-              {
-                "itemNumber": "CBG28",
-                "size": "28cm",
-                "piece": 70,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              },
-              {
-                "itemNumber": "CBG30",
-                "size": "30cm",
-                "piece": 60,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              },
-              {
-                "itemNumber": "CBG23",
-                "size": "30cm",
-                "piece": 50,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              },
-              {
-                "itemNumber": "CBG8",
-                "size": "8cm",
-                "piece": 600,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              },
-              {
-                "itemNumber": "CBG18",
-                "size": "18cm",
-                "piece": 160,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              },
-              {
-                "itemNumber": "CBG22",
-                "size": "22cm",
-                "piece": 110,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              }
-            ]
-          }
-        ]
-      },
-      "Plastic Cups": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-34.png",
-            "type": "PET (with dome lids)",
-            "products": [
-              {
-                "itemNumber": "REF PCCBF",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Dome"
-              },
-              {
-                "itemNumber": "REF PCCIOF",
-                "volume": 10,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Dome"
-              },
-              {
-                "itemNumber": "REF PCCI2F",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Dome"
-              },
-              {
-                "itemNumber": "REF PCCIGF",
-                "volume": 16,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Dome"
-              },
-              {
-                "itemNumber": "REF PCURI2",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Red heart"
-              },
-              {
-                "itemNumber": "REF PCURI4",
-                "volume": 14,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Red heart"
-              },
-              {
-                "itemNumber": "REF PCURI6",
-                "volume": 16,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Red heart"
-              }
-            ]
-          },
-          {
-            "image": "page-35.png",
-            "type": "U-base cups",
-            "products": [
-              {
-                "itemNumber": "PCUF12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "PCUF14",
-                "volume": 14,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "PCUF16",
-                "volume": 16,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "BFL121416",
-                "size": "12-14-16",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "BDL1214160",
-                "size": "12-14-16",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "FL90",
-                "size": "12-14-16",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "DL90",
-                "size": "12-14-16",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              }
-            ]
-          },
-          {
-            "image": "page-36.png",
-            "type": "Plastic PP cups",
-            "products": [
-              {
-                "itemNumber": "PCSC12",
-                "volume": 12,
-                "piece": 25,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "Plastic PP"
-              },
-              {
-                "itemNumber": "PCSC14",
-                "volume": 14,
-                "piece": 25,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "Plastic PP"
-              },
-              {
-                "itemNumber": "PCSC16",
-                "volume": 16,
-                "piece": 25,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "Plastic PP"
-              }
-            ]
-          },
-          {
-            "image": "page-36.png",
-            "type": "Flat lids (PP)",
-            "products": [
-              {
-                "itemNumber": "FIBL90",
-                "size": "12/14/16",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic PP",
-                "notes": "Flat lid"
-              },
-              {
-                "itemNumber": "FIL90",
-                "size": "12/14/16",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic PP",
-                "notes": "Flat lid"
-              }
-            ]
-          }
-        ]
-      },
-      "Plastic Containers & Jars": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-37.png",
-            "type": "Plastic jars",
-            "products": [
-              {
-                "itemNumber": "J6585",
-                "size": "6.5cm x 8.5cm",
-                "piece": 230,
-                "carton": 216,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "J8585",
-                "size": "8.5cm x 8.5cm",
-                "piece": 350,
-                "carton": 195,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "JD085",
-                "size": "10cm x 8.5cm",
-                "piece": 400,
-                "carton": 195,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "J8510",
-                "size": "8.5cm x 10cm",
-                "piece": 435,
-                "carton": 144,
-                "rawMaterial": "Plastic"
-              }
-            ]
-          },
-          {
-            "image": "page-38.png",
-            "type": "Sauce cups",
-            "products": [
-              {
-                "itemNumber": "REF PC2",
-                "volume": 2,
-                "piece": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF B003",
-                "volume": 2,
-                "piece": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PC4",
-                "volume": 4,
-                "piece": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PK2",
-                "volume": 2,
-                "piece": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PK4",
-                "volume": 4,
-                "piece": 1000,
-                "rawMaterial": "Plastic"
-              }
-            ]
-          }
-        ]
-      },
-      "Aluminum Foil": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-40.png",
-            "type": "Aluminum foil rolls & sheets",
-            "products": [
-              {
-                "itemNumber": "AL023",
-                "size": "23cm x 16.4cm",
-                "piece": 500,
-                "rawMaterial": "Aluminum"
-              },
-              {
-                "itemNumber": "AL025",
-                "size": "25cm x 17.5cm",
-                "piece": 150,
-                "rawMaterial": "Aluminum"
-              },
-              {
-                "itemNumber": "AL028",
-                "size": "28cm x 19.5cm",
-                "piece": 150,
-                "rawMaterial": "Aluminum"
-              },
-              {
-                "itemNumber": "AL035",
-                "size": "35cm x 23.8cm",
-                "piece": 100,
-                "rawMaterial": "Aluminum"
-              },
-              {
-                "itemNumber": "ALUR30",
-                "size": "30cm",
-                "piece": 1350,
-                "carton": 6,
-                "rawMaterial": "Aluminum"
-              },
-              {
-                "itemNumber": "ALUR45",
-                "size": "45cm",
-                "piece": 1500,
-                "carton": 6,
-                "rawMaterial": "Aluminum"
-              }
-            ]
-          }
-        ]
-      },
-      "Cafe Supplies": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-41.png",
-            "type": "Wooden & plastic stirrers / straws",
-            "products": [
-              {
-                "itemNumber": "REF WSW140",
-                "size": "140 mm",
-                "piece": 5000,
-                "rawMaterial": "Wood"
-              },
-              {
-                "itemNumber": "REF WSW187",
-                "size": "187 mm",
-                "piece": 5000,
-                "rawMaterial": "Wood"
-              },
-              {
-                "itemNumber": "REF WS140",
-                "size": "140 mm",
-                "piece": 5000,
-                "rawMaterial": "Wood"
-              },
-              {
-                "itemNumber": "REF WS187",
-                "size": "187 mm",
-                "piece": 5000,
-                "rawMaterial": "Wood"
-              },
-              {
-                "itemNumber": "REF SWB6",
-                "size": "6 mm",
-                "piece": 10000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF SWB8",
-                "size": "8 mm",
-                "piece": 4000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF SWB10",
-                "size": "10 mm",
-                "piece": 2000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF SWC6",
-                "size": "6 mm",
-                "piece": 10000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF SWC8",
-                "size": "8 mm",
-                "piece": 4000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF SWC10",
-                "size": "10 mm",
-                "piece": 2000,
-                "rawMaterial": "Plastic"
-              }
-            ]
-          }
-        ]
-      }
+  "en": {
+    "Paper Cups": {
+      "description": "",
+      "groups": [
+        {
+          "image": "img1.png",
+          "type": "PaperCups (single layer)",
+          "products": [
+            {
+              "itemNumber": "PCW4",
+              "volume": 4,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "PCW7",
+              "volume": 7,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "PCW8",
+              "volume": 8,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "PCW12",
+              "volume": 12,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            }
+          ]
+        },
+        {
+          "image": "img2.png",
+          "type": "PaperCups (single layer)",
+          "products": [
+            {
+              "itemNumber": "PC053",
+              "volume": 8,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "PC040",
+              "volume": 12,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            }
+          ]
+        },
+        {
+          "image": "img3.png",
+          "type": "PaperCups (single layer)",
+          "products": [
+            {
+              "itemNumber": "PCK4",
+              "volume": 4,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "PCK7",
+              "volume": 7,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "PCK8",
+              "volume": 8,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "PCK12",
+              "volume": 12,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            }
+          ]
+        },
+        {
+          "image": "img4.png",
+          "type": "PaperCups (double)",
+          "products": [
+            {
+              "itemNumber": "PCWD4",
+              "volume": 4,
+              "piece": 50,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "PCWD7",
+              "volume": 7,
+              "piece": 50,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "WCD8",
+              "volume": 8,
+              "piece": 50,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "PCWD12",
+              "volume": 12,
+              "piece": 50,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "paper"
+            }
+          ]
+        },
+        {
+          "image": "img5.png",
+          "type": "PaperCups (double)",
+          "products": [
+            {
+              "itemNumber": "BDW4",
+              "volume": 4,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "BCW7",
+              "volume": 7,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "BCD8",
+              "volume": 8,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "BDW12",
+              "volume": 12,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            }
+          ]
+        },
+        {
+          "image": "img6.png",
+          "type": "PaperCups (double corrugated)",
+          "products": [
+            {
+              "volume": 4,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "volume": 7,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "volume": 8,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "volume": 12,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            }
+          ]
+        },
+        {
+          "image": "img7.png",
+          "type": "PaperCups (double corrugated)",
+          "products": [
+            {
+              "itemNumber": "BRP4",
+              "volume": 4,
+              "piece": 50,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "BRP7",
+              "volume": 7,
+              "piece": 50,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "BRP8",
+              "volume": 8,
+              "piece": 50,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "BRP12",
+              "volume": 12,
+              "piece": 50,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "paper"
+            }
+          ]
+        },
+        {
+          "image": "img8.png",
+          "type": "PaperCups (double corrugated)",
+          "products": [
+            {
+              "itemNumber": "PCKR4",
+              "volume": 4,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "PCKR7",
+              "volume": 7,
+              "piece": 50,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "PCKR8",
+              "volume": 8,
+              "piece": 50,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "PCKR12",
+              "volume": 12,
+              "piece": 50,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "paper"
+            }
+          ]
+        }
+      ]
     },
-    "ar": {
-      "أكواب ورقية": {
-        "description": "",
-        "groups": [
-          {
-            "image": "images/img1.png",
-            "type": "أكواب ورقية (طبقة واحدة)",
-            "products": [
-              {
-                "itemNumber": "PCW4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCW7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCW8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCW12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img2.png",
-            "type": "أكواب ورقية (طبقة واحدة)",
-            "products": [
-              {
-                "itemNumber": "PC053",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PC040",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img3.png",
-            "type": "أكواب ورقية (طبقة واحدة)",
-            "products": [
-              {
-                "itemNumber": "PCK4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCK7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCK8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCK12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img4.png",
-            "type": "أكواب ورقية (مزدوجة)",
-            "products": [
-              {
-                "itemNumber": "PCWD4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCWD7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "WCD8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCWD12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img5.png",
-            "type": "أكواب ورقية (مزدوجة)",
-            "products": [
-              {
-                "itemNumber": "BDW4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "BCW7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "BCD8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "BDW12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img6.png",
-            "type": "أكواب ورقية (مزدوجة مموجة)",
-            "products": [
-              {
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img7.png",
-            "type": "أكواب ورقية (مزدوجة مموجة)",
-            "products": [
-              {
-                "itemNumber": "BRP4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "BRP7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "BRP8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "BRP12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "img8.png",
-            "type": "أكواب ورقية (مزدوجة مموجة)",
-            "products": [
-              {
-                "itemNumber": "PCKR4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCKR7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCKR8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "PCKR12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "paper"
-              }
-            ]
-          }
-        ]
-      },
-      "أغطية الأكواب": {
-        "description": "",
-        "groups": [
-          {
-            "image": "img9.png",
-            "type": "أغطية الأكواب (بلاستيك)",
-            "products": [
-              {
-                "itemNumber": "WCL4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              },
-              {
-                "itemNumber": "WCL7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              },
-              {
-                "itemNumber": "WCL8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              },
-              {
-                "itemNumber": "WCL12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              }
-            ]
-          },
-          {
-            "image": "img10.png",
-            "type": "أغطية الأكواب (بلاستيك)",
-            "products": [
-              {
-                "itemNumber": "BCL4",
-                "volume": 4,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              },
-              {
-                "itemNumber": "BCL7",
-                "volume": 7,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              },
-              {
-                "itemNumber": "BCL8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              },
-              {
-                "itemNumber": "BCL12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "plastic"
-              }
-            ]
-          },
-          {
-            "image": "img11.png",
-            "type": "أغطية الأكواب (قصب السكر)",
-            "products": [
-              {
-                "itemNumber": "0000000",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "sugarCane"
-              }
-            ]
-          }
-        ]
-      },
-      "أغطية بلاستيك PP": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-09.png",
-            "type": "أغطية PP مانعة للتسرب",
-            "products": [
-              {
-                "itemNumber": "LCT8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCT12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCB8",
-                "volume": 8,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCB12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCT8N",
-                "volume": 8,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCT12N",
-                "volume": 12,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCB8N",
-                "volume": 8,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              },
-              {
-                "itemNumber": "LCB12N",
-                "volume": 12,
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "PP (plastic)"
-              }
-            ]
-          }
-        ]
-      },
-      "حاملات الأكواب الورقية": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-10.png",
-            "type": "حاملات أكواب",
-            "products": [
-              {
-                "itemNumber": "REB CUC2",
-                "piece": 250,
-                "rawMaterial": "paper",
-                "notes": "Double"
-              },
-              {
-                "itemNumber": "REB CUC4",
-                "piece": 250,
-                "rawMaterial": "paper",
-                "notes": "Quadrant"
-              }
-            ]
-          }
-        ]
-      },
-      "أوعية ورقية": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-13.png",
-            "type": "بيضاء مع غطاء PET-PP",
-            "products": [
-              {
-                "itemNumber": "WR32A",
-                "volume": 32,
-                "size": "15cm x 7.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "WB32A",
-                "volume": 32,
-                "size": "16.5cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "WB42B200",
-                "volume": 42,
-                "size": "18.4cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "WR24",
-                "volume": 24,
-                "size": "15cm x 5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "WB16",
-                "volume": 16,
-                "size": "15cm x 4.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              }
-            ]
-          },
-          {
-            "image": "page-14.png",
-            "type": "بنية كرافت مع غطاء PET-PP",
-            "products": [
-              {
-                "itemNumber": "REF PB32",
-                "volume": 32,
-                "size": "15cm x 7.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "REF BP328200",
-                "volume": 32,
-                "size": "16.5cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "REF BP428",
-                "volume": 42,
-                "size": "18.4cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "REF BP48",
-                "volume": 48,
-                "size": "20.3cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "REF BP168",
-                "volume": 16,
-                "size": "15cm x 4.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "REF BP25200",
-                "volume": 24,
-                "size": "15cm x 5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              }
-            ]
-          },
-          {
-            "image": "page-15.png",
-            "type": "سوداء مع غطاء PET-PP",
-            "products": [
-              {
-                "itemNumber": "PB021",
-                "volume": 32,
-                "size": "15cm x 7.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "KB328200",
-                "volume": 32,
-                "size": "16.5cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "KB42B200",
-                "volume": 42,
-                "size": "18.4cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "PB022",
-                "volume": 48,
-                "size": "20.3cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "PK16B",
-                "volume": 16,
-                "size": "15cm x 4.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              },
-              {
-                "itemNumber": "KB24200",
-                "volume": 24,
-                "size": "15cm x 5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "Paper,PET-PP"
-              }
-            ]
-          }
-        ]
-      },
-      "علب ورقية": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-19.png",
-            "type": "غطاء متصل ونافذة",
-            "products": [
-              {
-                "itemNumber": "REF LBWH15",
-                "volume": 15,
-                "size": "12cm x 8.5cm x 3.7cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBWH25",
-                "volume": 25,
-                "size": "15cm x 10cm x 3.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBWH40",
-                "volume": 40,
-                "size": "18cm x 12cm x 5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBW55",
-                "volume": 15,
-                "size": "12cm x 8.5cm x 3.7cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBW25",
-                "volume": 25,
-                "size": "15cm x 10cm x 3.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBW40",
-                "volume": 40,
-                "size": "18cm x 12cm x 5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBW66",
-                "volume": 66,
-                "size": "19.5cm x 14cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBWK15",
-                "volume": 15,
-                "size": "12cm x 8.5cm x 3.7cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBWK25",
-                "volume": 25,
-                "size": "15cm x 10cm x 3.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBWK40",
-                "volume": 40,
-                "size": "18cm x 12cm x 5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF LBWK66",
-                "volume": 66,
-                "size": "19.5cm x 14cm x 6.5cm",
-                "piece": 50,
-                "carton": 4,
-                "packing": 200,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "page-20.png",
-            "type": "علب برجر",
-            "products": [
-              {
-                "itemNumber": "HB100",
-                "size": "10cm x 10cm x 8cm",
-                "piece": 50,
-                "carton": 6,
-                "packing": 300,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "HB105",
-                "size": "10.5cm x 10.5cm x 8.5cm",
-                "piece": 50,
-                "carton": 6,
-                "packing": 300,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "HB11",
-                "size": "11cm x 11cm x 11cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "HB120",
-                "size": "12cm x 12cm x 7cm",
-                "piece": 50,
-                "carton": 6,
-                "packing": 300,
-                "rawMaterial": "paper"
-              }
-            ]
-          }
-        ]
-      },
-      " أطباق ورقية": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-21.png",
-            "type": "أطباق كرافت ورقية",
-            "products": [
-              {
-                "itemNumber": "REF TRK3",
-                "size": "10cm x 6.2cm x 4.1cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF TRK4",
-                "size": "10.7cm x 6.9cm x 4.1cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF TRK5",
-                "size": "13.8cm x 8.6cm x 5.7cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF TRK6",
-                "size": "16.8cm x 9.6cm x 5.7cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "paper"
-              }
-            ]
-          }
-        ]
-      },
-      "أكياس ورقية": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-23.png",
-            "type": "مقبض مقوى",
-            "products": [
-              {
-                "itemNumber": "REF WB29",
-                "size": "10cm x 29cm x 22cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF WB36",
-                "size": "12cm x 36cm x 28cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF WB40",
-                "size": "16cm x 38cm x 32cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF BP35",
-                "size": "18cm x 35cm x 35cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              }
-            ]
-          },
-          {
-            "image": "page-24.png",
-            "type": "مقبض مسطح",
-            "products": [
-              {
-                "itemNumber": "REF WE35",
-                "size": "18cm x 35cm x 35cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF BP29",
-                "size": "10cm x 29cm x 22cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF BP36",
-                "size": "12cm x 36cm x 28cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              },
-              {
-                "itemNumber": "REF BP40",
-                "size": "16cm x 38cm x 32cm",
-                "piece": 160,
-                "rawMaterial": "paper"
-              }
-            ]
-          }
-        ]
-      },
-      "عبوات ميكروويف": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-26.png",
-            "type": "مستطيلة",
-            "products": [
-              {
-                "itemNumber": "PMW28",
-                "volume": 28,
-                "size": "22cm x 15.3cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "PMW32",
-                "volume": 32,
-                "size": "22.4cm x 15.3cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MYB38",
-                "volume": 38,
-                "size": "22.5cm x 11.5cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "PMW16",
-                "volume": 16,
-                "size": "19cm x 12.8cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MYB24",
-                "volume": 24,
-                "size": "22cm x 15.3cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              }
-            ]
-          },
-          {
-            "image": "page-27.png",
-            "type": "دائرية",
-            "products": [
-              {
-                "itemNumber": "MW24-A",
-                "volume": 24,
-                "size": "15.5cm x 12.5cm x 5cm",
-                "piece": 50,
-                "carton": 6,
-                "packing": 300,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MW24-B",
-                "volume": 24,
-                "size": "18.5cm x 13.5cm x 5cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MYB32",
-                "volume": 32,
-                "size": "17cm x 13.5cm x 6.5cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MYB48",
-                "volume": 48,
-                "size": "23cm x 18cm x 6cm",
-                "piece": 50,
-                "carton": 3,
-                "packing": 150,
-                "rawMaterial": "Paper,PP"
-              }
-            ]
-          },
-          {
-            "image": "page-28.png",
-            "type": "بيضاوية",
-            "products": [
-              {
-                "itemNumber": "MPB16",
-                "volume": 16,
-                "size": "22cm x 15.3cm",
-                "piece": 28,
-                "carton": 5,
-                "packing": 250,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MPC24",
-                "volume": 24,
-                "size": "22.4cm x 15.3cm",
-                "piece": 24,
-                "carton": 5,
-                "packing": 250,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MPB32",
-                "volume": 32,
-                "size": "22.4cm x 15.3cm",
-                "piece": 32,
-                "carton": 5,
-                "packing": 250,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MPB38",
-                "volume": 38,
-                "size": "22.5cm x 11.5cm",
-                "piece": 38,
-                "carton": 5,
-                "packing": 250,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MPC53",
-                "volume": 53,
-                "size": "24cm x 19cm x 3.5cm",
-                "piece": 32,
-                "carton": 5,
-                "packing": 250,
-                "rawMaterial": "Paper,PP"
-              },
-              {
-                "itemNumber": "MPC52",
-                "volume": 52,
-                "size": "24cm x 19cm x 3.5cm",
-                "piece": 32,
-                "carton": 5,
-                "packing": 250,
-                "rawMaterial": "Paper,PP"
-              }
-            ]
-          }
-        ]
-      },
-      "علب قصب السكر": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-29.png",
-            "type": "علب قصب السكر",
-            "products": [
-              {
-                "itemNumber": "Subr1000",
-                "volume": 1000,
-                "size": "23.5cm x 13.5cm x 6cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr750",
-                "volume": 750,
-                "size": "23.5cm x 13.5cm x 4.5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr700",
-                "volume": 700,
-                "size": "19.5cm x 11.5cm x 5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr10",
-                "volume": 10,
-                "size": "10cm x 10cm x 8cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "sugarCane,Connected"
-              },
-              {
-                "itemNumber": "Subr500",
-                "volume": 500,
-                "size": "23.5cm x 13.5cm x 4.5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr600",
-                "volume": 600,
-                "size": "22cm x 17cm x 5.5cm",
-                "piece": 50,
-                "carton": 6,
-                "packing": 300,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr800",
-                "volume": 800,
-                "size": "22cm x 17cm x 4cm",
-                "piece": 50,
-                "carton": 6,
-                "packing": 300,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr900",
-                "volume": 900,
-                "size": "18cm x 18cm x 7cm",
-                "piece": 75,
-                "carton": 4,
-                "packing": 300,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr90000-A",
-                "volume": 90000,
-                "size": "18cm x 18cm x 5.5cm",
-                "piece": 75,
-                "carton": 4,
-                "packing": 300,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "Subr90000-B",
-                "volume": 90000,
-                "size": "20cm x 5cm",
-                "piece": 125,
-                "carton": 4,
-                "packing": 500,
-                "rawMaterial": "sugarCane,PP"
-              },
-              {
-                "itemNumber": "REF SBR32A",
-                "volume": 32,
-                "size": "19.5cm x 6.3cm x 10.5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Sugar Cane,Plastic PET"
-              },
-              {
-                "itemNumber": "REF SBR24B",
-                "volume": 24,
-                "size": "19.5cm x 4.8cm x 10.5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Sugar Cane,Plastic PET"
-              },
-              {
-                "itemNumber": "REF SBR16",
-                "volume": 16,
-                "size": "15.5cm x 5.5cm x 8.5cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Sugar Cane,Plastic PET"
-              },
-              {
-                "itemNumber": "REF SB450",
-                "volume": "",
-                "size": "17cm x 12.5cm x 3.5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Sugar Cane,Connected"
-              },
-              {
-                "itemNumber": "REF SB600",
-                "volume": "",
-                "size": "18.3cm x 13.5cm x 4.5cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Sugar Cane,Connected"
-              }
-            ]
-          }
-        ]
-      },
-      "أطقم المائدة": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-31.png",
-            "type": "مرفق منديلي",
-            "products": [
-              {
-                "itemNumber": "PENB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "PSBNIB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "CS3",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "MS3",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "TAOIS",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 10,
-                "packing": 500,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "PKB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1950,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PKB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1950,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PFIB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1950,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PSB18",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1950,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "PKW19",
-                "size": "19cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PFWB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PSBWB",
-                "size": "18cm",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              }
-            ]
-          }
-        ]
-      },
-      "قواعد الكيك": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-32.png",
-            "type": "قواعد كيك دائرية",
-            "products": [
-              {
-                "itemNumber": "CBG26",
-                "size": "26cm",
-                "piece": 80,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              },
-              {
-                "itemNumber": "CBG28",
-                "size": "28cm",
-                "piece": 70,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              },
-              {
-                "itemNumber": "CBG30",
-                "size": "30cm",
-                "piece": 60,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              },
-              {
-                "itemNumber": "CBG23",
-                "size": "30cm",
-                "piece": 50,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              },
-              {
-                "itemNumber": "CBG8",
-                "size": "8cm",
-                "piece": 600,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              },
-              {
-                "itemNumber": "CBG18",
-                "size": "18cm",
-                "piece": 160,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              },
-              {
-                "itemNumber": "CBG22",
-                "size": "22cm",
-                "piece": 110,
-                "rawMaterial": "cardboard",
-                "notes": "carton"
-              }
-            ]
-          }
-        ]
-      },
-      "أكواب بلاستيكية": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-34.png",
-            "type": "PET (غطاء قبة)",
-            "products": [
-              {
-                "itemNumber": "REF PCCBF",
-                "volume": 8,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Dome"
-              },
-              {
-                "itemNumber": "REF PCCIOF",
-                "volume": 10,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Dome"
-              },
-              {
-                "itemNumber": "REF PCCI2F",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Dome"
-              },
-              {
-                "itemNumber": "REF PCCIGF",
-                "volume": 16,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Dome"
-              },
-              {
-                "itemNumber": "REF PCURI2",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Red heart"
-              },
-              {
-                "itemNumber": "REF PCURI4",
-                "volume": 14,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Red heart"
-              },
-              {
-                "itemNumber": "REF PCURI6",
-                "volume": 16,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic (PET)",
-                "notes": "Red heart"
-              }
-            ]
-          },
-          {
-            "image": "page-35.png",
-            "type": "قاعدة U",
-            "products": [
-              {
-                "itemNumber": "PCUF12",
-                "volume": 12,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "PCUF14",
-                "volume": 14,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "PCUF16",
-                "volume": 16,
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "BFL121416",
-                "size": "12-14-16",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "BDL1214160",
-                "size": "12-14-16",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "FL90",
-                "size": "12-14-16",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "DL90",
-                "size": "12-14-16",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic"
-              }
-            ]
-          },
-          {
-            "image": "page-36.png",
-            "type": "أكواب PP",
-            "products": [
-              {
-                "itemNumber": "PCSC12",
-                "volume": 12,
-                "piece": 25,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "Plastic PP"
-              },
-              {
-                "itemNumber": "PCSC14",
-                "volume": 14,
-                "piece": 25,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "Plastic PP"
-              },
-              {
-                "itemNumber": "PCSC16",
-                "volume": 16,
-                "piece": 25,
-                "carton": 20,
-                "packing": 500,
-                "rawMaterial": "Plastic PP"
-              }
-            ]
-          }
-        ]
-      },
-      "أغطية مسطحة": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-36.png",
-            "type": "أغطية مسطحة PP",
-            "products": [
-              {
-                "itemNumber": "FIBL90",
-                "size": "12/14/16",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic PP",
-                "notes": "Flat lid"
-              },
-              {
-                "itemNumber": "FIL90",
-                "size": "12/14/16",
-                "piece": 50,
-                "carton": 20,
-                "packing": 1000,
-                "rawMaterial": "Plastic PP",
-                "notes": "Flat lid"
-              }
-            ]
-          }
-        ]
-      },
-      "عبوات بلاستيكية و برطمانات": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-37.png",
-            "type": "برطمانات بلاستيكية",
-            "products": [
-              {
-                "itemNumber": "J6585",
-                "size": "6.5cm x 8.5cm",
-                "piece": 230,
-                "carton": 216,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "J8585",
-                "size": "8.5cm x 8.5cm",
-                "piece": 350,
-                "carton": 195,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "JD085",
-                "size": "10cm x 8.5cm",
-                "piece": 400,
-                "carton": 195,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "J8510",
-                "size": "8.5cm x 10cm",
-                "piece": 435,
-                "carton": 144,
-                "rawMaterial": "Plastic"
-              }
-            ]
-          },
-          {
-            "image": "page-38.png",
-            "type": "أكواب الصوص",
-            "products": [
-              {
-                "itemNumber": "REF PC2",
-                "volume": 2,
-                "piece": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF B003",
-                "volume": 2,
-                "piece": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PC4",
-                "volume": 4,
-                "piece": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PK2",
-                "volume": 2,
-                "piece": 1000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF PK4",
-                "volume": 4,
-                "piece": 1000,
-                "rawMaterial": "Plastic"
-              }
-            ]
-          }
-        ]
-      },
-      "ورق ألومنيوم": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-40.png",
-            "type": "ورق ألومنيوم",
-            "products": [
-              {
-                "itemNumber": "AL023",
-                "size": "23cm x 16.4cm",
-                "piece": 500,
-                "rawMaterial": "Aluminum"
-              },
-              {
-                "itemNumber": "AL025",
-                "size": "25cm x 17.5cm",
-                "piece": 150,
-                "rawMaterial": "Aluminum"
-              },
-              {
-                "itemNumber": "AL028",
-                "size": "28cm x 19.5cm",
-                "piece": 150,
-                "rawMaterial": "Aluminum"
-              },
-              {
-                "itemNumber": "AL035",
-                "size": "35cm x 23.8cm",
-                "piece": 100,
-                "rawMaterial": "Aluminum"
-              },
-              {
-                "itemNumber": "ALUR30",
-                "size": "30cm",
-                "piece": 1350,
-                "carton": 6,
-                "rawMaterial": "Aluminum"
-              },
-              {
-                "itemNumber": "ALUR45",
-                "size": "45cm",
-                "piece": 1500,
-                "carton": 6,
-                "rawMaterial": "Aluminum"
-              }
-            ]
-          }
-        ]
-      },
-      "مستلزمات الكافيه": {
-        "description": "",
-        "groups": [
-          {
-            "image": "page-41.png",
-            "type": "ملاعق/مصاصات خشبية وبلاستيكية",
-            "products": [
-              {
-                "itemNumber": "REF WSW140",
-                "size": "140 mm",
-                "piece": 5000,
-                "rawMaterial": "Wood"
-              },
-              {
-                "itemNumber": "REF WSW187",
-                "size": "187 mm",
-                "piece": 5000,
-                "rawMaterial": "Wood"
-              },
-              {
-                "itemNumber": "REF WS140",
-                "size": "140 mm",
-                "piece": 5000,
-                "rawMaterial": "Wood"
-              },
-              {
-                "itemNumber": "REF WS187",
-                "size": "187 mm",
-                "piece": 5000,
-                "rawMaterial": "Wood"
-              },
-              {
-                "itemNumber": "REF SWB6",
-                "size": "6 mm",
-                "piece": 10000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF SWB8",
-                "size": "8 mm",
-                "piece": 4000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF SWB10",
-                "size": "10 mm",
-                "piece": 2000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF SWC6",
-                "size": "6 mm",
-                "piece": 10000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF SWC8",
-                "size": "8 mm",
-                "piece": 4000,
-                "rawMaterial": "Plastic"
-              },
-              {
-                "itemNumber": "REF SWC10",
-                "size": "10 mm",
-                "piece": 2000,
-                "rawMaterial": "Plastic"
-              }
-            ]
-          }
-        ]
-      }
+    "PaperCupLids": {
+      "description": "",
+      "groups": [
+        {
+          "image": "img9.png",
+          "type": "PaperCupLids (plastic)",
+          "products": [
+            {
+              "itemNumber": "WCL4",
+              "volume": 4,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "plastic"
+            },
+            {
+              "itemNumber": "WCL7",
+              "volume": 7,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "plastic"
+            },
+            {
+              "itemNumber": "WCL8",
+              "volume": 8,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "plastic"
+            },
+            {
+              "itemNumber": "WCL12",
+              "volume": 12,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "plastic"
+            }
+          ]
+        },
+        {
+          "image": "img10.png",
+          "type": "PaperCupLids (plastic)",
+          "products": [
+            {
+              "itemNumber": "BCL4",
+              "volume": 4,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "plastic"
+            },
+            {
+              "itemNumber": "BCL7",
+              "volume": 7,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "plastic"
+            },
+            {
+              "itemNumber": "BCL8",
+              "volume": 8,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "plastic"
+            },
+            {
+              "itemNumber": "BCL12",
+              "volume": 12,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "plastic"
+            }
+          ]
+        },
+        {
+          "image": "img11.png",
+          "type": "PaperCupLids (sugarcane)",
+          "products": [
+            {
+              "itemNumber": "0000000",
+              "volume": 8,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "sugarCane"
+            }
+          ]
+        }
+      ]
+    },
+    "Plastic PP Caps": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-09.png",
+          "type": "Leakproof PP plastic caps",
+          "products": [
+            {
+              "itemNumber": "LCT8",
+              "volume": 8,
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "PP (plastic)"
+            },
+            {
+              "itemNumber": "LCT12",
+              "volume": 12,
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "PP (plastic)"
+            },
+            {
+              "itemNumber": "LCB8",
+              "volume": 8,
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "PP (plastic)"
+            },
+            {
+              "itemNumber": "LCB12",
+              "volume": 12,
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "PP (plastic)"
+            },
+            {
+              "itemNumber": "LCT8N",
+              "volume": 8,
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "PP (plastic)"
+            },
+            {
+              "itemNumber": "LCT12N",
+              "volume": 12,
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "PP (plastic)"
+            },
+            {
+              "itemNumber": "LCB8N",
+              "volume": 8,
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "PP (plastic)"
+            },
+            {
+              "itemNumber": "LCB12N",
+              "volume": 12,
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "PP (plastic)"
+            }
+          ]
+        }
+      ]
+    },
+    "Paper Cup Holders": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-10.png",
+          "type": "Cup holders",
+          "products": [
+            {
+              "itemNumber": "REB CUC2",
+              "piece": 250,
+              "rawMaterial": "paper",
+              "notes": "Double"
+            },
+            {
+              "itemNumber": "REB CUC4",
+              "piece": 250,
+              "rawMaterial": "paper",
+              "notes": "Quadrant"
+            }
+          ]
+        }
+      ]
+    },
+    "Paper Bowls": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-13.png",
+          "type": "White with PET-PP cover",
+          "products": [
+            {
+              "itemNumber": "WR32A",
+              "volume": 32,
+              "size": "15cm x 7.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "WB32A",
+              "volume": 32,
+              "size": "16.5cm x 6.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "WB42B200",
+              "volume": 42,
+              "size": "18.4cm x 6.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "WR24",
+              "volume": 24,
+              "size": "15cm x 5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "WB16",
+              "volume": 16,
+              "size": "15cm x 4.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            }
+          ]
+        },
+        {
+          "image": "page-14.png",
+          "type": "Brown kraft with PET-PP cover",
+          "products": [
+            {
+              "itemNumber": "REF PB32",
+              "volume": 32,
+              "size": "15cm x 7.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "REF BP328200",
+              "volume": 32,
+              "size": "16.5cm x 6.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "REF BP428",
+              "volume": 42,
+              "size": "18.4cm x 6.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "REF BP48",
+              "volume": 48,
+              "size": "20.3cm x 6.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "REF BP168",
+              "volume": 16,
+              "size": "15cm x 4.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "REF BP25200",
+              "volume": 24,
+              "size": "15cm x 5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            }
+          ]
+        },
+        {
+          "image": "page-15.png",
+          "type": "Black with PET-PP cover",
+          "products": [
+            {
+              "itemNumber": "PB021",
+              "volume": 32,
+              "size": "15cm x 7.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "KB328200",
+              "volume": 32,
+              "size": "16.5cm x 6.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "KB42B200",
+              "volume": 42,
+              "size": "18.4cm x 6.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "PB022",
+              "volume": 48,
+              "size": "20.3cm x 6.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "PK16B",
+              "volume": 16,
+              "size": "15cm x 4.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            },
+            {
+              "itemNumber": "KB24200",
+              "volume": 24,
+              "size": "15cm x 5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "Paper,PET-PP"
+            }
+          ]
+        }
+      ]
+    },
+    "Paper Boxes": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-19.png",
+          "type": "Attached cover & window",
+          "products": [
+            {
+              "itemNumber": "REF LBWH15",
+              "volume": 15,
+              "size": "12cm x 8.5cm x 3.7cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF LBWH25",
+              "volume": 25,
+              "size": "15cm x 10cm x 3.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF LBWH40",
+              "volume": 40,
+              "size": "18cm x 12cm x 5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF LBW55",
+              "volume": 15,
+              "size": "12cm x 8.5cm x 3.7cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF LBW25",
+              "volume": 25,
+              "size": "15cm x 10cm x 3.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF LBW40",
+              "volume": 40,
+              "size": "18cm x 12cm x 5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF LBW66",
+              "volume": 66,
+              "size": "19.5cm x 14cm x 6.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF LBWK15",
+              "volume": 15,
+              "size": "12cm x 8.5cm x 3.7cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF LBWK25",
+              "volume": 25,
+              "size": "15cm x 10cm x 3.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF LBWK40",
+              "volume": 40,
+              "size": "18cm x 12cm x 5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF LBWK66",
+              "volume": 66,
+              "size": "19.5cm x 14cm x 6.5cm",
+              "piece": 50,
+              "carton": 4,
+              "packing": 200,
+              "rawMaterial": "paper"
+            }
+          ]
+        },
+        {
+          "image": "page-20.png",
+          "type": "Burger Boxes",
+          "products": [
+            {
+              "itemNumber": "HB100",
+              "size": "10cm x 10cm x 8cm",
+              "piece": 50,
+              "carton": 6,
+              "packing": 300,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "HB105",
+              "size": "10.5cm x 10.5cm x 8.5cm",
+              "piece": 50,
+              "carton": 6,
+              "packing": 300,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "HB11",
+              "size": "11cm x 11cm x 11cm",
+              "piece": 50,
+              "carton": 3,
+              "packing": 150,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "HB120",
+              "size": "12cm x 12cm x 7cm",
+              "piece": 50,
+              "carton": 6,
+              "packing": 300,
+              "rawMaterial": "paper"
+            }
+          ]
+        }
+      ]
+    },
+    "Paper Plates": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-21.png",
+          "type": "Kraft paper plates",
+          "products": [
+            {
+              "itemNumber": "REF TRK3",
+              "size": "10cm x 6.2cm x 4.1cm",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF TRK4",
+              "size": "10.7cm x 6.9cm x 4.1cm",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF TRK5",
+              "size": "13.8cm x 8.6cm x 5.7cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF TRK6",
+              "size": "16.8cm x 9.6cm x 5.7cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "paper"
+            }
+          ]
+        }
+      ]
+    },
+    "Paper Bags": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-23.png",
+          "type": "Reinforced handle",
+          "products": [
+            {
+              "itemNumber": "REF WB29",
+              "size": "10cm x 29cm x 22cm",
+              "piece": 160,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF WB36",
+              "size": "12cm x 36cm x 28cm",
+              "piece": 160,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF WB40",
+              "size": "16cm x 38cm x 32cm",
+              "piece": 160,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF BP35",
+              "size": "18cm x 35cm x 35cm",
+              "piece": 160,
+              "rawMaterial": "paper"
+            }
+          ]
+        },
+        {
+          "image": "page-24.png",
+          "type": "Flat handle",
+          "products": [
+            {
+              "itemNumber": "REF WE35",
+              "size": "18cm x 35cm x 35cm",
+              "piece": 160,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF BP29",
+              "size": "10cm x 29cm x 22cm",
+              "piece": 160,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF BP36",
+              "size": "12cm x 36cm x 28cm",
+              "piece": 160,
+              "rawMaterial": "paper"
+            },
+            {
+              "itemNumber": "REF BP40",
+              "size": "16cm x 38cm x 32cm",
+              "piece": 160,
+              "rawMaterial": "paper"
+            }
+          ]
+        }
+      ]
+    },
+    "Microwave Containers": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-26.png",
+          "type": "Rectangular microwave containers",
+          "products": [
+            {
+              "itemNumber": "PMW28",
+              "volume": 28,
+              "size": "22cm x 15.3cm",
+              "piece": 50,
+              "carton": 3,
+              "packing": 150,
+              "rawMaterial": "Paper,PP"
+            },
+            {
+              "itemNumber": "PMW32",
+              "volume": 32,
+              "size": "22.4cm x 15.3cm",
+              "piece": 50,
+              "carton": 3,
+              "packing": 150,
+              "rawMaterial": "Paper,PP"
+            },
+            {
+              "itemNumber": "MYB38",
+              "volume": 38,
+              "size": "22.5cm x 11.5cm",
+              "piece": 50,
+              "carton": 3,
+              "packing": 150,
+              "rawMaterial": "Paper,PP"
+            },
+            {
+              "itemNumber": "PMW16",
+              "volume": 16,
+              "size": "19cm x 12.8cm",
+              "piece": 50,
+              "carton": 3,
+              "packing": 150,
+              "rawMaterial": "Paper,PP"
+            },
+            {
+              "itemNumber": "MYB24",
+              "volume": 24,
+              "size": "22cm x 15.3cm",
+              "piece": 50,
+              "carton": 3,
+              "packing": 150,
+              "rawMaterial": "Paper,PP"
+            }
+          ]
+        },
+        {
+          "image": "page-27.png",
+          "type": "Round microwave containers",
+          "products": [
+            {
+              "itemNumber": "MW24-A",
+              "volume": 24,
+              "size": "15.5cm x 12.5cm x 5cm",
+              "piece": 50,
+              "carton": 6,
+              "packing": 300,
+              "rawMaterial": "Paper,PP"
+            },
+            {
+              "itemNumber": "MW24-B",
+              "volume": 24,
+              "size": "18.5cm x 13.5cm x 5cm",
+              "piece": 50,
+              "carton": 3,
+              "packing": 150,
+              "rawMaterial": "Paper,PP"
+            },
+            {
+              "itemNumber": "MYB32",
+              "volume": 32,
+              "size": "17cm x 13.5cm x 6.5cm",
+              "piece": 50,
+              "carton": 3,
+              "packing": 150,
+              "rawMaterial": "Paper,PP"
+            },
+            {
+              "itemNumber": "MYB48",
+              "volume": 48,
+              "size": "23cm x 18cm x 6cm",
+              "piece": 50,
+              "carton": 3,
+              "packing": 150,
+              "rawMaterial": "Paper,PP"
+            }
+          ]
+        },
+        {
+          "image": "page-28.png",
+          "type": "Oval microwave containers",
+          "products": [
+            {
+              "itemNumber": "MPB16",
+              "volume": 16,
+              "size": "22cm x 15.3cm",
+              "piece": 28,
+              "carton": 5,
+              "packing": 250,
+              "rawMaterial": "Paper,PP"
+            },
+            {
+              "itemNumber": "MPC24",
+              "volume": 24,
+              "size": "22.4cm x 15.3cm",
+              "piece": 24,
+              "carton": 5,
+              "packing": 250,
+              "rawMaterial": "Paper,PP"
+            },
+            {
+              "itemNumber": "MPB32",
+              "volume": 32,
+              "size": "22.4cm x 15.3cm",
+              "piece": 32,
+              "carton": 5,
+              "packing": 250,
+              "rawMaterial": "Paper,PP"
+            },
+            {
+              "itemNumber": "MPB38",
+              "volume": 38,
+              "size": "22.5cm x 11.5cm",
+              "piece": 38,
+              "carton": 5,
+              "packing": 250,
+              "rawMaterial": "Paper,PP"
+            },
+            {
+              "itemNumber": "MPC53",
+              "volume": 53,
+              "size": "24cm x 19cm x 3.5cm",
+              "piece": 32,
+              "carton": 5,
+              "packing": 250,
+              "rawMaterial": "Paper,PP"
+            },
+            {
+              "itemNumber": "MPC52",
+              "volume": 52,
+              "size": "24cm x 19cm x 3.5cm",
+              "piece": 32,
+              "carton": 5,
+              "packing": 250,
+              "rawMaterial": "Paper,PP"
+            }
+          ]
+        }
+      ]
+    },
+    "Sugarcane Boxes": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-29.png",
+          "type": "Sugarcane boxes",
+          "products": [
+            {
+              "itemNumber": "Subr1000",
+              "volume": 1000,
+              "size": "23.5cm x 13.5cm x 6cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "sugarCane,PP"
+            },
+            {
+              "itemNumber": "Subr750",
+              "volume": 750,
+              "size": "23.5cm x 13.5cm x 4.5cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "sugarCane,PP"
+            },
+            {
+              "itemNumber": "Subr700",
+              "volume": 700,
+              "size": "19.5cm x 11.5cm x 5cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "sugarCane,PP"
+            },
+            {
+              "itemNumber": "Subr10",
+              "volume": 10,
+              "size": "10cm x 10cm x 8cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "sugarCane,Connected"
+            },
+            {
+              "itemNumber": "Subr500",
+              "volume": 500,
+              "size": "23.5cm x 13.5cm x 4.5cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "sugarCane,PP"
+            },
+            {
+              "itemNumber": "Subr600",
+              "volume": 600,
+              "size": "22cm x 17cm x 5.5cm",
+              "piece": 50,
+              "carton": 6,
+              "packing": 300,
+              "rawMaterial": "sugarCane,PP"
+            },
+            {
+              "itemNumber": "Subr800",
+              "volume": 800,
+              "size": "22cm x 17cm x 4cm",
+              "piece": 50,
+              "carton": 6,
+              "packing": 300,
+              "rawMaterial": "sugarCane,PP"
+            },
+            {
+              "itemNumber": "Subr900",
+              "volume": 900,
+              "size": "18cm x 18cm x 7cm",
+              "piece": 75,
+              "carton": 4,
+              "packing": 300,
+              "rawMaterial": "sugarCane,PP"
+            },
+            {
+              "itemNumber": "Subr90000-A",
+              "volume": 90000,
+              "size": "18cm x 18cm x 5.5cm",
+              "piece": 75,
+              "carton": 4,
+              "packing": 300,
+              "rawMaterial": "sugarCane,PP"
+            },
+            {
+              "itemNumber": "Subr90000-B",
+              "volume": 90000,
+              "size": "20cm x 5cm",
+              "piece": 125,
+              "carton": 4,
+              "packing": 500,
+              "rawMaterial": "sugarCane,PP"
+            },
+            {
+              "itemNumber": "REF SBR32A",
+              "volume": 32,
+              "size": "19.5cm x 6.3cm x 10.5cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "Sugar Cane,Plastic PET"
+            },
+            {
+              "itemNumber": "REF SBR24B",
+              "volume": 24,
+              "size": "19.5cm x 4.8cm x 10.5cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "Sugar Cane,Plastic PET"
+            },
+            {
+              "itemNumber": "REF SBR16",
+              "volume": 16,
+              "size": "15.5cm x 5.5cm x 8.5cm",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Sugar Cane,Plastic PET"
+            },
+            {
+              "itemNumber": "REF SB450",
+              "volume": "",
+              "size": "17cm x 12.5cm x 3.5cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "Sugar Cane,Connected"
+            },
+            {
+              "itemNumber": "REF SB600",
+              "volume": "",
+              "size": "18.3cm x 13.5cm x 4.5cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "Sugar Cane,Connected"
+            }
+          ]
+        }
+      ]
+    },
+    "Tableware Sets": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-31.png",
+          "type": "Napkin included (covered)",
+          "products": [
+            {
+              "itemNumber": "PENB",
+              "size": "18cm",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "PSBNIB",
+              "size": "18cm",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "CS3",
+              "size": "18cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "MS3",
+              "size": "18cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "TAOIS",
+              "size": "18cm",
+              "piece": 50,
+              "carton": 10,
+              "packing": 500,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "PKB",
+              "size": "18cm",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1950,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF PKB",
+              "size": "18cm",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1950,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF PFIB",
+              "size": "18cm",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1950,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF PSB18",
+              "size": "18cm",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1950,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "PKW19",
+              "size": "19cm",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF PFWB",
+              "size": "18cm",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF PSBWB",
+              "size": "18cm",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic"
+            }
+          ]
+        }
+      ]
+    },
+    "Cake Bases": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-32.png",
+          "type": "Round cake bases",
+          "products": [
+            {
+              "itemNumber": "CBG26",
+              "size": "26cm",
+              "piece": 80,
+              "rawMaterial": "cardboard",
+              "notes": "carton"
+            },
+            {
+              "itemNumber": "CBG28",
+              "size": "28cm",
+              "piece": 70,
+              "rawMaterial": "cardboard",
+              "notes": "carton"
+            },
+            {
+              "itemNumber": "CBG30",
+              "size": "30cm",
+              "piece": 60,
+              "rawMaterial": "cardboard",
+              "notes": "carton"
+            },
+            {
+              "itemNumber": "CBG23",
+              "size": "30cm",
+              "piece": 50,
+              "rawMaterial": "cardboard",
+              "notes": "carton"
+            },
+            {
+              "itemNumber": "CBG8",
+              "size": "8cm",
+              "piece": 600,
+              "rawMaterial": "cardboard",
+              "notes": "carton"
+            },
+            {
+              "itemNumber": "CBG18",
+              "size": "18cm",
+              "piece": 160,
+              "rawMaterial": "cardboard",
+              "notes": "carton"
+            },
+            {
+              "itemNumber": "CBG22",
+              "size": "22cm",
+              "piece": 110,
+              "rawMaterial": "cardboard",
+              "notes": "carton"
+            }
+          ]
+        }
+      ]
+    },
+    "Plastic Cups": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-34.png",
+          "type": "PET (with dome lids)",
+          "products": [
+            {
+              "itemNumber": "REF PCCBF",
+              "volume": 8,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic (PET)",
+              "notes": "Dome"
+            },
+            {
+              "itemNumber": "REF PCCIOF",
+              "volume": 10,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic (PET)",
+              "notes": "Dome"
+            },
+            {
+              "itemNumber": "REF PCCI2F",
+              "volume": 12,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic (PET)",
+              "notes": "Dome"
+            },
+            {
+              "itemNumber": "REF PCCIGF",
+              "volume": 16,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic (PET)",
+              "notes": "Dome"
+            },
+            {
+              "itemNumber": "REF PCURI2",
+              "volume": 12,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic (PET)",
+              "notes": "Red heart"
+            },
+            {
+              "itemNumber": "REF PCURI4",
+              "volume": 14,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic (PET)",
+              "notes": "Red heart"
+            },
+            {
+              "itemNumber": "REF PCURI6",
+              "volume": 16,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic (PET)",
+              "notes": "Red heart"
+            }
+          ]
+        },
+        {
+          "image": "page-35.png",
+          "type": "U-base cups",
+          "products": [
+            {
+              "itemNumber": "PCUF12",
+              "volume": 12,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "PCUF14",
+              "volume": 14,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "PCUF16",
+              "volume": 16,
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "BFL121416",
+              "size": "12-14-16",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "BDL1214160",
+              "size": "12-14-16",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "FL90",
+              "size": "12-14-16",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "DL90",
+              "size": "12-14-16",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic"
+            }
+          ]
+        },
+        {
+          "image": "page-36.png",
+          "type": "Plastic PP cups",
+          "products": [
+            {
+              "itemNumber": "PCSC12",
+              "volume": 12,
+              "piece": 25,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "Plastic PP"
+            },
+            {
+              "itemNumber": "PCSC14",
+              "volume": 14,
+              "piece": 25,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "Plastic PP"
+            },
+            {
+              "itemNumber": "PCSC16",
+              "volume": 16,
+              "piece": 25,
+              "carton": 20,
+              "packing": 500,
+              "rawMaterial": "Plastic PP"
+            }
+          ]
+        },
+        {
+          "image": "page-36.png",
+          "type": "Flat lids (PP)",
+          "products": [
+            {
+              "itemNumber": "FIBL90",
+              "size": "12/14/16",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic PP",
+              "notes": "Flat lid"
+            },
+            {
+              "itemNumber": "FIL90",
+              "size": "12/14/16",
+              "piece": 50,
+              "carton": 20,
+              "packing": 1000,
+              "rawMaterial": "Plastic PP",
+              "notes": "Flat lid"
+            }
+          ]
+        }
+      ]
+    },
+    "Plastic Containers & Jars": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-37.png",
+          "type": "Plastic jars",
+          "products": [
+            {
+              "itemNumber": "J6585",
+              "size": "6.5cm x 8.5cm",
+              "piece": 230,
+              "carton": 216,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "J8585",
+              "size": "8.5cm x 8.5cm",
+              "piece": 350,
+              "carton": 195,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "JD085",
+              "size": "10cm x 8.5cm",
+              "piece": 400,
+              "carton": 195,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "J8510",
+              "size": "8.5cm x 10cm",
+              "piece": 435,
+              "carton": 144,
+              "rawMaterial": "Plastic"
+            }
+          ]
+        },
+        {
+          "image": "page-38.png",
+          "type": "Sauce cups",
+          "products": [
+            {
+              "itemNumber": "REF PC2",
+              "volume": 2,
+              "piece": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF B003",
+              "volume": 2,
+              "piece": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF PC4",
+              "volume": 4,
+              "piece": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF PK2",
+              "volume": 2,
+              "piece": 1000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF PK4",
+              "volume": 4,
+              "piece": 1000,
+              "rawMaterial": "Plastic"
+            }
+          ]
+        }
+      ]
+    },
+    "Aluminum Foil": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-40.png",
+          "type": "Aluminum foil rolls & sheets",
+          "products": [
+            {
+              "itemNumber": "AL023",
+              "size": "23cm x 16.4cm",
+              "piece": 500,
+              "rawMaterial": "Aluminum"
+            },
+            {
+              "itemNumber": "AL025",
+              "size": "25cm x 17.5cm",
+              "piece": 150,
+              "rawMaterial": "Aluminum"
+            },
+            {
+              "itemNumber": "AL028",
+              "size": "28cm x 19.5cm",
+              "piece": 150,
+              "rawMaterial": "Aluminum"
+            },
+            {
+              "itemNumber": "AL035",
+              "size": "35cm x 23.8cm",
+              "piece": 100,
+              "rawMaterial": "Aluminum"
+            },
+            {
+              "itemNumber": "ALUR30",
+              "size": "30cm",
+              "piece": 1350,
+              "carton": 6,
+              "rawMaterial": "Aluminum"
+            },
+            {
+              "itemNumber": "ALUR45",
+              "size": "45cm",
+              "piece": 1500,
+              "carton": 6,
+              "rawMaterial": "Aluminum"
+            }
+          ]
+        }
+      ]
+    },
+    "Cafe Supplies": {
+      "description": "",
+      "groups": [
+        {
+          "image": "page-41.png",
+          "type": "Wooden & plastic stirrers / straws",
+          "products": [
+            {
+              "itemNumber": "REF WSW140",
+              "size": "140 mm",
+              "piece": 5000,
+              "rawMaterial": "Wood"
+            },
+            {
+              "itemNumber": "REF WSW187",
+              "size": "187 mm",
+              "piece": 5000,
+              "rawMaterial": "Wood"
+            },
+            {
+              "itemNumber": "REF WS140",
+              "size": "140 mm",
+              "piece": 5000,
+              "rawMaterial": "Wood"
+            },
+            {
+              "itemNumber": "REF WS187",
+              "size": "187 mm",
+              "piece": 5000,
+              "rawMaterial": "Wood"
+            },
+            {
+              "itemNumber": "REF SWB6",
+              "size": "6 mm",
+              "piece": 10000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF SWB8",
+              "size": "8 mm",
+              "piece": 4000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF SWB10",
+              "size": "10 mm",
+              "piece": 2000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF SWC6",
+              "size": "6 mm",
+              "piece": 10000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF SWC8",
+              "size": "8 mm",
+              "piece": 4000,
+              "rawMaterial": "Plastic"
+            },
+            {
+              "itemNumber": "REF SWC10",
+              "size": "10 mm",
+              "piece": 2000,
+              "rawMaterial": "Plastic"
+            }
+          ]
+        }
+      ]
     }
-  }
-
+  },
+  ar: {
+    "أكواب ورقية": {
+      description: "",
+      groups: [
+        {
+          image: "1.png",
+          type: "أكواب ورقية (طبقة واحدة)",
+          products: [
+            {
+              itemNumber: "PCW4",
+              volume: 4,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "PCW7",
+              volume: 7,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "PCW8",
+              volume: 8,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "PCW12",
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+          ],
+        },
+        {
+          image: "2.png",
+          type: "أكواب ورقية (طبقة واحدة)",
+          products: [
+            {
+              itemNumber: "PC053",
+              volume: 8,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "PC040",
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+          ],
+        },
+        {
+          image: "3.png",
+          type: "أكواب ورقية (طبقة واحدة)",
+          products: [
+            {
+              itemNumber: "PCK4",
+              volume: 4,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "PCK7",
+              volume: 7,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "PCK8",
+              volume: 8,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "PCK12",
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+          ],
+        },
+        {
+          image: "4.png",
+          type: "أكواب ورقية (مزدوجة)",
+          products: [
+            {
+              itemNumber: "PCWD4",
+              volume: 4,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "PCWD7",
+              volume: 7,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "WCD8",
+              volume: 8,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "PCWD12",
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+          ],
+        },
+        {
+          image: "5.png",
+          type: "أكواب ورقية (مزدوجة)",
+          products: [
+            {
+              itemNumber: "BDW4",
+              volume: 4,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BCW7",
+              volume: 7,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BCD8",
+              volume: 8,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BDW12",
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+          ],
+        },
+        {
+          image: "6.png",
+          type: "أكواب ورقية (مزدوجة)",
+          products: [
+            {
+              volume: 4,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+              itemNumber: "PCKD4",
+            },
+            {
+              volume: 7,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+              itemNumber: "PCKD7",
+            },
+            {
+              volume: 8,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+              itemNumber: "PCKD8",
+            },
+            {
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+              itemNumber: "PCKD12",
+            },
+          ],
+        },
+        {
+          image: "7.png",
+          type: "أكواب ورقية (مزدوجة مموجة)",
+          products: [
+            {
+              volume: 4,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+            {
+              volume: 7,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+            {
+              volume: 8,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+            {
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+          ],
+        },
+        {
+          image: "8.png",
+          type: "أكواب ورقية (مزدوجة مموجة)",
+          products: [
+            {
+              itemNumber: "BRP4",
+              volume: 4,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BRP7",
+              volume: 7,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BRP8",
+              volume: 8,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BRP12",
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+          ],
+        },
+        {
+          image: "9.png",
+          type: "أكواب ورقية (مزدوجة مموجة)",
+          products: [
+            {
+              itemNumber: "PCKR4",
+              volume: 4,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "PCKR7",
+              volume: 7,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "PCKR8",
+              volume: 8,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "PCKR12",
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+          ],
+        },
+      ],
+    },
+    "أغطية الأكواب": {
+      description: "",
+      groups: [
+        {
+          image: "10.png",
+          type: "أغطية الأكواب (بلاستيك)",
+          products: [
+            {
+              itemNumber: "WCL4",
+              volume: 4,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "plastic",
+            },
+            {
+              itemNumber: "WCL7",
+              volume: 7,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "plastic",
+            },
+            {
+              itemNumber: "WCL8",
+              volume: 8,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "plastic",
+            },
+            {
+              itemNumber: "WCL12",
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "plastic",
+            },
+          ],
+        },
+        {
+          image: "11.png",
+          type: "أغطية الأكواب (بلاستيك)",
+          products: [
+            {
+              itemNumber: "BCL4",
+              volume: 4,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "plastic",
+            },
+            {
+              itemNumber: "BCL7",
+              volume: 7,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "plastic",
+            },
+            {
+              itemNumber: "BCL8",
+              volume: 8,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "plastic",
+            },
+            {
+              itemNumber: "BCL12",
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "plastic",
+            },
+          ],
+        },
+        {
+          image: "12.png",
+          type: "أغطية الأكواب (قصب السكر)",
+          products: [
+            {
+              itemNumber: "0000000",
+              volume: 8,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "sugarCane",
+            },
+            {
+              itemNumber: "0000000",
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "sugarCane",
+            },
+          ],
+        },
+        {
+          image: "15.png",
+          type: "أغطية PP مانعة للتسرب",
+          products: [
+            {
+              itemNumber: "LCT8",
+              volume: 8,
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "PP (plastic)",
+            },
+            {
+              itemNumber: "LCT12",
+              volume: 12,
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "PP (plastic)",
+            },
+          ],
+        },
+        {
+          image: "13.png",
+          type: "أغطية PP مانعة للتسرب",
+          products: [
+            {
+              itemNumber: "LCB8",
+              volume: 8,
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "PP (plastic)",
+            },
+            {
+              itemNumber: "LCB12",
+              volume: 12,
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "PP (plastic)",
+            },
+          ],
+        },
+        {
+          image: "16.png",
+          type: "أغطية PP مانعة للتسرب",
+          products: [
+            {
+              itemNumber: "LCT8N",
+              volume: 8,
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "PP (plastic)",
+            },
+            {
+              itemNumber: "LCT12N",
+              volume: 12,
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "PP (plastic)",
+            },
+          ],
+        },
+        {
+          image: "14.png",
+          type: "أغطية PP مانعة للتسرب",
+          products: [
+            {
+              itemNumber: "LCB8N",
+              volume: 8,
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "PP (plastic)",
+            },
+            {
+              itemNumber: "LCB12N",
+              volume: 12,
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "PP (plastic)",
+            },
+          ],
+        },
+      ],
+    },
+    "حاملات الأكواب الورقية": {
+      description: "",
+      groups: [
+        {
+          image: "17.png",
+          type: "حاملات أكواب",
+          products: [
+            {
+              itemNumber: "REB CUC2",
+              packing: 250,
+              piece: "Double",
+              volume: 2,
+              rawMaterial: "Cartoon",
+              notes: "Double",
+            },
+          ],
+        },
+        {
+          image: "18.png",
+          type: "حاملات أكواب",
+          products: [
+            {
+              itemNumber: "REB CUC4",
+              packing: 250,
+              volume: 4,
+              piece: "Quadrant",
+              rawMaterial: "Cartoon",
+              notes: "Quadrant",
+            },
+          ],
+        },
+      ],
+    },
+    "أوعية ورقية": {
+      description: "",
+      groups: [
+        {
+          image: "19.png",
+          type: "بيضاء مع غطاء PET-PP",
+          products: [
+            {
+              itemNumber: "BP10",
+              volume: 10,
+              size: "15cm x 7.5cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Paper",
+            },
+            {
+              itemNumber: "BP12",
+              volume: 12,
+              size: "16.5cm x 6.5cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Paper",
+            },
+            {
+              itemNumber: "BP16A",
+              volume: 16,
+              size: "18.4cm x 6.5cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Paper",
+            },
+          ],
+        },
+        {
+          image: "20.png",
+          type: "بيضاء مع غطاء PET-PP",
+          products: [
+            {
+              itemNumber: "BP10",
+              volume: 10,
+              size: "15cm x 7.5cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Paper",
+            },
+            {
+              itemNumber: "BP12",
+              volume: 12,
+              size: "16.5cm x 6.5cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Paper",
+            },
+            {
+              itemNumber: "BP16A",
+              volume: 16,
+              size: "18.4cm x 6.5cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Paper",
+            },
+          ],
+        },
+        {
+          image: "21.png",
+          type: "بيضاء مع غطاء PET-PP",
+          products: [
+            {
+              itemNumber: "BP10",
+              volume: 10,
+              size: "15cm x 7.5cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Paper",
+            },
+            {
+              itemNumber: "BP12",
+              volume: 12,
+              size: "16.5cm x 6.5cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Paper",
+            },
+            {
+              itemNumber: "BP16A",
+              volume: 16,
+              size: "18.4cm x 6.5cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Paper",
+            },
+          ],
+        },
+      ],
+    },
+    "علب ورقية": {
+      description: "",
+      groups: [
+        {
+          image: "22.png",
+          type: "غطاء متصل ونافذة",
+          products: [
+            {
+              itemNumber: "WB32A",
+              volume: 32,
+              size: "12cm x 8.5cm x 3.7cm",
+              piece: 50,
+              carton: 4,
+              packing: 200,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF LBWH25",
+              volume: 25,
+              size: "15cm x 10cm x 3.5cm",
+              piece: 50,
+              carton: 4,
+              packing: 200,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF LBWH40",
+              volume: 40,
+              size: "18cm x 12cm x 5cm",
+              piece: 50,
+              carton: 4,
+              packing: 200,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF LBW55",
+              volume: 15,
+              size: "12cm x 8.5cm x 3.7cm",
+              piece: 50,
+              carton: 4,
+              packing: 200,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF LBW25",
+              volume: 25,
+              size: "15cm x 10cm x 3.5cm",
+              piece: 50,
+              carton: 4,
+              packing: 200,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF LBW40",
+              volume: 40,
+              size: "18cm x 12cm x 5cm",
+              piece: 50,
+              carton: 4,
+              packing: 200,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF LBW66",
+              volume: 66,
+              size: "19.5cm x 14cm x 6.5cm",
+              piece: 50,
+              carton: 4,
+              packing: 200,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF LBWK15",
+              volume: 15,
+              size: "12cm x 8.5cm x 3.7cm",
+              piece: 50,
+              carton: 4,
+              packing: 200,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF LBWK25",
+              volume: 25,
+              size: "15cm x 10cm x 3.5cm",
+              piece: 50,
+              carton: 4,
+              packing: 200,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF LBWK40",
+              volume: 40,
+              size: "18cm x 12cm x 5cm",
+              piece: 50,
+              carton: 4,
+              packing: 200,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF LBWK66",
+              volume: 66,
+              size: "19.5cm x 14cm x 6.5cm",
+              piece: 50,
+              carton: 4,
+              packing: 200,
+              rawMaterial: "paper",
+            },
+          ],
+        }
+      ],
+    },
+    " أطباق ورقية": {
+      description: "",
+      groups: [
+        {
+          image: "page-21.png",
+          type: "أطباق كرافت ورقية",
+          products: [
+            {
+              itemNumber: "REF TRK3",
+              size: "10cm x 6.2cm x 4.1cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF TRK4",
+              size: "10.7cm x 6.9cm x 4.1cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF TRK5",
+              size: "13.8cm x 8.6cm x 5.7cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF TRK6",
+              size: "16.8cm x 9.6cm x 5.7cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "paper",
+            },
+          ],
+        },
+      ],
+    },
+    "أكياس ورقية": {
+      description: "",
+      groups: [
+        {
+          image: "page-23.png",
+          type: "مقبض مقوى",
+          products: [
+            {
+              itemNumber: "REF WB29",
+              size: "10cm x 29cm x 22cm",
+              piece: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF WB36",
+              size: "12cm x 36cm x 28cm",
+              piece: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF WB40",
+              size: "16cm x 38cm x 32cm",
+              piece: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF BP35",
+              size: "18cm x 35cm x 35cm",
+              piece: 160,
+              rawMaterial: "paper",
+            },
+          ],
+        },
+        {
+          image: "page-24.png",
+          type: "مقبض مسطح",
+          products: [
+            {
+              itemNumber: "REF WE35",
+              size: "18cm x 35cm x 35cm",
+              piece: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF BP29",
+              size: "10cm x 29cm x 22cm",
+              piece: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF BP36",
+              size: "12cm x 36cm x 28cm",
+              piece: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "REF BP40",
+              size: "16cm x 38cm x 32cm",
+              piece: 160,
+              rawMaterial: "paper",
+            },
+          ],
+        },
+      ],
+    },
+    "عبوات ميكروويف": {
+      description: "",
+      groups: [
+        {
+          image: "page-26.png",
+          type: "مستطيلة",
+          products: [
+            {
+              itemNumber: "PMW28",
+              volume: 28,
+              size: "22cm x 15.3cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "PMW32",
+              volume: 32,
+              size: "22.4cm x 15.3cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MYB38",
+              volume: 38,
+              size: "22.5cm x 11.5cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "PMW16",
+              volume: 16,
+              size: "19cm x 12.8cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MYB24",
+              volume: 24,
+              size: "22cm x 15.3cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+          ],
+        },
+        {
+          image: "page-27.png",
+          type: "دائرية",
+          products: [
+            {
+              itemNumber: "MW24-A",
+              volume: 24,
+              size: "15.5cm x 12.5cm x 5cm",
+              piece: 50,
+              carton: 6,
+              packing: 300,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MW24-B",
+              volume: 24,
+              size: "18.5cm x 13.5cm x 5cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MYB32",
+              volume: 32,
+              size: "17cm x 13.5cm x 6.5cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MYB48",
+              volume: 48,
+              size: "23cm x 18cm x 6cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+          ],
+        },
+        {
+          image: "page-28.png",
+          type: "بيضاوية",
+          products: [
+            {
+              itemNumber: "MPB16",
+              volume: 16,
+              size: "22cm x 15.3cm",
+              piece: 28,
+              carton: 5,
+              packing: 250,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MPC24",
+              volume: 24,
+              size: "22.4cm x 15.3cm",
+              piece: 24,
+              carton: 5,
+              packing: 250,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MPB32",
+              volume: 32,
+              size: "22.4cm x 15.3cm",
+              piece: 32,
+              carton: 5,
+              packing: 250,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MPB38",
+              volume: 38,
+              size: "22.5cm x 11.5cm",
+              piece: 38,
+              carton: 5,
+              packing: 250,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MPC53",
+              volume: 53,
+              size: "24cm x 19cm x 3.5cm",
+              piece: 32,
+              carton: 5,
+              packing: 250,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MPC52",
+              volume: 52,
+              size: "24cm x 19cm x 3.5cm",
+              piece: 32,
+              carton: 5,
+              packing: 250,
+              rawMaterial: "Paper,PP",
+            },
+          ],
+        },
+      ],
+    },
+    "علب قصب السكر": {
+      description: "",
+      groups: [
+        {
+          image: "page-29.png",
+          type: "علب قصب السكر",
+          products: [
+            {
+              itemNumber: "Subr1000",
+              volume: 1000,
+              size: "23.5cm x 13.5cm x 6cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "sugarCane,PP",
+            },
+            {
+              itemNumber: "Subr750",
+              volume: 750,
+              size: "23.5cm x 13.5cm x 4.5cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "sugarCane,PP",
+            },
+            {
+              itemNumber: "Subr700",
+              volume: 700,
+              size: "19.5cm x 11.5cm x 5cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "sugarCane,PP",
+            },
+            {
+              itemNumber: "Subr10",
+              volume: 10,
+              size: "10cm x 10cm x 8cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "sugarCane,Connected",
+            },
+            {
+              itemNumber: "Subr500",
+              volume: 500,
+              size: "23.5cm x 13.5cm x 4.5cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "sugarCane,PP",
+            },
+            {
+              itemNumber: "Subr600",
+              volume: 600,
+              size: "22cm x 17cm x 5.5cm",
+              piece: 50,
+              carton: 6,
+              packing: 300,
+              rawMaterial: "sugarCane,PP",
+            },
+            {
+              itemNumber: "Subr800",
+              volume: 800,
+              size: "22cm x 17cm x 4cm",
+              piece: 50,
+              carton: 6,
+              packing: 300,
+              rawMaterial: "sugarCane,PP",
+            },
+            {
+              itemNumber: "Subr900",
+              volume: 900,
+              size: "18cm x 18cm x 7cm",
+              piece: 75,
+              carton: 4,
+              packing: 300,
+              rawMaterial: "sugarCane,PP",
+            },
+            {
+              itemNumber: "Subr90000-A",
+              volume: 90000,
+              size: "18cm x 18cm x 5.5cm",
+              piece: 75,
+              carton: 4,
+              packing: 300,
+              rawMaterial: "sugarCane,PP",
+            },
+            {
+              itemNumber: "Subr90000-B",
+              volume: 90000,
+              size: "20cm x 5cm",
+              piece: 125,
+              carton: 4,
+              packing: 500,
+              rawMaterial: "sugarCane,PP",
+            },
+            {
+              itemNumber: "REF SBR32A",
+              volume: 32,
+              size: "19.5cm x 6.3cm x 10.5cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "Sugar Cane,Plastic PET",
+            },
+            {
+              itemNumber: "REF SBR24B",
+              volume: 24,
+              size: "19.5cm x 4.8cm x 10.5cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "Sugar Cane,Plastic PET",
+            },
+            {
+              itemNumber: "REF SBR16",
+              volume: 16,
+              size: "15.5cm x 5.5cm x 8.5cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Sugar Cane,Plastic PET",
+            },
+            {
+              itemNumber: "REF SB450",
+              volume: "",
+              size: "17cm x 12.5cm x 3.5cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "Sugar Cane,Connected",
+            },
+            {
+              itemNumber: "REF SB600",
+              volume: "",
+              size: "18.3cm x 13.5cm x 4.5cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "Sugar Cane,Connected",
+            },
+          ],
+        },
+      ],
+    },
+    "أطقم المائدة": {
+      description: "",
+      groups: [
+        {
+          image: "page-31.png",
+          type: "مرفق منديلي",
+          products: [
+            {
+              itemNumber: "PENB",
+              size: "18cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "PSBNIB",
+              size: "18cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "CS3",
+              size: "18cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "MS3",
+              size: "18cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "TAOIS",
+              size: "18cm",
+              piece: 50,
+              carton: 10,
+              packing: 500,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "PKB",
+              size: "18cm",
+              piece: 50,
+              carton: 20,
+              packing: 1950,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF PKB",
+              size: "18cm",
+              piece: 50,
+              carton: 20,
+              packing: 1950,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF PFIB",
+              size: "18cm",
+              piece: 50,
+              carton: 20,
+              packing: 1950,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF PSB18",
+              size: "18cm",
+              piece: 50,
+              carton: 20,
+              packing: 1950,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "PKW19",
+              size: "19cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF PFWB",
+              size: "18cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF PSBWB",
+              size: "18cm",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic",
+            },
+          ],
+        },
+      ],
+    },
+    "قواعد الكيك": {
+      description: "",
+      groups: [
+        {
+          image: "page-32.png",
+          type: "قواعد كيك دائرية",
+          products: [
+            {
+              itemNumber: "CBG26",
+              size: "26cm",
+              piece: 80,
+              rawMaterial: "cardboard",
+              notes: "carton",
+            },
+            {
+              itemNumber: "CBG28",
+              size: "28cm",
+              piece: 70,
+              rawMaterial: "cardboard",
+              notes: "carton",
+            },
+            {
+              itemNumber: "CBG30",
+              size: "30cm",
+              piece: 60,
+              rawMaterial: "cardboard",
+              notes: "carton",
+            },
+            {
+              itemNumber: "CBG23",
+              size: "30cm",
+              piece: 50,
+              rawMaterial: "cardboard",
+              notes: "carton",
+            },
+            {
+              itemNumber: "CBG8",
+              size: "8cm",
+              piece: 600,
+              rawMaterial: "cardboard",
+              notes: "carton",
+            },
+            {
+              itemNumber: "CBG18",
+              size: "18cm",
+              piece: 160,
+              rawMaterial: "cardboard",
+              notes: "carton",
+            },
+            {
+              itemNumber: "CBG22",
+              size: "22cm",
+              piece: 110,
+              rawMaterial: "cardboard",
+              notes: "carton",
+            },
+          ],
+        },
+      ],
+    },
+    "أكواب بلاستيكية": {
+      description: "",
+      groups: [
+        {
+          image: "page-34.png",
+          type: "PET (غطاء قبة)",
+          products: [
+            {
+              itemNumber: "REF PCCBF",
+              volume: 8,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic (PET)",
+              notes: "Dome",
+            },
+            {
+              itemNumber: "REF PCCIOF",
+              volume: 10,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic (PET)",
+              notes: "Dome",
+            },
+            {
+              itemNumber: "REF PCCI2F",
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic (PET)",
+              notes: "Dome",
+            },
+            {
+              itemNumber: "REF PCCIGF",
+              volume: 16,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic (PET)",
+              notes: "Dome",
+            },
+            {
+              itemNumber: "REF PCURI2",
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic (PET)",
+              notes: "Red heart",
+            },
+            {
+              itemNumber: "REF PCURI4",
+              volume: 14,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic (PET)",
+              notes: "Red heart",
+            },
+            {
+              itemNumber: "REF PCURI6",
+              volume: 16,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic (PET)",
+              notes: "Red heart",
+            },
+          ],
+        },
+        {
+          image: "page-35.png",
+          type: "قاعدة U",
+          products: [
+            {
+              itemNumber: "PCUF12",
+              volume: 12,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "PCUF14",
+              volume: 14,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "PCUF16",
+              volume: 16,
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "BFL121416",
+              size: "12-14-16",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "BDL1214160",
+              size: "12-14-16",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "FL90",
+              size: "12-14-16",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "DL90",
+              size: "12-14-16",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic",
+            },
+          ],
+        },
+        {
+          image: "page-36.png",
+          type: "أكواب PP",
+          products: [
+            {
+              itemNumber: "PCSC12",
+              volume: 12,
+              piece: 25,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "Plastic PP",
+            },
+            {
+              itemNumber: "PCSC14",
+              volume: 14,
+              piece: 25,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "Plastic PP",
+            },
+            {
+              itemNumber: "PCSC16",
+              volume: 16,
+              piece: 25,
+              carton: 20,
+              packing: 500,
+              rawMaterial: "Plastic PP",
+            },
+          ],
+        },
+      ],
+    },
+    "أغطية مسطحة": {
+      description: "",
+      groups: [
+        {
+          image: "page-36.png",
+          type: "أغطية مسطحة PP",
+          products: [
+            {
+              itemNumber: "FIBL90",
+              size: "12/14/16",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic PP",
+              notes: "Flat lid",
+            },
+            {
+              itemNumber: "FIL90",
+              size: "12/14/16",
+              piece: 50,
+              carton: 20,
+              packing: 1000,
+              rawMaterial: "Plastic PP",
+              notes: "Flat lid",
+            },
+          ],
+        },
+      ],
+    },
+    "عبوات بلاستيكية و برطمانات": {
+      description: "",
+      groups: [
+        {
+          image: "page-37.png",
+          type: "برطمانات بلاستيكية",
+          products: [
+            {
+              itemNumber: "J6585",
+              size: "6.5cm x 8.5cm",
+              piece: 230,
+              carton: 216,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "J8585",
+              size: "8.5cm x 8.5cm",
+              piece: 350,
+              carton: 195,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "JD085",
+              size: "10cm x 8.5cm",
+              piece: 400,
+              carton: 195,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "J8510",
+              size: "8.5cm x 10cm",
+              piece: 435,
+              carton: 144,
+              rawMaterial: "Plastic",
+            },
+          ],
+        },
+        {
+          image: "page-38.png",
+          type: "أكواب الصوص",
+          products: [
+            {
+              itemNumber: "REF PC2",
+              volume: 2,
+              piece: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF B003",
+              volume: 2,
+              piece: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF PC4",
+              volume: 4,
+              piece: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF PK2",
+              volume: 2,
+              piece: 1000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF PK4",
+              volume: 4,
+              piece: 1000,
+              rawMaterial: "Plastic",
+            },
+          ],
+        },
+      ],
+    },
+    "ورق ألومنيوم": {
+      description: "",
+      groups: [
+        {
+          image: "page-40.png",
+          type: "ورق ألومنيوم",
+          products: [
+            {
+              itemNumber: "AL023",
+              size: "23cm x 16.4cm",
+              piece: 500,
+              rawMaterial: "Aluminum",
+            },
+            {
+              itemNumber: "AL025",
+              size: "25cm x 17.5cm",
+              piece: 150,
+              rawMaterial: "Aluminum",
+            },
+            {
+              itemNumber: "AL028",
+              size: "28cm x 19.5cm",
+              piece: 150,
+              rawMaterial: "Aluminum",
+            },
+            {
+              itemNumber: "AL035",
+              size: "35cm x 23.8cm",
+              piece: 100,
+              rawMaterial: "Aluminum",
+            },
+            {
+              itemNumber: "ALUR30",
+              size: "30cm",
+              piece: 1350,
+              carton: 6,
+              rawMaterial: "Aluminum",
+            },
+            {
+              itemNumber: "ALUR45",
+              size: "45cm",
+              piece: 1500,
+              carton: 6,
+              rawMaterial: "Aluminum",
+            },
+          ],
+        },
+      ],
+    },
+    "مستلزمات الكافيه": {
+      description: "",
+      groups: [
+        {
+          image: "page-41.png",
+          type: "ملاعق/مصاصات خشبية وبلاستيكية",
+          products: [
+            {
+              itemNumber: "REF WSW140",
+              size: "140 mm",
+              piece: 5000,
+              rawMaterial: "Wood",
+            },
+            {
+              itemNumber: "REF WSW187",
+              size: "187 mm",
+              piece: 5000,
+              rawMaterial: "Wood",
+            },
+            {
+              itemNumber: "REF WS140",
+              size: "140 mm",
+              piece: 5000,
+              rawMaterial: "Wood",
+            },
+            {
+              itemNumber: "REF WS187",
+              size: "187 mm",
+              piece: 5000,
+              rawMaterial: "Wood",
+            },
+            {
+              itemNumber: "REF SWB6",
+              size: "6 mm",
+              piece: 10000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF SWB8",
+              size: "8 mm",
+              piece: 4000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF SWB10",
+              size: "10 mm",
+              piece: 2000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF SWC6",
+              size: "6 mm",
+              piece: 10000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF SWC8",
+              size: "8 mm",
+              piece: 4000,
+              rawMaterial: "Plastic",
+            },
+            {
+              itemNumber: "REF SWC10",
+              size: "10 mm",
+              piece: 2000,
+              rawMaterial: "Plastic",
+            },
+          ],
+        },
+      ],
+    },
+  },
+};
 
 module.exports = catalog;

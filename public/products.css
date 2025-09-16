@@ -8,14 +8,14 @@ body {
 
 .header-rectangle {
   position: relative; /* Create positioning context for absolute children */
-  overflow: visible; /* Allow image to extend beyond bounds */
+  overflow: visible; /* Allow image tos extend beyond bounds */
 }
 
 .header-img {
   width: 300px;
   position: absolute;
   top: -50%; /* Extend above the rectangle */
-  right: 70%; /* Position from the right */
+  right: 70%; /* sPosition from the right */
   z-index: 10; /* Ensure it's above other elements */
 }
 .right {

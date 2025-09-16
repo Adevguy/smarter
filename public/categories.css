@@ -4,16 +4,13 @@ body {
 * {
   font-family: 'Alexandria', sans-serif !important;
 }
-.header_img {
-  width: 300px;
-}
 .header-btn {
   background-color: #ef6341;
   display: flex;
   justify-content: space-around;
   border: none;
   border-radius: 30px;
-  padding: 10px 0;
+  padding:  0;
   padding-right: 10%;
   align-items: center;
 }
@@ -35,8 +32,7 @@ body {
 @media (min-width: 768px) {
   .w-md-50 {
     width: 50% !important;
-    font-size: medium;
-    padding: 5px 0;
+    font-size: small;
   }
   .explore-btn img {
     width: 40px;
