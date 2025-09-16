@@ -81,16 +81,30 @@ app.get("/categories", (req, res) => {
   const lang = req.session.language || "ar";
   const uniqueCategories = Object.keys(categories[lang]).map((key) => {
     const category = categories[lang][key];
-    if(category.image === undefined){
-      category.image = "/cups.png"; // set a default image if none is provided
-    }else {
-      category.image = `/category_images/${category.image}`;
+    
+    // Get the Arabic category name for image naming
+    let arabicCategoryName;
+    if (lang === "ar") {
+      // Already in Arabic
+      arabicCategoryName = key;
+    } else {
+      // Convert from English to Arabic using categoryMap
+      arabicCategoryName = categoryMap[key] || key;
     }
+    
+    // Set image based on Arabic category name
+    let categoryImage;
+    if(category.image === undefined || category.image === ""){
+      categoryImage = `/category_images/${arabicCategoryName}.png`;
+    } else {
+      categoryImage = `/category_images/${arabicCategoryName}.png`;
+    }
+    
     return {
       // the object key, e.g. "paperCupsSingleLayer"
       name: key, // Arabic/English name from the object
       description: category.description || "", // optional field
-      image: category.image, // default image if not provided
+      image: categoryImage, // image based on Arabic category name
     };
   });
   res.render("categories", {
@@ -101,15 +115,42 @@ app.get("/categories", (req, res) => {
 
 const categoryMap = {
   // English to Arabic
-  "PaperCups (single layer)": "أكواب ورقية (طبقة واحدة)",
-  "PaperCups (double)": "أكواب ورقية (مزدوجة)",
-  "PaperCups (double corrugated)": "أكواب ورقية (مزدوجة مموجة)",
-  PaperCupLids: "أغطية الأكواب الورقية",
+  "Paper Cups": "أكواب ورقية",
+  "Cup Lids": "أغطية الأكواب",
+  "Paper Cup Holders": "حاملات الأكواب الورقية",
+  "Paper Bowls": "أوعية ورقية",
+  "Paper Plates": "أطباق ورقية",
+  "Paper Boxes": "علب ورقية",
+  "Sugar Cane Boxes": "علب قصب السكر",
+  "Flat Lids": "أغطية مسطحة",
+  "Plastic Cups": "أكواب بلاستيكية",
+  "Plastic Containers & Jars": "عبوات بلاستيكية و برطمانات",
+  "Microwave Containers": "عبوات ميكروويف",
+  "Paper Bags": "أكياس ورقية",
+  "Dinnerware Sets": "أطقم المائدة",
+  "Cake Stands": "قواعد الكيك",
+  "Cafe Supplies": "مستلزمات الكافيه",
+  "Aluminum Foil": "ورق ألومنيوم",
+  "Wooden & Plastic Cutlery": "مستلزمات الكافيه",
+  
   // Arabic to English
-  "أكواب ورقية (طبقة واحدة)": "PaperCups (single layer)",
-  "أكواب ورقية (مزدوجة)": "PaperCups (double)",
-  "أكواب ورقية (مزدوجة مموجة)": "PaperCups (double corrugated)",
-  "أغطية الأكواب الورقية": "PaperCupLids",
+  "أكواب ورقية": "Paper Cups",
+  "أغطية الأكواب": "Cup Lids",
+  "حاملات الأكواب الورقية": "Paper Cup Holders",
+  "أوعية ورقية": "Paper Bowls",
+  "أطباق ورقية": "Paper Plates",
+  "علب ورقية": "Paper Boxes",
+  "علب قصب السكر": "Sugar Cane Boxes",
+  "أغطية مسطحة": "Flat Lids",
+  "أكواب بلاستيكية": "Plastic Cups",
+  "عبوات بلاستيكية و برطمانات": "Plastic Containers & Jars",
+  "عبوات ميكروويف": "Microwave Containers",
+  "أكياس ورقية": "Paper Bags",
+  "أطقم المائدة": "Dinnerware Sets",
+  "قواعد الكيك": "Cake Stands",
+  "مستلزمات الكافيه": "Cafe Supplies",
+  "ورق ألومنيوم": "Aluminum Foil",
+  "مستلزمات الوقايه": "Wooden & Plastic Cutlery"
 };
 
 app.get("/products/:category", (req, res) => {
@@ -130,18 +171,9 @@ app.get("/products/:category", (req, res) => {
     categoryData = categories[lang] && categories[lang][category];
   }
 
-  // If still not found, try the other language and map it
+  // If still not found in current language, return 404 instead of falling back
   if (!categoryData) {
-    const otherLang = lang === "ar" ? "en" : "ar";
-    categoryData = categories[otherLang] && categories[otherLang][category];
-    if (!categoryData && categoryMap[category]) {
-      categoryData =
-        categories[otherLang] && categories[otherLang][categoryMap[category]];
-    }
-  }
-
-  if (!categoryData) {
-    return res.status(404).send("Category not found");
+    return res.status(404).send("Category not found in current language");
   }
 
   // Handle both array-of-arrays and groups object shape
@@ -166,26 +198,25 @@ app.get("/products/:category", (req, res) => {
       (group && group.image) ||
       (Array.isArray(categoryData.images) ? categoryData.images[idx] : null) ||
       null;
-    const productType =
-      (group && group.type) ||
-      (Array.isArray(categoryData.types) ? categoryData.types[idx] : null) ||
-      null;
+    
+    // Get the type from the current language data
+    const productType = group && group.type;
+    
     return {
       type: productType || category,
-      material: items[0]?.rawMaterial || "N/A",
-      quantity: items[0]?.piece || "N/A",
-      cartoonSize: items[0]?.carton || "N/A",
-      size: items.map((p) => p.volume),
-      id: items.map((p) => p.itemNumber),
-      packing: items.map((p) => p.packing),
       image, // can be null
+      products: items // Pass all product items with their complete data
     };
   });
+
+  // Use the category key we found for display
+  const displayCategoryName = categoryKey || category;
+
   res.render("products", {
-    title: category || "Products",
+    title: displayCategoryName || "Products",
     description: categoryData.description || "",
     products,
-    category,
+    category: displayCategoryName,
   });
 });
 

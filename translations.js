@@ -59,7 +59,14 @@ const translations = {
     piece: "Piece",
     packagedCarton: "Packaged-Carton",
     capacity: "Capacity",
+    volume: "Volume",
+    size: "Size",
+    weight: "Weight",
+    packing: "Packing",
     itemNumber: "Item Number",
+    description: "Description",
+    notes: "Notes",
+    material: "Material",
     lightweightPortable: "Lightweight and portable, making them ideal for people on the go. They are also easy to carry and are available in different sizes to suit different beverages.",
     
     // Footer
@@ -129,7 +136,14 @@ const translations = {
     piece: "قطعه",
     packagedCarton: "مغلف-كرتون",
     capacity: "السعة",
+    volume: "الحجم",
+    size: "الحجم",
+    weight: "الوزن",
+    packing: "التعبئة",
     itemNumber: "رقم الصنف",
+    description: "الوصف",
+    notes: "ملاحظات",
+    material: "المادة",
     lightweightPortable: "خفيفة الوزن وقابلة للحمل ، مما يجعلها مثالية للأشخاص أثناء التنقل. كما يسهل حملها ، وهي متوفرة بأحجام مختلفة التناسب مختلف المشروبات.",
     
     // Footer
