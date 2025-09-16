@@ -276,16 +276,16 @@ body::before {
   .carousel-control-next {
     width: 40px;
     height: 40px;
-    left: 10px;
-    right: 10px;
   }
   
   .carousel-control-prev {
     left: 10px;
+    right: auto;
   }
   
   .carousel-control-next {
     right: 10px;
+    left: auto;
   }
   
   .gallery-section {
