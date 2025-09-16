@@ -1,16 +1,16 @@
-require("dotenv").config()
+require("dotenv").config();
 
-const express = require('express');
-const session = require('express-session');
-const MongoStore = require('connect-mongo');
+const express = require("express");
+const session = require("express-session");
+const MongoStore = require("connect-mongo");
 const app = express();
 const port = 3000;
-const categories = require('./data.js');
-const {sendEmail} = require('./emailHandler.js');
-const translations = require('./translations.js');
+const categories = require("./data.js");
+const { sendEmail } = require("./emailHandler.js");
+const translations = require("./translations.js");
 
 // Trust proxy for production environments
-app.set('trust proxy', 1);
+app.set("trust proxy", 1);
 
 // Middleware to parse JSON bodies
 app.use(express.json());
@@ -20,26 +20,29 @@ app.use(express.urlencoded({ extended: true })); // to parse form data
 app.set("views", __dirname + "/views");
 
 // Session middleware with MongoDB store
-app.use(session({
-  secret: process.env.SESSION_SECRET || 'your-secret-key',
-  resave: false,
-  saveUninitialized: false,
-  store: MongoStore.create({
-    mongoUrl: process.env.MONGODB_URI || 'mongodb://localhost:27017/smarter-sessions',
-    touchAfter: 24 * 3600 // lazy session update
-  }),
-  cookie: { 
-    secure: process.env.NODE_ENV === 'production', // true in production with HTTPS
-    httpOnly: true,
-    maxAge: 1000 * 60 * 60 * 24 * 7 // 1 week
-  }
-}));
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET || "your-secret-key",
+    resave: false,
+    saveUninitialized: false,
+    store: MongoStore.create({
+      mongoUrl:
+        process.env.MONGODB_URI || "mongodb://localhost:27017/smarter-sessions",
+      touchAfter: 24 * 3600, // lazy session update
+    }),
+    cookie: {
+      secure: process.env.NODE_ENV === "production", // true in production with HTTPS
+      httpOnly: true,
+      maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week
+    },
+  })
+);
 // Sample route
 app.use((req, res, next) => {
   res.locals.url = req.url;
   // Set default language if not set
   if (!req.session.language) {
-    req.session.language = 'ar'; // default to Arabic
+    req.session.language = "ar"; // default to Arabic
   }
   res.locals.lang = req.session.language;
   res.locals.t = translations[req.session.language];
@@ -47,65 +50,70 @@ app.use((req, res, next) => {
 });
 
 // Language switching route
-app.get('/switch-language/:lang', (req, res) => {
+app.get("/switch-language/:lang", (req, res) => {
   const lang = req.params.lang;
-  if (lang === 'ar' || lang === 'en') {
+  if (lang === "ar" || lang === "en") {
     req.session.language = lang;
   }
   // Redirect back to the referring page or home
-  const referer = req.get('Referer') || '/';
+  const referer = req.get("Referer") || "/";
   res.redirect(referer);
 });
-app.get('/', (req, res) => {
-  res.render('home', { title: 'Home' });
+app.get("/", (req, res) => {
+  res.render("home", { title: "Home" });
 });
 app.get("/contact", (req, res) => {
-  const lang = req.session.language || 'ar';
-  const categoriesNames = Object.keys(categories[lang]).map(key => {
+  const lang = req.session.language || "ar";
+  const categoriesNames = Object.keys(categories[lang]).map((key) => {
     const category = categories[lang][key];
     return {
       name: key, // Arabic/English name from the object
-      description: category.description || "" // optional field
+      description: category.description || "", // optional field
     };
   });
-  const products = categoriesNames.map(cat => cat.name);
+  const products = categoriesNames.map((cat) => cat.name);
   res.render("contact", { title: "Contact Us", products });
 });
 app.get("/about", (req, res) => {
   res.render("about", { title: "About Us" });
 });
 app.get("/categories", (req, res) => {
-  const lang = req.session.language || 'ar';
-  const uniqueCategories = Object.keys(categories[lang]).map(key => {
+  const lang = req.session.language || "ar";
+  const uniqueCategories = Object.keys(categories[lang]).map((key) => {
     const category = categories[lang][key];
+    if(category.image === undefined){
+      category.image = "cups.png"; // set a default image if none is provided
+    }else {
+      category.image = `category_images/${category.image}`;
+    }
     return {
       // the object key, e.g. "paperCupsSingleLayer"
       name: key, // Arabic/English name from the object
-      description: category.description || "" // optional field
+      description: category.description || "", // optional field
+      image: category.image, // default image if not provided
     };
   });
-  res.render("categories", { 
-    title: "Categories", 
-    categories: uniqueCategories 
+  res.render("categories", {
+    title: "Categories",
+    categories: uniqueCategories,
   });
 });
-
 
 const categoryMap = {
   // English to Arabic
   "PaperCups (single layer)": "أكواب ورقية (طبقة واحدة)",
   "PaperCups (double)": "أكواب ورقية (مزدوجة)",
   "PaperCups (double corrugated)": "أكواب ورقية (مزدوجة مموجة)",
-  "PaperCupLids": "أغطية الأكواب الورقية",
-  // Arabic to English  
+  PaperCupLids: "أغطية الأكواب الورقية",
+  // Arabic to English
   "أكواب ورقية (طبقة واحدة)": "PaperCups (single layer)",
   "أكواب ورقية (مزدوجة)": "PaperCups (double)",
   "أكواب ورقية (مزدوجة مموجة)": "PaperCups (double corrugated)",
-  "أغطية الأكواب الورقية": "PaperCupLids"
+  "أغطية الأكواب الورقية": "PaperCupLids",
 };
 
 app.get("/products/:category", (req, res) => {
-  const lang = req.session.language || 'ar';
+  const lang = req.session.language || "ar";
   const category = req.params.category;
 
   // Convert category name to match current language
@@ -113,21 +121,22 @@ app.get("/products/:category", (req, res) => {
   if (categoryMap[category]) {
     categoryKey = categoryMap[category];
   }
-  
+
   // Try to find category in current language first
   let categoryData = categories[lang] && categories[lang][categoryKey];
-  
+
   // If not found, try the original category name
   if (!categoryData) {
     categoryData = categories[lang] && categories[lang][category];
   }
-  
+
   // If still not found, try the other language and map it
   if (!categoryData) {
-    const otherLang = lang === 'ar' ? 'en' : 'ar';
+    const otherLang = lang === "ar" ? "en" : "ar";
     categoryData = categories[otherLang] && categories[otherLang][category];
     if (!categoryData && categoryMap[category]) {
-      categoryData = categories[otherLang] && categories[otherLang][categoryMap[category]];
+      categoryData =
+        categories[otherLang] && categories[otherLang][categoryMap[category]];
     }
   }
 
@@ -157,7 +166,8 @@ app.get("/products/:category", (req, res) => {
       (group && group.image) ||
       (Array.isArray(categoryData.images) ? categoryData.images[idx] : null) ||
       null;
-    const productType =     (group && group.type) ||
+    const productType =
+      (group && group.type) ||
       (Array.isArray(categoryData.types) ? categoryData.types[idx] : null) ||
       null;
     return {
@@ -165,27 +175,26 @@ app.get("/products/:category", (req, res) => {
       material: items[0]?.rawMaterial || "N/A",
       quantity: items[0]?.piece || "N/A",
       cartoonSize: items[0]?.carton || "N/A",
-      size: items.map(p => p.volume),
-      id: items.map(p => p.itemNumber),
-      packing: items.map(p => p.packing),
-      image // can be null
+      size: items.map((p) => p.volume),
+      id: items.map((p) => p.itemNumber),
+      packing: items.map((p) => p.packing),
+      image, // can be null
     };
   });
   res.render("products", {
     title: category || "Products",
     description: categoryData.description || "",
     products,
-    category
+    category,
   });
 });
-
 
 app.post("/send-email", async (req, res) => {
   const { name, email, phoneNumber, product, message } = req.body;
 
   try {
     await sendEmail(name, email, phoneNumber, product, message);
-    res.redirect("/")
+    res.redirect("/");
   } catch (error) {
     console.error("Error sending email:", error);
     res.status(500).json({ message: "Failed to send email" });

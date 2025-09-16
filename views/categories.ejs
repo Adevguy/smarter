@@ -42,7 +42,8 @@
         <%for(let category of categories){%>
         <div class="col-md-6 my-3">
           <div class="card p-3" style="background-color: #c9735e">
-            <img src="/cups.png" alt="cup product" class="img-fluid" />
+            <%console.log(category)%>
+            <img src="<%=category.image%>" alt="cup product" class="img-fluid" />
             <h3 class="text-white fw-bold"><%=category.name%></h3>
             <p class="text-white">
               <%=category.description%>

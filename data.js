@@ -2011,6 +2011,7 @@ const catalog = {
   ar: {
     "أكواب ورقية": {
       description: "",
+      image: "plastic_cups.avif",
       groups: [
         {
           image: "1.png",
@@ -2338,6 +2339,7 @@ const catalog = {
     },
     "أغطية الأكواب": {
       description: "",
+      image: "cup_cap.jpg",
       groups: [
         {
           image: "10.png",
@@ -2529,6 +2531,7 @@ const catalog = {
     },
     "حاملات الأكواب الورقية": {
       description: "",
+      image: "cup_hold.jpg",
       groups: [
         {
           image: "17.png",
