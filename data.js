@@ -4151,7 +4151,6 @@ const catalog = {
       ],
     },
     "قواعد الكيك": {
-      description: "قواعد الكيك.avif",
       image: "قواعد الكيك.avif",
       groups: [
         {

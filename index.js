@@ -55,9 +55,27 @@ app.get("/switch-language/:lang", (req, res) => {
   if (lang === "ar" || lang === "en") {
     req.session.language = lang;
   }
-  // Redirect back to the referring page or home
+  
+  // Handle special case for products pages
   const referer = req.get("Referer") || "/";
-  res.redirect(referer);
+  const productsMatch = referer.match(/\/products\/(.+)$/);
+  
+  if (productsMatch) {
+    // Extract the category from the URL
+    const categoryFromUrl = decodeURIComponent(productsMatch[1]);
+    
+    // Convert category to the new language
+    let newCategoryName = categoryFromUrl;
+    if (categoryMap[categoryFromUrl]) {
+      newCategoryName = categoryMap[categoryFromUrl];
+    }
+    
+    // Redirect to the products page with the translated category name
+    res.redirect(`/products/${encodeURIComponent(newCategoryName)}`);
+  } else {
+    // For other pages, redirect back to the referring page or home
+    res.redirect(referer);
+  }
 });
 app.get("/", (req, res) => {
   res.render("home", { title: "Home" });
@@ -211,12 +229,30 @@ app.get("/products/:category", (req, res) => {
 
   // Use the category key we found for display
   const displayCategoryName = categoryKey || category;
+  
+  // Ensure category name is displayed in current language
+  let localizedCategoryName = displayCategoryName;
+  if (lang === "ar") {
+    // If current language is Arabic, make sure we show Arabic name
+    if (categoryMap[displayCategoryName]) {
+      // displayCategoryName is in English, convert to Arabic
+      localizedCategoryName = categoryMap[displayCategoryName];
+    }
+    // If displayCategoryName is already in Arabic, keep it as is
+  } else {
+    // If current language is English, make sure we show English name
+    if (categoryMap[displayCategoryName]) {
+      // displayCategoryName is in Arabic, convert to English
+      localizedCategoryName = categoryMap[displayCategoryName];
+    }
+    // If displayCategoryName is already in English, keep it as is
+  }
 
   res.render("products", {
-    title: displayCategoryName || "Products",
+    title: localizedCategoryName || "Products",
     description: categoryData.description || "",
     products,
-    category: displayCategoryName,
+    category: localizedCategoryName,
   });
 });
 
