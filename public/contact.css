@@ -361,4 +361,13 @@ span img{
   opacity: 0.3;
   z-index: -1;
   pointer-events: none;
+}@media (max-width: 768px) {
+  body::before {
+    background-size: 150px auto;
+  }
+  
+}
+
+body[dir = "ltr"] .hero-section {
+  flex-direction: row-reverse;
 }

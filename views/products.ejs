@@ -23,7 +23,7 @@
       >
         <div class="row align-items-center text-center text-md-<%=lang === "ar" ? "end" : "start"%>">
           <div class="col-md-6">
-            <h2 class="display-5 text-white fw-bold"><%= t.cups %></h2>
+            <h2 class="display-5 text-white fw-bold"><%= category%></h2>
             <p class="text-white fs-5"><%= t.productsSubtitle %></p>
           </div>
           <div class="col-md-6 text-center mt-3 mt-md-0">
@@ -34,13 +34,13 @@
 
       <!-- Products -->
       <div class="products mt-5">
-        <%for(let product of products){%>
+        <%for(let productGroup of products){%>
         <div class="product mt-5">
           <div class="row g-4">
             <!-- Product Image -->
             <div class="col-md-6 col-12 text-center">
               <img
-                src="/<%=product.image%>"
+                src="/images/<%=productGroup.image%>"
                 class="img-fluid products-img"
                 alt="product image"
               />
@@ -48,71 +48,137 @@
 
             <!-- Product Info -->
             <div class="col-md-6 col-12">
-              <!-- نوع المنتج -->
+              <!-- Product Type -->
               <div class="row mb-4">
-                <div class="col-6 text-white">
+                <div class="col-12 text-white">
                   <p class="fs-5 fw-bolder"><%= t.type %></p>
-                  <p class="info-text fw-bold"><%=product.type%></p>
-                </div>
-                <div
-                  class="col-6 d-flex align-items-center justify-content-center"
-                >
-                  <img
-                    class="recycle-img ms-2"
-                    src="/recycle.svg"
-                    alt="recycle"
-                  />
-                  <p class="text-white fw-bolder fs-5 mb-0">
-                    <%=product.material%>
-                  </p>
+                  <p class="info-text fw-bold"><%=productGroup.type%></p>
                 </div>
               </div>
 
-              <!-- الكمية -->
-              <div class="row mb-4">
-                <div class="col-6 text-white">
-                  <p class="fs-5 fw-bolder"><%= t.piece %></p>
-                  <p class="info-text fw-bold"><%=product.quantity%></p>
-                </div>
-                <div class="col-6 text-white">
-                  <p class="fs-5 fw-bolder"><%= t.packagedCarton %></p>
-                  <p class="info-text fw-bold"><%=product.cartoonSize%></p>
-                </div>
-              </div>
-
-              <!-- السعة -->
-              <div class="row mb-4">
-                <div class="col-12 text-white">
-                  <p class="fs-5 fw-bolder"><%= t.capacity %></p>
-                  <div class="row text-center g-2">
-                    <%for(let size of product.size){%>
-                    <div class="col-6 col-sm-3">
-                      <p class="info-text fw-bold"><%=size%></p>
-                    </div>
-                    <%}%>
-                  </div>
-                </div>
-              </div>
-
-              <!-- رقم الصنف -->
+              <!-- Products in this group -->
               <div class="row">
-                <div class="col-12 text-white">
-                  <p class="fs-5 fw-bolder"><%= t.itemNumber %></p>
-                  <div class="row text-center g-3 justify-content-center">
-                    <% for(let i = 0; i < product.id.length; i++){ %>
-                    <div class="col-6 col-md-3 size-col text-center">
-                      <p class="info-text fw-bold">
-                        <%= product.id[i] || "غير متوفر" %>
-                      </p>
-                      <p class="info-text fw-bold"><%= product.packing[i] %></p>
-                      <img
-                        src="/<%=product.image%>"
-                        class="img-fluid size-img <%=lang === "ar"? "": "leftt"%>"
-                        alt="cup"
-                      />
+                <div class="col-12">
+                  <% productGroup.products.forEach((product, index) => { %>
+                  <div class="product-item mb-4 p-3" style="background-color: rgba(255,255,255,0.1); border-radius: 10px;">
+                    <div class="row g-3">
+                      
+                      <!-- Product Image (progressive sizing) -->
+                      <div class="col-md-3 col-12 text-center mb-3">
+                        <% 
+                        // Calculate image size based on position in group (smallest to largest)
+                        const baseSize = 60;
+                        const sizeIncrement = 20;
+                        const imageHeight = baseSize + (index * sizeIncrement);
+                        %>
+                        <img
+                          src="/images/<%=productGroup.image%>"
+                          class="img-fluid size-img <%=lang === "ar"? "": "leftt"%>"
+                          alt="product size"
+                          style="max-height: <%=imageHeight%>px; object-fit: contain;"
+                        />
+                        <% if (product.volume) { %>
+                        <p class="text-white small mt-1 mb-0"><%=product.volume%> oz</p>
+                        <% } %>
+                      </div>
+                      
+                      <!-- Product Details -->
+                      <div class="col-md-9 col-12">
+                        <div class="row g-3">
+                          
+                          <!-- Item Number -->
+                          <% if (product.itemNumber) { %>
+                          <div class="col-md-6 col-12 text-white">
+                            <p class="fs-6 fw-bolder mb-1"><%= t.itemNumber %></p>
+                            <p class="info-text fw-bold"><%=product.itemNumber%></p>
+                          </div>
+                          <% } %>
+
+                          <!-- Volume -->
+                          <% if (product.volume) { %>
+                          <div class="col-md-6 col-12 text-white">
+                            <p class="fs-6 fw-bolder mb-1"><%= t.volume %></p>
+                            <p class="info-text fw-bold"><%=product.volume%> oz</p>
+                          </div>
+                          <% } %>
+
+                          <!-- Size (dimensions) -->
+                          <% if (product.size) { %>
+                          <div class="col-md-6 col-12 text-white">
+                            <p class="fs-6 fw-bolder mb-1"><%= t.size %></p>
+                            <p class="info-text fw-bold"><%=product.size%></p>
+                          </div>
+                          <% } %>
+
+                          <!-- Weight -->
+                          <% if (product.weight) { %>
+                          <div class="col-md-6 col-12 text-white">
+                            <p class="fs-6 fw-bolder mb-1"><%= t.weight %></p>
+                            <p class="info-text fw-bold"><%=product.weight%></p>
+                          </div>
+                          <% } %>
+
+                          <!-- Piece -->
+                          <% if (product.piece) { %>
+                          <div class="col-md-6 col-12 text-white">
+                            <p class="fs-6 fw-bolder mb-1"><%= t.piece %></p>
+                            <p class="info-text fw-bold"><%=product.piece%></p>
+                          </div>
+                          <% } %>
+
+                          <!-- Carton -->
+                          <% if (product.carton) { %>
+                          <div class="col-md-6 col-12 text-white">
+                            <p class="fs-6 fw-bolder mb-1"><%= t.packagedCarton %></p>
+                            <p class="info-text fw-bold"><%=product.carton%></p>
+                          </div>
+                          <% } %>
+
+                          <!-- Packing -->
+                          <% if (product.packing) { %>
+                          <div class="col-md-6 col-12 text-white">
+                            <p class="fs-6 fw-bolder mb-1"><%= t.packing %></p>
+                            <p class="info-text fw-bold"><%=product.packing%></p>
+                          </div>
+                          <% } %>
+
+                          <!-- Raw Material -->
+                          <% if (product.rawMaterial) { %>
+                          <div class="col-md-6 col-12 d-flex align-items-center">
+                            <img
+                              class="recycle-img me-2"
+                              src="/recycle.svg"
+                              alt="recycle"
+                            />
+                            <div class="text-white">
+                              <p class="fs-6 fw-bolder mb-1"><%= t.material %></p>
+                              <p class="info-text fw-bold"><%=product.rawMaterial%></p>
+                            </div>
+                          </div>
+                          <% } %>
+
+                          <!-- Description -->
+                          <% if (product.description) { %>
+                          <div class="col-12 text-white">
+                            <p class="fs-6 fw-bolder mb-1"><%= t.description %></p>
+                            <p class="info-text fw-bold"><%=product.description%></p>
+                          </div>
+                          <% } %>
+
+                          <!-- Notes -->
+                          <% if (product.notes) { %>
+                          <div class="col-12 text-white">
+                            <p class="fs-6 fw-bolder mb-1"><%= t.notes %></p>
+                            <p class="info-text fw-bold"><%=product.notes%></p>
+                          </div>
+                          <% } %>
+                          
+                        </div>
+                      </div>
+
                     </div>
-                    <% } %>
                   </div>
+                  <% }); %>
                 </div>
               </div>
 
@@ -144,6 +210,75 @@
         <%}%>
       </div>
       <!-- end of .products -->
+
+      <!-- Image Gallery Slider -->
+      <div class="gallery-section mt-5 mb-5">
+        <h2 class="text-white text-center mb-4 fw-bold"><%= lang === 'ar' ? 'معرض الصور' : 'Image Gallery' %></h2>
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <% 
+            const allImages = [];
+            products.forEach(productGroup => {
+              if(productGroup.image) {
+                allImages.push(productGroup.image);
+              }
+            });
+            
+            // Create slides with 3 images each
+            const imagesPerSlide = 3;
+            const slides = [];
+            for(let i = 0; i < allImages.length; i += imagesPerSlide) {
+              slides.push(allImages.slice(i, i + imagesPerSlide));
+            }
+            %>
+            
+            <% if(slides.length > 0) { %>
+            <% slides.forEach((slide, index) => { %>
+            <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+              <div class="row g-3 justify-content-center">
+                <% slide.forEach(image => { %>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="gallery-item">
+                    <img src="/images/<%= image %>" class="img-fluid gallery-img" alt="Product Gallery">
+                  </div>
+                </div>
+                <% }) %>
+              </div>
+            </div>
+            <% }) %>
+            <% } else { %>
+            <div class="carousel-item active">
+              <div class="row g-3 justify-content-center">
+                <div class="col-12 text-center text-white">
+                  <p><%= lang === 'ar' ? 'لا توجد صور متاحة' : 'No images available' %></p>
+                </div>
+              </div>
+            </div>
+            <% } %>
+          </div>
+          
+          <% if(slides.length > 1) { %>
+          <!-- Carousel controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <% slides.forEach((slide, index) => { %>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="<%= index %>" 
+                    class="<%= index === 0 ? 'active' : '' %>" aria-current="<%= index === 0 ? 'true' : 'false' %>" 
+                    aria-label="Slide <%= index + 1 %>"></button>
+            <% }) %>
+          </div>
+          <% } %>
+        </div>
+      </div>
     </div>
         <%-include("footer")%>
 

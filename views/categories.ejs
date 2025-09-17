@@ -22,8 +22,8 @@
           <%= t.categoriesSubtitle %>
         </p>
         <a href="/contact" dir="<%=lang === "ar" ? "rtl" : "rtl"%>"
-          class=" fs-5 w-50 text-white header-btn mx-auto mx-md-0 d-block d-md-inline"
-         style="padding: 20px; text-decoration: none;">
+          class=" fs-5 w-50 text-white header-btn mx-auto mx-md-0 d-block d-md-inline mb-4"
+         style="padding: 20px; text-decoration: none; border-radius:15px;">
           <%= t.orderNow %> <img src="/arrow.svg" alt="arrow svg" />
         </a>
       </div>
@@ -42,14 +42,14 @@
         <%for(let category of categories){%>
         <div class="col-md-6 my-3">
           <div class="card p-3" style="background-color: #c9735e">
-            <img src="/cups.png" alt="cup product" class="img-fluid" />
+            <img src="<%=category.image%>" alt="cup product" class="img-fluid" />
             <h3 class="text-white fw-bold"><%=category.name%></h3>
             <p class="text-white">
               <%=category.description%>
             </p>
             <a
               href="/products/<%=category.name%>"
-              class="text-white mt-3 text-decoration-none explore-btn <%= lang === 'en' ? 'center-en' : '' %>"
+              class="text-white w-md-50 mt-3 text-decoration-none explore-btn <%= lang === 'en' ? 'center-en' : '' %>"
               ><%= t.exploreCategory %> <img src="/arrow.svg" alt="arrow"
                 class="<%= lang === 'en' ? 'arrow-rotate-en' : '' %>"
               /></a>

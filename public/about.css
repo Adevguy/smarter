@@ -194,7 +194,7 @@ html, body, *
 .image-bg-2 {
   background-color: var(--color-accent);
   border-radius: 20px;
-  width: 66.93%; /* 338 / 505 */
+  width: 60%;
   height: 700px; /* 691 / 733 */
   top: 5.73%; /* 42 / 733 */
   left: 33.07%; /* 167 / 505 */
@@ -202,8 +202,8 @@ html, body, *
 
 .main-image-2 {
   border-radius: 35px;
-  width: 600px; /* 463 / 505 */
-  height: 800px; /* 707 / 733 */
+  width: 500px; /* 463 / 505 */
+  height: 700px; /* 707 / 733 */
   top: 0;
   left: 0;
   object-fit: cover;
@@ -340,7 +340,6 @@ html, body, *
     object-fit: cover;
     border-radius: 16px !important;
     background: transparent;
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
   }
 
   .mission-section {
@@ -364,6 +363,25 @@ html, body, *
   }
 }
 
+/* Image display control for different screen sizes */
+.desktop-image {
+  display: block;
+}
+
+.mobile-image {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-image {
+    display: none;
+  }
+  
+  .mobile-image {
+    display: block;
+  }
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -378,4 +396,13 @@ body::before {
   opacity: 0.3;
   z-index: -1;
   pointer-events: none;
+}@media (max-width: 768px) {
+  body::before {
+    background-size: 150px auto;
+  }
+  
+}
+
+body[dir = "ltr"] .hero-title {
+  text-align: left;
 }
