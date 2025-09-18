@@ -4,6 +4,7 @@ const catalog = {
     "Paper Cups": {
       description: "",
       groups: [
+        { image: "1.png" },
         {
           image: "1.png",
           type: "Paper Cups (Single Layer)",
@@ -332,6 +333,7 @@ const catalog = {
       description: "",
       image: "cup_cap.jpg",
       groups: [
+        { image: "2.png" },
         {
           image: "10.png",
           type: "Cup Lids (Plastic)",
@@ -524,6 +526,7 @@ const catalog = {
       description: "",
       image: "cup_hold.jpg",
       groups: [
+        { image: "3.png" },
         {
           image: "17.png",
           type: "Cup Holders",
@@ -557,6 +560,7 @@ const catalog = {
     "Paper Bowls": {
       description: "",
       groups: [
+        { image: "4.png" },
         {
           image: "19.png",
           type: "White with PET-PP Lid",
@@ -661,6 +665,7 @@ const catalog = {
     "Paper Plates": {
       description: "",
       groups: [
+        { image: "5.png" },
         {
           image: "22.png",
           type: "Attached Lid with Window",
@@ -926,6 +931,7 @@ const catalog = {
     "Paper Boxes": {
       description: "",
       groups: [
+        { image: "6.png" },
         {
           image: "31.png",
           type: "Paper Boxes with Attached Lid",
@@ -1057,6 +1063,7 @@ const catalog = {
     "Sugar Cane Boxes": {
       description: "",
       groups: [
+        { image: "7.png" },
         {
           image: "34.png",
           type: "Sugar Cane Boxes with Attached Lid",
@@ -1161,6 +1168,7 @@ const catalog = {
     "Flat Lids": {
       description: "",
       groups: [
+        { image: "8.png" },
         {
           image: "37.png",
           type: "Flat Lids (Transparent)",
@@ -1242,6 +1250,7 @@ const catalog = {
     "Plastic Cups": {
       description: "",
       groups: [
+        { image: "9.png" },
         {
           image: "39.png",
           type: "Plastic Cups (Transparent)",
@@ -1307,6 +1316,7 @@ const catalog = {
     "Plastic Containers & Jars": {
       description: "",
       groups: [
+        { image: "10.png" },
         {
           image: "40.png",
           type: "Plastic Containers (Round)",
@@ -1534,6 +1544,7 @@ const catalog = {
     "Microwave Containers": {
       description: "",
       groups: [
+        { image: "11.png" },
         {
           image: "44.png",
           type: "Microwave Safe Containers (Round)",
@@ -1707,6 +1718,7 @@ const catalog = {
     "Paper Bags": {
       description: "",
       groups: [
+        { image: "12.png" },
         {
           image: "48.png",
           type: "Paper Bags (White)",
@@ -1804,6 +1816,7 @@ const catalog = {
     "Dinnerware Sets": {
       description: "",
       groups: [
+        { image: "13.png" },
         {
           image: "50.png",
           type: "Complete Dinnerware Sets",
@@ -1831,6 +1844,7 @@ const catalog = {
     "Cake Stands": {
       description: "",
       groups: [
+        { image: "14.png" },
         {
           image: "51.png",
           type: "Cake Stands (Cardboard)",
@@ -1912,6 +1926,7 @@ const catalog = {
     "Cafe Supplies": {
       description: "",
       groups: [
+        { image: "15.png" },
         {
           image: "53.png",
           type: "Coffee Stirrers",
@@ -1975,6 +1990,7 @@ const catalog = {
     "Aluminum Foil": {
       description: "",
       groups: [
+        { image: "16.png" },
         {
           image: "56.png",
           type: "Aluminum Foil Rolls",
@@ -2026,6 +2042,7 @@ const catalog = {
     "Wooden & Plastic Cutlery": {
       description: "",
       groups: [
+        { image: "17.png" },
         {
           image: "58.png",
           type: "Wooden Spoons",
@@ -2136,6 +2153,7 @@ const catalog = {
     "أكواب ورقية": {
       description: "",
       groups: [
+        { image: "18.png" },
         {
           image: "1.png",
           type: "أكواب ورقية (طبقة واحدة)",
@@ -2464,6 +2482,7 @@ const catalog = {
       description: "",
       image: "cup_cap.jpg",
       groups: [
+        { image: "19.png" },
         {
           image: "10.png",
           type: "أغطية الأكواب (بلاستيك)",
@@ -2656,6 +2675,7 @@ const catalog = {
       description: "",
       image: "cup_hold.jpg",
       groups: [
+        { image: "20.png" },
         {
           image: "17.png",
           type: "حاملات أكواب",
@@ -2689,6 +2709,7 @@ const catalog = {
     "أوعية ورقية": {
       description: "",
       groups: [
+        { image: "21.png" },
         {
           image: "19.png",
           type: "بيضاء مع غطاء PET-PP",
@@ -2793,6 +2814,7 @@ const catalog = {
     "أطباق ورقية": {
       description: "",
       groups: [
+        { image: "22.png" },
         {
           image: "22.png",
           type: "غطاء متصل ونافذة",
@@ -3058,6 +3080,7 @@ const catalog = {
     "علب ورقية": {
       description: "",
       groups: [
+        { image: "23.png" },
         {
           image: "31.png",
           type: "علب ورقيه بغطاء متصل",
@@ -3426,372 +3449,11 @@ const catalog = {
         },
       ],
     },
-    "أكياس ورقية": {
-      description: "",
-      groups: [
-        {
-          image: "41.png",
-          type: "اكياس ورقيه بيد مبرومه",
-          products: [
-            {
-              itemNumber: "WB29",
-              size: "10cm 29cm 22cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "WB36",
-              size: "12cm 36cm 28cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "WB40",
-              size: "16cm 38cm 32cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              size: "18cm 35cm 35cm",
-              rawMaterial: "paper",
-              packing: 160,
-            },
-          ],
-        },
-        {
-          image: "43.png",
-          type: "اكياس ورقيه بيد مبرومه",
-          products: [
-            {
-              itemNumber: "BP29",
-              size: "10cm 29cm 22cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "BP36",
-              size: "12cm 36cm 28cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "BP40",
-              size: "16cm 38cm 32cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "BP35",
-              size: "18cm 35cm 35cm",
-              rawMaterial: "paper",
-              packing: 160,
-            },
-          ],
-        },
-        {
-          image: "44.png",
-          type: "اكياس ورقيه بيد مبرومه",
-          products: [
-            {
-              itemNumber: "BP29",
-              size: "10cm 29cm 22cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "BP36",
-              size: "12cm 36cm 28cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "BP40",
-              size: "16cm 38cm 32cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "BP35",
-              size: "18cm 35cm 35cm",
-              rawMaterial: "paper",
-              packing: 160,
-            },
-          ],
-        },
-        {
-          image: "45.png",
-          type: "اكياس ورقيه بيد مسطحه",
-          products: [
-            {
-              itemNumber: "WB29",
-              size: "10cm 29cm 22cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "WB36",
-              size: "12cm 36cm 28cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "WB40",
-              size: "16cm 38cm 32cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "WBP35",
-              size: "18cm 35cm 35cm",
-              rawMaterial: "paper",
-              packing: 160,
-            },
-          ],
-        },
-        {
-          image: "46.png",
-          type: "اكياس ورقيه بيد مبرومه",
-          products: [
-            {
-              itemNumber: "BP29",
-              size: "10cm 29cm 22cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "BP36",
-              size: "12cm 36cm 28cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "BP40",
-              size: "16cm 38cm 32cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "BP35",
-              size: "18cm 35cm 35cm",
-              rawMaterial: "paper",
-              packing: 160,
-            },
-          ],
-        },
-        {
-          image: "47.png",
-          type: "اكياس ورقيه بيد مبرومه",
-          products: [
-            {
-              itemNumber: "BP29",
-              size: "10cm 29cm 22cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "BP36",
-              size: "12cm 36cm 28cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "BP40",
-              size: "16cm 38cm 32cm",
-              packing: 160,
-              rawMaterial: "paper",
-            },
-            {
-              itemNumber: "BP35",
-              size: "18cm 35cm 35cm",
-              rawMaterial: "paper",
-              packing: 160,
-            },
-          ],
-        },
-      ],
-    },
-    "عبوات ميكروويف": {
-      description: "",
-      groups: [
-        {
-          image: "48.png",
-          type: "مستطيلة",
-          products: [
-            {
-              itemNumber: "PMW28",
-              volume: 28,
-              size: "22cm 15.3cm",
-              piece: 50,
-              carton: 3,
-              packing: 150,
-              rawMaterial: "Paper,PP",
-            },
-            {
-              itemNumber: "PMW32",
-              volume: 32,
-              size: "22.4cm 15.3cm",
-              piece: 50,
-              carton: 3,
-              packing: 150,
-              rawMaterial: "Paper,PP",
-            },
-            {
-              itemNumber: "MYB38",
-              volume: 38,
-              size: "22.5cm x 11.5cm",
-              piece: 50,
-              carton: 3,
-              packing: 150,
-              rawMaterial: "Paper,PP",
-            },
-            {
-              itemNumber: "PMW16",
-              volume: 16,
-              size: "19cm x 12.8cm",
-              piece: 50,
-              carton: 3,
-              packing: 150,
-              rawMaterial: "Paper,PP",
-            },
-            {
-              itemNumber: "MYB24",
-              volume: 24,
-              size: "22cm x 15.3cm",
-              piece: 50,
-              carton: 3,
-              packing: 150,
-              rawMaterial: "Paper,PP",
-            },
-          ],
-        },
-        {
-          image: "49.png",
-          type: "مستطيلة",
-          products: [
-            {
-              itemNumber: "MYB24",
-              volume: 24,
-              size: "22cm x 15.3cm",
-              piece: 50,
-              carton: 3,
-              packing: 150,
-              rawMaterial: "Paper,PP",
-            },
-          ],
-        },
-        {
-          image: "50.png",
-          type: "دائرية",
-          products: [
-            {
-              itemNumber: "MW24",
-              volume: 24,
-              size: "15.5cm 12.5cm 5cm",
-              piece: 50,
-              carton: 6,
-              packing: 300,
-              rawMaterial: "Paper,PP",
-            },
-            {
-              itemNumber: "MW24",
-              volume: 24,
-              size: "18.5cm 13.5cm 5cm",
-              piece: 50,
-              carton: 3,
-              packing: 150,
-              rawMaterial: "Paper,PP",
-            },
-            {
-              itemNumber: "MYB32",
-              volume: 32,
-              size: "17cm 13.5cm 6.5cm",
-              piece: 50,
-              carton: 3,
-              packing: 150,
-              rawMaterial: "Paper,PP",
-            },
-            {
-              itemNumber: "MYB48",
-              volume: 48,
-              size: "23cm 18cm 6cm",
-              piece: 50,
-              carton: 3,
-              packing: 150,
-              rawMaterial: "Paper,PP",
-            },
-          ],
-        },
-        {
-          image: "51.png",
-          type: "بيضاوية",
-          products: [
-            {
-              itemNumber: "MPB16",
-              volume: 28,
-              size: "22cm 15.3cm",
-              piece: 50,
-              carton: 5,
-              packing: 250,
-              rawMaterial: "Paper,PP",
-            },
-            {
-              itemNumber: "MPC24",
-              volume: 24,
-              size: "22.4cm 15.3cm",
-              piece: 50,
-              carton: 5,
-              packing: 250,
-              rawMaterial: "Paper,PP",
-            },
-            {
-              itemNumber: "MPB32",
-              volume: 32,
-              size: "22.4cm 15.3cm",
-              piece: 50,
-              carton: 5,
-              packing: 250,
-              rawMaterial: "Paper,PP",
-            },
-            {
-              itemNumber: "MPB38",
-              volume: 38,
-              size: "22.5cm 11.5cm",
-              piece: 50,
-              carton: 5,
-              packing: 250,
-              rawMaterial: "Paper,PP",
-            },
-          ],
-        },
-        {
-          image: "52.png",
-          type: "بيضاوية",
-          products: [
-            {
-              itemNumber: "MPC53",
-              volume: 53,
-              size: "24cm 19cm 3.5cm",
-              piece: 50,
-              carton: 5,
-              packing: 250,
-              rawMaterial: "Paper,PP",
-            },
-            {
-              itemNumber: "MPC52",
-              volume: 52,
-              size: "24cm 19cm 3.5cm",
-              piece: 50,
-              carton: 5,
-              packing: 250,
-              rawMaterial: "Paper,PP",
-            },
-          ],
-        },
-      ],
-    },
+    
     "علب قصب السكر": {
       description: "",
       groups: [
+        { image: "26.png" },
         {
           image: "53.png",
           type: "علب قصب السكر",
@@ -3994,6 +3656,7 @@ const catalog = {
       image: "أطقم المائدة.jpg",
       description: "",
       groups: [
+        { image: "27.png" },
         {
           image: "62.png",
           type: "مرفق منديلي",
@@ -4153,6 +3816,7 @@ const catalog = {
     "قواعد الكيك": {
       image: "قواعد الكيك.avif",
       groups: [
+        { image: "28.png" },
         {
           image: "71.png",
           type: "قواعد كيك دائرية",
@@ -4213,6 +3877,7 @@ const catalog = {
     "أكواب بلاستيكية": {
       description: "",
       groups: [
+        { image: "29.png" },
         {
           image: "73.png",
           type: "PET (غطاء قبة)",
@@ -4460,9 +4125,375 @@ const catalog = {
         },
       ],
     },
+    "أكياس ورقية": {
+      description: "",
+      groups: [
+        { image: "24.png" },
+        {
+          image: "41.png",
+          type: "اكياس ورقيه بيد مبرومه",
+          products: [
+            {
+              itemNumber: "WB29",
+              size: "10cm 29cm 22cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "WB36",
+              size: "12cm 36cm 28cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "WB40",
+              size: "16cm 38cm 32cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              size: "18cm 35cm 35cm",
+              rawMaterial: "paper",
+              packing: 160,
+            },
+          ],
+        },
+        {
+          image: "43.png",
+          type: "اكياس ورقيه بيد مبرومه",
+          products: [
+            {
+              itemNumber: "BP29",
+              size: "10cm 29cm 22cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BP36",
+              size: "12cm 36cm 28cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BP40",
+              size: "16cm 38cm 32cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BP35",
+              size: "18cm 35cm 35cm",
+              rawMaterial: "paper",
+              packing: 160,
+            },
+          ],
+        },
+        {
+          image: "44.png",
+          type: "اكياس ورقيه بيد مبرومه",
+          products: [
+            {
+              itemNumber: "BP29",
+              size: "10cm 29cm 22cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BP36",
+              size: "12cm 36cm 28cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BP40",
+              size: "16cm 38cm 32cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BP35",
+              size: "18cm 35cm 35cm",
+              rawMaterial: "paper",
+              packing: 160,
+            },
+          ],
+        },
+        {
+          image: "45.png",
+          type: "اكياس ورقيه بيد مسطحه",
+          products: [
+            {
+              itemNumber: "WB29",
+              size: "10cm 29cm 22cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "WB36",
+              size: "12cm 36cm 28cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "WB40",
+              size: "16cm 38cm 32cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "WBP35",
+              size: "18cm 35cm 35cm",
+              rawMaterial: "paper",
+              packing: 160,
+            },
+          ],
+        },
+        {
+          image: "46.png",
+          type: "اكياس ورقيه بيد مبرومه",
+          products: [
+            {
+              itemNumber: "BP29",
+              size: "10cm 29cm 22cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BP36",
+              size: "12cm 36cm 28cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BP40",
+              size: "16cm 38cm 32cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BP35",
+              size: "18cm 35cm 35cm",
+              rawMaterial: "paper",
+              packing: 160,
+            },
+          ],
+        },
+        {
+          image: "47.png",
+          type: "اكياس ورقيه بيد مبرومه",
+          products: [
+            {
+              itemNumber: "BP29",
+              size: "10cm 29cm 22cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BP36",
+              size: "12cm 36cm 28cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BP40",
+              size: "16cm 38cm 32cm",
+              packing: 160,
+              rawMaterial: "paper",
+            },
+            {
+              itemNumber: "BP35",
+              size: "18cm 35cm 35cm",
+              rawMaterial: "paper",
+              packing: 160,
+            },
+          ],
+        },
+      ],
+    },
+    "عبوات ميكروويف": {
+      description: "",
+      groups: [
+        { image: "25.png" },
+        {
+          image: "48.png",
+          type: "مستطيلة",
+          products: [
+            {
+              itemNumber: "PMW28",
+              volume: 28,
+              size: "22cm 15.3cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "PMW32",
+              volume: 32,
+              size: "22.4cm 15.3cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MYB38",
+              volume: 38,
+              size: "22.5cm x 11.5cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "PMW16",
+              volume: 16,
+              size: "19cm x 12.8cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MYB24",
+              volume: 24,
+              size: "22cm x 15.3cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+          ],
+        },
+        {
+          image: "49.png",
+          type: "مستطيلة",
+          products: [
+            {
+              itemNumber: "MYB24",
+              volume: 24,
+              size: "22cm x 15.3cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+          ],
+        },
+        {
+          image: "50.png",
+          type: "دائرية",
+          products: [
+            {
+              itemNumber: "MW24",
+              volume: 24,
+              size: "15.5cm 12.5cm 5cm",
+              piece: 50,
+              carton: 6,
+              packing: 300,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MW24",
+              volume: 24,
+              size: "18.5cm 13.5cm 5cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MYB32",
+              volume: 32,
+              size: "17cm 13.5cm 6.5cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MYB48",
+              volume: 48,
+              size: "23cm 18cm 6cm",
+              piece: 50,
+              carton: 3,
+              packing: 150,
+              rawMaterial: "Paper,PP",
+            },
+          ],
+        },
+        {
+          image: "51.png",
+          type: "بيضاوية",
+          products: [
+            {
+              itemNumber: "MPB16",
+              volume: 28,
+              size: "22cm 15.3cm",
+              piece: 50,
+              carton: 5,
+              packing: 250,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MPC24",
+              volume: 24,
+              size: "22.4cm 15.3cm",
+              piece: 50,
+              carton: 5,
+              packing: 250,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MPB32",
+              volume: 32,
+              size: "22.4cm 15.3cm",
+              piece: 50,
+              carton: 5,
+              packing: 250,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MPB38",
+              volume: 38,
+              size: "22.5cm 11.5cm",
+              piece: 50,
+              carton: 5,
+              packing: 250,
+              rawMaterial: "Paper,PP",
+            },
+          ],
+        },
+        {
+          image: "52.png",
+          type: "بيضاوية",
+          products: [
+            {
+              itemNumber: "MPC53",
+              volume: 53,
+              size: "24cm 19cm 3.5cm",
+              piece: 50,
+              carton: 5,
+              packing: 250,
+              rawMaterial: "Paper,PP",
+            },
+            {
+              itemNumber: "MPC52",
+              volume: 52,
+              size: "24cm 19cm 3.5cm",
+              piece: 50,
+              carton: 5,
+              packing: 250,
+              rawMaterial: "Paper,PP",
+            },
+          ],
+        },
+      ],
+    },
     "أغطية مسطحة": {
       description: "",
       groups: [
+        { image: "30.png" },
         {
           image: "83.png",
           type: "أغطية مسطحة PP",
@@ -4498,6 +4529,7 @@ const catalog = {
     "عبوات بلاستيكية و برطمانات": {
       description: "",
       groups: [
+        { image: "31.png" },
         {
           image: "85.png",
           type: "برطمانات بلاستيكية",
@@ -4579,6 +4611,7 @@ const catalog = {
     "مستلزمات الوقايه": {
       description: "",
       groups: [
+        { image: "32.png" },
         {
           image: "88.png",
           type: "مستلزمات الوقايه",
@@ -4741,6 +4774,7 @@ const catalog = {
     "ورق ألومنيوم": {
       description: "",
       groups: [
+        { image: "33.png" },
         {
           image: "99.png",
           type: "ورق ألومنيوم",
@@ -4796,6 +4830,7 @@ const catalog = {
     "مستلزمات الكافيه": {
       description: "",
       groups: [
+        { image: "34.png" },
         {
           image: "101.png",
           type: "ملاعق/مصاصات خشبية وبلاستيكية",

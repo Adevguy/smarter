@@ -206,7 +206,8 @@ app.get("/products/:category", (req, res) => {
 
   // Transform groups into objects for your template
   const products = rawGroups.map((group, idx) => {
-    const items = Array.isArray(group)
+    
+    let items = Array.isArray(group)
       ? group
       : Array.isArray(group.products)
       ? group.products
@@ -219,7 +220,6 @@ app.get("/products/:category", (req, res) => {
     
     // Get the type from the current language data
     const productType = group && group.type;
-    
     return {
       type: productType || category,
       image, // can be null
@@ -247,8 +247,15 @@ app.get("/products/:category", (req, res) => {
     }
     // If displayCategoryName is already in English, keep it as is
   }
-
+  let header_image = products[0].image
+  if(lang === "ar") {
+    let number = header_image.match(/\d+/);
+    number = number - 17
+    header_image = `${number}.png`
+  }
+  products.shift()
   res.render("products", {
+    header_image,
     title: localizedCategoryName || "Products",
     description: categoryData.description || "",
     products,
