@@ -4,7 +4,7 @@ const express = require("express");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const categories = require("./data.js");
 const { sendEmail } = require("./emailHandler.js");
 const translations = require("./translations.js");
@@ -149,7 +149,7 @@ const categoryMap = {
   "Cake Stands": "قواعد الكيك",
   "Cafe Supplies": "مستلزمات الكافيه",
   "Aluminum Foil": "ورق ألومنيوم",
-  "Wooden & Plastic Cutlery": "مستلزمات الكافيه",
+  "Protection Supplies": "مستلزمات الوقايه",
   
   // Arabic to English
   "أكواب ورقية": "Paper Cups",
@@ -168,7 +168,7 @@ const categoryMap = {
   "قواعد الكيك": "Cake Stands",
   "مستلزمات الكافيه": "Cafe Supplies",
   "ورق ألومنيوم": "Aluminum Foil",
-  "مستلزمات الوقايه": "Wooden & Plastic Cutlery"
+  "مستلزمات الوقايه": "Protection Supplies"
 };
 
 app.get("/products/:category", (req, res) => {
@@ -248,11 +248,7 @@ app.get("/products/:category", (req, res) => {
     // If displayCategoryName is already in English, keep it as is
   }
   let header_image = products[0].image
-  if(lang === "ar") {
-    let number = header_image.match(/\d+/);
-    number = number - 17
-    header_image = `${number}.png`
-  }
+ 
   products.shift()
   res.render("products", {
     header_image,
