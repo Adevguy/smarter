@@ -524,7 +524,7 @@ const catalog = {
     },
     "Paper Cup Holders": {
       description: "",
-      image: "cup_hold.jpg",
+      image: "cup_hold.png",
       groups: [
         { image: "3.png" },
         {

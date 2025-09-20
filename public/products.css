@@ -26,7 +26,8 @@
 
     }
     .products-img {
-      width: 400px;
+      width: 40%;
+      margin-top: 50px;
     }
     .info-text {
       background-color: #2A5DA7;

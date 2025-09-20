@@ -145,15 +145,16 @@
                           <!-- Raw Material -->
                           <% if (product.rawMaterial) { %>
                           <div class="col-md-6 col-12 d-flex align-items-center">
-                            <img
-                              class="recycle-img me-2"
-                              src="/recycle.svg"
-                              alt="recycle"
-                            />
+                           
                             <div class="text-white">
                               <p class="fs-6 fw-bolder mb-1"><%= t.material %></p>
                               <p class="info-text fw-bold"><%=product.rawMaterial%></p>
                             </div>
+                             <img
+                              class="recycle-img me-2"
+                              src="/recycle.svg"
+                              alt="recycle"
+                            />
                           </div>
                           <% } %>
 

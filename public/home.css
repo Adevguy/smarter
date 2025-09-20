@@ -168,6 +168,7 @@ html, body, *
     justify-content: center;
     align-items: center;
     order: 2;
+    margin-right: 20px;
   }
   .hero-left + .hero-image {
     order: 2;

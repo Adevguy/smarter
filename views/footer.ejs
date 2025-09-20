@@ -6,7 +6,7 @@
         <hr class="footer-divider">
         <div class="footer-bottom">
           <div class="footer-left">
-            <img src="/logo.png" alt="Smart Ller logo" class="footer-logo">
+            <a href="/"><img src="/logo.png" alt="Smart Ller logo" class="footer-logo"></a>
             <nav class="footer-nav">
               <ul>
                 <li><a href="/about" style="text-decoration: none;"><%= t.aboutUsFooter %></a></li>
@@ -208,6 +208,12 @@
     }
     .social-icons {
       gap: 30px;
+      img{
+        width: 25px;
+      }
+    }
+    .footer-nav a {
+      font-size: 16px;
     }
   }
 </style>
