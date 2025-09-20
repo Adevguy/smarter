@@ -147,10 +147,10 @@ const translations = {
     lightweightPortable: "خفيفة الوزن وقابلة للحمل ، مما يجعلها مثالية للأشخاص أثناء التنقل. كما يسهل حملها ، وهي متوفرة بأحجام مختلفة التناسب مختلف المشروبات.",
     
     // Footer
-    aboutUsFooter: "معلومات عنا",
+    aboutUsFooter: "من نحن",
     ourProductsFooter: "منتجاتنا",
     contactUsFooter: "تواصل معنا", 
-    socialCommunication: "تواصل اجتماعي"
+    socialCommunication: "تواصل اجتماعي",
   }
 };
 
