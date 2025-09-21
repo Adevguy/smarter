@@ -15,11 +15,12 @@ body {
     }
 
     .header-img {
-      width: 300px;
+      width: 40%;
       position: absolute;
-      top: -25%; /* Extend above the rectangle */
+      top: -30%; /* Extend above the rectangle */
       right: 70%; /* sPosition from the right */
       z-index: 10; /* Ensure it's above other elements */
+      animation: header-img-slide-in 1s cubic-bezier(0.4,0,0.2,1) both;
     }
     .right {
       right: 10% !important; /* Position from the right */
@@ -28,6 +29,7 @@ body {
     .products-img {
       width: 40%;
       margin-top: 50px;
+      width: 55% !important;
     }
     .info-text {
       background-color: #2A5DA7;
@@ -81,7 +83,7 @@ body {
 
     @media (max-width: 768px) {
       .header-img {
-        width: 180px;
+        width: 100% !important;
         position: static;
         top: auto;
         right: auto;
@@ -303,3 +305,29 @@ body {
         width: 100%;
       }
     }
+
+    @keyframes header-img-slide-in {
+      from {
+        opacity: 0;
+        transform: translateX(80px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes header-img-slide-in-rtl {
+      from {
+        opacity: 0;
+        transform: translateX(-80px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    body[dir="ltr"] .header-img{
+  width: 30%; 
+}

@@ -26,12 +26,12 @@ const translations = {
     browseAboutUs: "Browse About Us",
     // About page
     passionForSustainability: "Passion for Sustainability, Innovation in Packaging",
-    introduction: "Introduction",
-    introText: "We are a team specialized in providing eco-friendly packaging solutions that combine quality and innovation. We strive to reduce environmental impact through the use of sustainable materials, and we are committed to meeting the needs of our customers, individuals and companies, with modern ideas and practical designs. Our vision is to be the trusted partner that helps you develop your business in a more sustainable and responsible way.",
+    introduction: "ABOUT US",
+    introText: "Smart Paper is an innovative Saudi packaging company, established in 2022, with operations across all regions of Saudi Arabia We specialize in delivering end-to-end packaging solutions — from concept design and printing to branding and customized services for food and beverage businesses",
     ourVision: "Our Vision",
-    visionText: "Our vision is to become the first choice locally and regionally in the field of sustainable packaging solutions. We aspire to lead the transformation towards a more conscious industry, where sustainability is an essential part of every production and commercial process. We believe that innovation is the main driver of change, so we constantly work to develop new technologies and adopt best global practices.",
+    visionText: "To be a leading name in the packaging industry by offering a comprehensive range of innovative packaging solutions that meet current and future customer needs — while driving sustainability, creativity, and excellence.",
     ourMission: "Our Mission",
-    missionText: "Our mission is to provide integrated packaging solutions that combine innovation, quality and sustainability. We believe that packaging is not just a means of preserving products, but rather an integrated experience that reflects the identity and values of the brand. Therefore, we work to design and manufacture environmentally friendly packages that rely on recyclable and safe materials for use.",
+    missionText: "Our mission is simple: to provide packaging that not only protects but also elevates our customers’ brands.",
     
     // Contact page
     contactUsNow: "Contact us now",
@@ -103,12 +103,12 @@ const translations = {
     browseAboutUs: "من نحن",
     // About page
     passionForSustainability: "شغف بالاستدامة، ابتكار في التغليف",
-    introduction: "مقدمة",
-    introText: "نحن فريق متخصص في تقديم حلول تغليف صديقة للبيئة تجمع بين الجودة والابتكار. نسعى لتقليل الأثر البيئي عبر استخدام مواد مستدامة، ونحرص على تلبية احتياجات عملائنا من الأفراد والشركات بأفكار حديثة وتصاميم عملية. رؤيتنا هي أن نكون الشريك الموثوق الذي يساعدك على تطوير عملك بطريقة أكثر استدامة ومسؤولية.",
+    introduction: "من نحن",
+    introText: "الورقه الذكيه هي شركة سعودية مبتكرة في مجال التغليف، تأسست عام 2022، وتغطي عملياتها جميع مناطق المملكة.  نحن متخصصون في تقديم حلول تغليف متكاملة – من التصميم والطباعة إلى العلامة التجارية والخدمات المخصصة لقطاع الأغذية والمشروبات.",
     ourVision: "رؤيتنا",
-    visionText: "رؤيتنا تتمثل في أن نصبح الخيار الأول محليًا وإقليميًا في مجال حلول التغليف المستدامة. نطمح إلى قيادة التحول نحو صناعة أكثر وعيًا، حيث تكون الاستدامة جزءًا أساسيًا من كل عملية إنتاجية وتجارية. نؤمن بأن الابتكار هو المحرك الأساسي للتغيير، لذلك نعمل باستمرار على تطوير تقنيات جديدة، واعتماد أفضل الممارسات العالمية",
-    ourMission: "مهماتنا",
-    missionText: "رسالتنا هي توفير حلول تغليف متكاملة تجمع بين الابتكار والجودة والاستدامة. نحن نؤمن بأن التغليف ليس مجرد وسيلة لحفظ المنتجات، بل هو تجربة متكاملة تعكس هوية العلامة التجارية وقيمها. لذلك نعمل على تصميم وتصنيع عبوات صديقة للبيئة تعتمد على مواد قابلة لإعادة التدوير وآمنة للاستخدام",
+    visionText: " نكون اسماً رائداً في صناعة التغليف من خلال تقديم مجموعة شاملة من الحلول المبتكرة التي تلبي احتياجات العملاء الحالية والمستقبلية – مع تعزيز الاستدامة والإبداع والتميّز",
+    ourMission: "رسالتنا",
+    missionText: "رسالتنا بسيطة: تقديم تغليف لا يقتصر على الحماية فحسب، بل يضيف قيمة لعلامات عملائنا التجارية.",
     
     // Contact page  
     contactUsNow: "قم بالتواصل معنا الان",
@@ -126,7 +126,7 @@ const translations = {
     ourProducts: "منتجاتنا",
     categoriesSubtitle: "اكتشف مجموعتنا من منتجات التغليف المستدامة المصممة بجودة عالية.",
     orderNow: "اطلب الان",
-    exploreCategory: "استكشاف الفئة",
+    exploreCategory: "بحث",
     
     // Products page
     cups: "الأكواب",

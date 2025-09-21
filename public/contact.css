@@ -371,6 +371,10 @@ span img{
   
 }
 
-body[dir = "ltr"] .hero-section {
-  flex-direction: row-reverse;
+/* Directional layout for contact form and image */
+body[dir="ltr"] .contact-container {
+  flex-direction: row-reverse !important;
+}
+body[dir="rtl"] .contact-container {
+  flex-direction: row-reverse !important;
 }
